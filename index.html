@@ -152,6 +152,31 @@ color:#fff
 }
 .customAlertBox h2{margin:0 0 12px;font-size:28px}
 .customAlertBox p{margin:0 0 18px;font-size:18px;color:#dce8f7;white-space:pre-line;text-align:left;line-height:1.55}
+
+.customConfirmActions{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+margin-top:14px;
+}
+.customConfirmActions button{
+border:0;
+border-radius:14px;
+padding:14px;
+font-size:17px;
+font-weight:1000;
+cursor:pointer;
+}
+.customConfirmActions .cancel{
+background:#243650;
+color:#fff;
+}
+.customConfirmActions .ok{
+background:linear-gradient(135deg,#1e5eff 0%,#2563eb 48%,#38bdf8 100%);
+color:#fff;
+}
+@media(max-width:520px){.customConfirmActions{grid-template-columns:1fr}}
+
 .customAlertBox button{
 width:100%;
 border:0;
@@ -7002,7 +7027,7 @@ PORTIERI
 <div class="adminActions">
 <button class="adminActionBtn primary" onclick="registerTeamFromClipboardText()"><svg aria-hidden="true" class="fmIcon"><use href="#fm-icon-check"></use></svg> Registra Team</button>
 <button class="adminActionBtn danger" onclick="clearRegisteredTeams()"> Svuota Iscrizioni</button>
-<button class="adminActionBtn secondary" onclick="exportRegisteredTeamsHtml()"> Salva HTML aggiornato</button>
+<button class="adminActionBtn secondary" onclick="exportRegisteredTeamsCsv()"> Esporta CSV iscrizioni</button>
 </div>
 <div class="adminResult" id="adminResult">Iscrizioni svuotate.</div>
 <div class="adminListTitle"> Iscrizioni già registrate</div>
@@ -11798,7 +11823,35 @@ function showAlert(msg){
 }
 
 function closeAlert(){
+  const box = document.querySelector('#customAlert .customAlertBox');
+  if(box && box.dataset.mode === 'confirm'){
+    box.dataset.mode = '';
+    box.innerHTML = '<h2> FantaMondiale 2026</h2><p id="customAlertText"></p><button onclick="closeAlert()">OK</button>';
+  }
   document.getElementById('customAlert').style.display = 'none';
+}
+
+function showConfirm(message, onOk){
+  const alert = document.getElementById('customAlert');
+  const box = document.querySelector('#customAlert .customAlertBox');
+  if(!alert || !box){
+    if(confirm(message)) onOk && onOk();
+    return;
+  }
+  box.dataset.mode = 'confirm';
+  box.innerHTML = `<h2> FantaMondiale 2026</h2>
+    <p id="customAlertText"></p>
+    <div class="customConfirmActions">
+      <button class="cancel" type="button" id="customConfirmCancel">Annulla</button>
+      <button class="ok" type="button" id="customConfirmOk">OK</button>
+    </div>`;
+  document.getElementById('customAlertText').textContent = message;
+  document.getElementById('customConfirmCancel').onclick = closeAlert;
+  document.getElementById('customConfirmOk').onclick = ()=>{
+    closeAlert();
+    onOk && onOk();
+  };
+  alert.style.display = 'grid';
 }
 
 function markDirty(){
@@ -12150,6 +12203,7 @@ async function init(){
   renderPlayersPage();
   loadRegisteredTeams();
   renderRegisteredTeams();
+  loadRegisteredTeamsFromCsvIfNeeded();
 
   const stamp = localStorage.getItem(STORE_KEY+'_time');
   const info=document.getElementById('saveInfo');
@@ -12991,6 +13045,115 @@ function saveRegisteredTeams(){
   localStorage.setItem(registeredStoreKey(), JSON.stringify(REGISTERED_TEAMS));
 }
 
+function csvEscape(value){
+  const s = String(value ?? '');
+  return '"' + s.replace(/"/g,'""') + '"';
+}
+
+function parseCsvRows(text){
+  const rows=[];
+  let row=[], cell='', inQuotes=false;
+  for(let i=0;i<String(text||'').length;i++){
+    const ch=text[i], next=text[i+1];
+    if(inQuotes){
+      if(ch === '"' && next === '"'){ cell += '"'; i++; }
+      else if(ch === '"'){ inQuotes=false; }
+      else cell += ch;
+    }else{
+      if(ch === '"') inQuotes=true;
+      else if(ch === ','){ row.push(cell); cell=''; }
+      else if(ch === '\n'){ row.push(cell); rows.push(row); row=[]; cell=''; }
+      else if(ch !== '\r') cell += ch;
+    }
+  }
+  row.push(cell);
+  if(row.length > 1 || row[0] !== '') rows.push(row);
+  return rows;
+}
+
+function teamToCsvRow(team){
+  const raw = team.rawText || registeredTeamText(team);
+  return [
+    team.name || '',
+    team.registeredAt || team.createdAt || '',
+    team.registeredDate || '',
+    team.players?.length || 0,
+    fmt(team.spent || 0),
+    team.topNation || '-',
+    raw
+  ];
+}
+
+function exportRegisteredTeamsCsv(){
+  loadRegisteredTeams();
+  const header = ['nome','data_registrazione_iso','data_registrazione','giocatori','valore_rosa','nazionale_piu_rappresentata','rosa_whatsapp'];
+  const rows = [header].concat(REGISTERED_TEAMS.map(teamToCsvRow));
+  const csv = rows.map(r=>r.map(csvEscape).join(',')).join('\n');
+  const blob = new Blob([csv], {type:'text/csv;charset=utf-8'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='iscrizioni.csv';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(a.href);
+  showAlert('CSV iscrizioni esportato. Caricalo su GitHub in database/iscrizioni.csv per aggiornare le Squadre Iscritte online.');
+}
+
+function importRegisteredTeamsCsvText(text, saveLocal){
+  const rows = parseCsvRows(text);
+  if(rows.length < 2) return false;
+  const header = rows[0].map(h=>String(h||'').trim().toLowerCase());
+  const idx = name => header.indexOf(name);
+  const iName = idx('nome');
+  const iIso = idx('data_registrazione_iso');
+  const iDate = idx('data_registrazione');
+  const iRaw = idx('rosa_whatsapp');
+  if(iName < 0 || iRaw < 0) return false;
+  const imported=[];
+  rows.slice(1).forEach(r=>{
+    const raw = r[iRaw] || '';
+    if(!raw.trim()) return;
+    try{
+      const parsed = parseRegisteredTeamText(raw);
+      parsed.name = (r[iName] || parsed.name || '').trim();
+      parsed.registeredAt = r[iIso] || parsed.createdAt || '';
+      parsed.registeredDate = r[iDate] || formatRegistrationDate(parsed.registeredAt);
+      parsed.rawText = raw;
+      imported.push(parsed);
+    }catch(e){}
+  });
+  if(!imported.length) return false;
+  REGISTERED_TEAMS = imported;
+  if(saveLocal) saveRegisteredTeams();
+  return true;
+}
+
+async function loadRegisteredTeamsFromCsvIfNeeded(){
+  loadRegisteredTeams();
+  if(REGISTERED_TEAMS.length) return false;
+  const paths = ['database/iscrizioni.csv','data/iscrizioni.csv','iscrizioni.csv'];
+  for(const path of paths){
+    try{
+      const res = await fetch(path, {cache:'no-store'});
+      if(!res.ok) continue;
+      const text = await res.text();
+      if(importRegisteredTeamsCsvText(text, false)){
+        renderRegisteredTeams();
+        renderAdminRegisteredTeams();
+        return true;
+      }
+    }catch(e){}
+  }
+  return false;
+}
+
+function formatRegistrationDate(iso){
+  const d = iso ? new Date(iso) : new Date();
+  if(isNaN(d.getTime())) return '';
+  return d.toLocaleDateString('it-IT') + ' ' + d.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
+}
+
 function unlockAdminArea(){
   const pass = document.getElementById('adminPassword')?.value || '';
   if(pass !== REGISTRATION_PASSWORD){
@@ -13199,6 +13362,8 @@ function parseRegisteredTeamText(text){
     id: Date.now().toString(36),
     name: teamName,
     createdAt: new Date().toISOString(),
+    registeredAt: new Date().toISOString(),
+    registeredDate: formatRegistrationDate(new Date().toISOString()),
     players,
     spent,
     roleCounts,
@@ -13212,19 +13377,26 @@ function registerTeamFromClipboardText(){
   try{
     loadRegisteredTeams();
     const parsed = parseRegisteredTeamText(document.getElementById('teamImportText').value);
+    parsed.registeredAt = new Date().toISOString();
+    parsed.registeredDate = formatRegistrationDate(parsed.registeredAt);
     const existing = REGISTERED_TEAMS.findIndex(t => normalizeNameForTeam(t.name) === normalizeNameForTeam(parsed.name));
+    const finalize = ()=>{
+      if(existing >= 0){
+        REGISTERED_TEAMS[existing] = parsed;
+      }else{
+        REGISTERED_TEAMS.push(parsed);
+      }
+      saveRegisteredTeams();
+      renderRegisteredTeams();
+      renderAdminRegisteredTeams();
+      document.getElementById('adminResult').innerHTML = `Team registrato: <b>${escapeHtml(parsed.name)}</b><br>Data registrazione: ${escapeHtml(parsed.registeredDate)}<br>Giocatori: ${parsed.players.length}/26<br>Valore Rosa: ${fmt(parsed.spent)}`;
+      showAlert("Team registrato correttamente. Esporta il CSV iscrizioni e caricalo su GitHub in database/iscrizioni.csv.");
+    };
     if(existing >= 0){
-      const ok = confirm('Squadra già presente. Vuoi sostituirla?');
-      if(!ok) return;
-      REGISTERED_TEAMS[existing] = parsed;
-    }else{
-      REGISTERED_TEAMS.push(parsed);
+      showConfirm('Squadra già presente. Vuoi sostituirla?', finalize);
+      return;
     }
-    saveRegisteredTeams();
-    renderRegisteredTeams();
-    renderAdminRegisteredTeams();
-    document.getElementById('adminResult').innerHTML = `Team registrato: <b>${escapeHtml(parsed.name)}</b><br>Giocatori: ${parsed.players.length}/26<br>Valore Rosa: ${fmt(parsed.spent)}`;
-    showAlert("Team registrato correttamente. Ricordati di esportare/salvare i dati aggiornati prima di pubblicarli.");
+    finalize();
   }catch(err){
     document.getElementById('adminResult').textContent = ' ' + err.message;
     showAlert(err.message);
@@ -13265,8 +13437,8 @@ function renderRegisteredTeams(){
       <div class="registeredTeamMeta">
         Giocatori: <b>${t.players?.length || 0}/26</b><br>
         Valore Rosa: <b>${fmt(t.spent || 0)}</b><br>
-        Portieri ${counts.Portieri || 0} · Difensori ${counts.Difensori || 0} · Centrocampisti ${counts.Centrocampisti || 0} · Attaccanti ${counts.Attaccanti || 0}<br>
-         Nazionale più rappresentata: <b>${escapeHtml(t.topNation || '-')}</b>
+        Data registrazione: <b>${escapeHtml(t.registeredDate || formatRegistrationDate(t.registeredAt || t.createdAt) || '-')}</b><br>
+        Nazionale più rappresentata: <b>${escapeHtml(t.topNation || '-')}</b>
       </div>
       <div class="registeredActions">
         <button class="registeredActionBtn primary" onclick="toggleRegisteredRoster(${idx})">Consulta Rosa</button>
@@ -13308,7 +13480,7 @@ function renderAdminRegisteredTeams(){
           <div class="adminTeamRowName"> ${escapeHtml(t.name || 'Senza nome')}</div>
           <div class="adminTeamRowMeta">
              ${t.players?.length || 0}/26 ·  ${fmt(t.spent || 0)}<br>
-            Portieri ${counts.Portieri || 0} · Difensori ${counts.Difensori || 0} · Centrocampisti ${counts.Centrocampisti || 0} · Attaccanti ${counts.Attaccanti || 0}
+            Registrata: ${escapeHtml(t.registeredDate || formatRegistrationDate(t.registeredAt || t.createdAt) || '-')}
           </div>
         </div>
       </div>
@@ -13341,24 +13513,24 @@ function deleteRegisteredTeam(idx){
   loadRegisteredTeams();
   const team=REGISTERED_TEAMS[idx];
   if(!team) return;
-  const ok=confirm(`Vuoi eliminare la squadra iscritta "${team.name}"?`);
-  if(!ok) return;
-  REGISTERED_TEAMS.splice(idx,1);
-  saveRegisteredTeams();
-  renderRegisteredTeams();
-  renderAdminRegisteredTeams();
-  const result=document.getElementById('adminResult');
-  if(result) result.innerHTML = ` Squadra eliminata: <b>${escapeHtml(team.name)}</b>`;
+  showConfirm(`Vuoi eliminare la squadra iscritta "${team.name}"?`, ()=>{
+    REGISTERED_TEAMS.splice(idx,1);
+    saveRegisteredTeams();
+    renderRegisteredTeams();
+    renderAdminRegisteredTeams();
+    const result=document.getElementById('adminResult');
+    if(result) result.innerHTML = ` Squadra eliminata: <b>${escapeHtml(team.name)}</b>`;
+  });
 }
 
 function clearRegisteredTeams(){
-  const ok = confirm('Vuoi davvero cancellare tutte le squadre iscritte da questo browser?');
-  if(!ok) return;
-  REGISTERED_TEAMS=[];
-  saveRegisteredTeams();
-  renderRegisteredTeams();
-  renderAdminRegisteredTeams();
-  document.getElementById('adminResult').textContent='Iscrizioni svuotate.';
+  showConfirm('Vuoi davvero cancellare tutte le squadre iscritte da questo browser?', ()=>{
+    REGISTERED_TEAMS=[];
+    saveRegisteredTeams();
+    renderRegisteredTeams();
+    renderAdminRegisteredTeams();
+    document.getElementById('adminResult').textContent='Iscrizioni svuotate.';
+  });
 }
 
 
