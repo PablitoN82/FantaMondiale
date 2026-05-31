@@ -6938,9 +6938,9 @@ m248 -3 c11 -11 20 -30 20 -42 0 -29 -38 -68 -67 -68 -52 0 -82 72 -46 112 21
 <div class="adminPanelBox" id="adminPanelBox" style="display:none">
 <div class="adminSubPage active" id="adminPageDatabase">
 <div class="adminSectionHeader"><span class="pageTitleIcon small"><svg aria-label="Database" class="pageTitlePngIcon svgInlineIcon" focusable="false" role="img"><use href="#fm-icon-database"></use></svg></span><span>Database</span></div>
-<div class="adminSectionText">Carica qui i CSV che diventeranno la sorgente unica dei dati. In questa prima versione la pagina è pronta per ricevere <b>teams.csv</b>, <b>players.csv</b> e <b>groups.csv</b>; il collegamento al resto dell'app verrà fatto nel passaggio successivo.</div>
+<div class="adminSectionText">Versione online: i CSV vengono caricati automaticamente dalla cartella <b>database/</b> del sito. Puoi comunque incollare o caricare manualmente un CSV da qui per fare prove locali.</div>
 <div class="databaseHintBox">
-  Struttura prevista: <code>players.csv</code> per i giocatori, <code>teams.csv</code> per le nazionali, <code>groups.csv</code> per i gironi. I dati riepilogativi delle rose verranno calcolati automaticamente dalle card.
+  Struttura ZIP prevista: <code>index.html</code> nella radice e cartella <code>database/</code> con <code>players.csv</code>, <code>teams.csv</code>, <code>groups.csv</code> e <code>roster.csv</code>. All'apertura del sito questi file vengono letti automaticamente.
 </div>
 <div class="databaseAdminGrid">
 <div class="databaseCsvCard">
@@ -15381,6 +15381,95 @@ button .fmBtnIconSvg,label .fmBtnIconSvg{pointer-events:none;}
 
   document.addEventListener('DOMContentLoaded',()=>{setTimeout(patchRoseDom,400);});
   window.addEventListener('load',()=>{setTimeout(patchRoseDom,800);});
+})();
+</script>
+
+
+<script id="fm-netlify-online-csv-loader">
+(function(){
+  'use strict';
+  const KINDS = ['players','teams','groups','roster'];
+  const K1 = k => 'FANTAMONDIALE_2026_DATABASE_' + String(k||'').toUpperCase();
+  const K2 = k => 'fm_database_csv_' + String(k||'').toLowerCase();
+  const ITALIAN = {players:'giocatori', teams:'squadre', groups:'gruppi'};
+  const ONLINE_PATHS = kind => [
+    'database/' + kind + '.csv',
+    './database/' + kind + '.csv',
+    'data/' + kind + '.csv',
+    './data/' + kind + '.csv',
+    'database/' + ITALIAN[kind] + '.csv',
+    './database/' + ITALIAN[kind] + '.csv',
+    'data/' + ITALIAN[kind] + '.csv',
+    './data/' + ITALIAN[kind] + '.csv'
+  ];
+
+  async function fetchFirst(kind){
+    for(const path of ONLINE_PATHS(kind)){
+      try{
+        const res = await fetch(path, {cache:'no-store'});
+        if(res && res.ok){
+          const text = await res.text();
+          if(String(text || '').trim()) return {text, path};
+        }
+      }catch(e){}
+    }
+    return {text:'', path:''};
+  }
+
+  function writeCsv(kind, text){
+    localStorage.setItem(K1(kind), text || '');
+    localStorage.setItem(K2(kind), text || '');
+    const cap = kind.charAt(0).toUpperCase() + kind.slice(1);
+    const ta = document.getElementById('databaseCsv' + cap);
+    if(ta) ta.value = text || '';
+    try{ if(typeof window.updateDatabaseCsvStatus === 'function') window.updateDatabaseCsvStatus(kind); }catch(e){}
+  }
+
+  let __fmOnlineCsvPromise = null;
+  let __fmOnlineCsvDone = false;
+  async function loadOnlineCsv(){
+    if(__fmOnlineCsvPromise) return __fmOnlineCsvPromise;
+    __fmOnlineCsvPromise = (async function(){
+    const loaded = {};
+    await Promise.all(KINDS.map(async kind => { loaded[kind] = await fetchFirst(kind); }));
+    const count = KINDS.filter(k => loaded[k] && loaded[k].text.trim()).length;
+    if(!count){ __fmOnlineCsvPromise = null; return false; }
+    if(__fmOnlineCsvDone) return true;
+
+    KINDS.forEach(kind => writeCsv(kind, loaded[kind] ? loaded[kind].text : ''));
+
+    try{ if(typeof window.setupDatabasePage === 'function') window.setupDatabasePage(); }catch(e){}
+    let result = null;
+    try{ if(typeof window.fmActivateLocalCsvDatabase === 'function') result = window.fmActivateLocalCsvDatabase(); }catch(e){ console.warn('Attivazione CSV online non riuscita:', e); }
+
+    KINDS.forEach(kind => {
+      const cap = kind.charAt(0).toUpperCase() + kind.slice(1);
+      const st = document.getElementById('databaseStatus' + cap);
+      if(st && loaded[kind] && loaded[kind].text.trim()){
+        st.innerHTML += '<br><b>Online:</b> ' + loaded[kind].path;
+      }
+    });
+
+    try{ if(typeof window.renderTeam === 'function') window.renderTeam(); }catch(e){}
+    try{
+      var rosePage = document.getElementById('pageRose');
+      if(rosePage && !rosePage.classList.contains('hidden') && typeof window.renderRosePageDynamic === 'function') window.renderRosePageDynamic();
+    }catch(e){}
+    try{ if(typeof window.setupPlayersPage === 'function') window.setupPlayersPage(); if(typeof window.renderPlayersPage === 'function') window.renderPlayersPage(); }catch(e){}
+    __fmOnlineCsvDone = true;
+    return result || true;
+    })();
+    return __fmOnlineCsvPromise;
+  }
+
+  window.fmLoadOnlineCsvDatabase = loadOnlineCsv;
+
+  document.addEventListener('DOMContentLoaded', function(){
+    setTimeout(loadOnlineCsv, 40);
+  });
+  window.addEventListener('load', function(){
+    setTimeout(loadOnlineCsv, 250);
+  });
 })();
 </script>
 
