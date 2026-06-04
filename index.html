@@ -2054,7 +2054,7 @@ D1. Nome Giocatore - Flag_Nation Nome Nazionale
   function flagTeam(name, code){try{if(typeof fmCircleFlagHtml==='function') return fmCircleFlagHtml(name)||fmCircleFlagHtml(code)||'';}catch(e){} return '';}
   function flagCode(code){try{if(typeof fmClubFlagHtmlFromCode==='function') return fmClubFlagHtmlFromCode(code)||'';}catch(e){} try{if(typeof fmEnsureLocalFlagData==='function'){const src=fmEnsureLocalFlagData(code); if(src) return '<span class="flagCircle" aria-hidden="true"><img alt="" src="'+src+'"></span>';}}catch(e){} return '';}
   function db(){
-    const groups=parseCsv(readDb('groups')), players=parseCsv(readDb('players')), coaches=parseCsv(readDb('coaches')), teams=parseCsv(readDb('teams')), roster=[];
+    const groups=parseCsv(readDb('groups')), players=parseCsv(readDb('players')), coaches=parseCsv(readDb('coaches')), teams=parseCsv(readDb('teams')); 
     const names={};
     [...teams,...groups,...coaches].forEach(r=>{const c=norm(r.team_id||r.team_code||r.id); if(c) names[c]=displayName(r,c);});
     players.forEach(r=>{const c=norm(r.team_code||r.team_id||r.id); if(c && !names[c]) names[c]=displayName(r,c);});
@@ -2063,7 +2063,7 @@ D1. Nome Giocatore - Flag_Nation Nome Nazionale
     if(!groupsMap.length){const seen=[]; players.forEach(r=>{const c=norm(r.team_code||r.team_id||r.id); if(c && !seen.includes(c)) seen.push(c);}); if(seen.length) groupsMap.push({id:'DB',label:'Nazionali',teams:seen.map(c=>({code:c,name:names[c]||FALLBACK[c]||c}))});}
     const byCode={};
     players.forEach((r,i)=>{const c=norm(r.team_code||r.team_id||r.id); if(!c) return; const role=ROLE_MAP[norm(r.position||r.role||r.ruolo||r.posizione)]||''; const name=String(r.player_name||r.name||r.player||r.giocatore||r.FIFA_player_name||'').trim(); if(!role || !name) return; const p={id:String(r.player_id||r.fifamod_id||r.id||('p'+i)).trim(),name,role,value:String(r.market_value||r.value||r.valore||'').trim(),club:String(r.club||r.squadra||'').trim(),countryClub:norm(r.club_country_code||r.country_club||r.club_country||r.countryClub||r.country_id_club),birthDate:String(r.birth_date||r.birthDate||'').trim(),heightCm:String(r.height_cm||r.height||r.altezza||'').trim(),caps:String(r.international_caps||r.caps||r.presenze||'').trim(),goals:String(r.international_goals||r.goals||r.reti||'').trim(),debutDate:String(r.debut_date||r.debutDate||r.debutto||'').trim(),shirtNumber:String(r.shirt_number||r.number||r.numero||r.numero_maglia||'').trim(),shirtName:String(r.name_on_shirt||r.shirt_name||r.nome_maglia||r.nome_sulla_maglia||'').trim()}; (byCode[c]||(byCode[c]=[])).push(p);});
-    return {groupsMap,byCode,names,coaches,teams,roster:[]};
+    return {groupsMap,byCode,names,coaches,teams};
   }
   function findByCode(rows, code){code=norm(code); return (rows||[]).find(r=>norm(r.team_id||r.team_code||r.id)===code) || {};}
   function teamInfo(D, code){const coach=findByCode(D.coaches,code), team=findByCode(D.teams,code); return {date:team.squad_date||team.list_date||team.convocati_date||team.date||'Lista non ancora consegnata', coach:coach.coach_name||coach.ct||coach.manager||coach.commissario_tecnico||team.coach_name||'', coachCountry:coach.coach_country||coach.coach_nationality||coach.ct_country||team.coach_country||code};}
@@ -2097,22 +2097,86 @@ D1. Nome Giocatore - Flag_Nation Nome Nazionale
 })();
 </script>
 
-<script id="fm-fixtures-session-only-fix">
+
+<script id="fm-github-database-autoload">
 (function(){
   "use strict";
-  function clearPersistedFixtures(){
-    try{
-      [
-        "fm_database_csv_fixtures",
-        "FANTAMONDIALE_2026_DATABASE_FIXTURES",
-        "fm_database_csv_calendar",
-        "FANTAMONDIALE_2026_DATABASE_CALENDAR"
-      ].forEach(function(k){ localStorage.removeItem(k); });
-    }catch(e){}
+  const CSV_FILES = [
+    {kind:"fixtures", file:"fixtures.csv", label:"Calendario Partite"},
+    {kind:"players",  file:"players.csv",  label:"Giocatori"},
+    {kind:"teams",    file:"teams.csv",    label:"Nazionali"},
+    {kind:"groups",   file:"groups.csv",   label:"Gironi"},
+    {kind:"coaches",  file:"coaches.csv",  label:"Allenatori e Dati Squadre"}
+  ];
+  const DB_DIR = "database/";
+  function cap(s){s=String(s||"");return s.charAt(0).toUpperCase()+s.slice(1);}
+  function key1(kind){return "FANTAMONDIALE_2026_DATABASE_"+String(kind).toUpperCase();}
+  function key2(kind){return "fm_database_csv_"+String(kind).toLowerCase();}
+  function parseCsvRows(text){
+    text=String(text||"").replace(/^\uFEFF/,"").replace(/\r/g,"");
+    const first=(text.split("\n").find(x=>String(x).trim())||"");
+    const sep=(first.split(";").length>first.split(",").length)?";":",";
+    const rows=[]; let row=[],cur="",q=false;
+    for(let i=0;i<text.length;i++){
+      const c=text[i], n=text[i+1];
+      if(q){ if(c==='"'&&n==='"'){cur+='"';i++;} else if(c==='"') q=false; else cur+=c; }
+      else { if(c==='"') q=true; else if(c===sep){row.push(cur);cur="";} else if(c==='\n'){row.push(cur);rows.push(row);row=[];cur="";} else cur+=c; }
+    }
+    if(cur!==""||row.length){row.push(cur);rows.push(row);}
+    return rows.filter(r=>r.some(x=>String(x||"").trim()!==""));
   }
-  clearPersistedFixtures();
-  document.addEventListener("DOMContentLoaded", clearPersistedFixtures);
-  window.addEventListener("load", function(){ setTimeout(clearPersistedFixtures, 0); });
+  function countRows(text){const rows=parseCsvRows(text); return Math.max(0, rows.length-1);}
+  function setStatus(kind, file, text, ok){
+    const id="databaseStatus"+cap(kind), el=document.getElementById(id);
+    const fname=document.getElementById("databaseFileName"+cap(kind));
+    if(fname) fname.textContent = ok ? "Auto: database/"+file : "Non trovato in database/";
+    if(el){
+      if(ok) el.innerHTML = "CSV caricato automaticamente da GitHub: <b>"+file+"</b><br>Righe lette: <b>"+countRows(text)+"</b>";
+      else el.innerHTML = "CSV non trovato in <b>database/"+file+"</b>. Puoi caricarlo manualmente.";
+    }
+  }
+  function setTextarea(kind,text){
+    const ta=document.getElementById("databaseCsv"+cap(kind));
+    if(ta) ta.value=text||"";
+  }
+  function saveDb(kind,text){
+    try{localStorage.setItem(key1(kind), text||""); localStorage.setItem(key2(kind), text||"");}catch(e){}
+  }
+  function refreshApp(){
+    try{ if(typeof window.updateDatabaseCsvStatus==="function") CSV_FILES.forEach(x=>window.updateDatabaseCsvStatus(x.kind)); }catch(e){}
+    try{ if(typeof window.renderRosePageDynamic==="function") window.renderRosePageDynamic(); }catch(e){}
+    try{ if(typeof window.renderRoseDefinitive==="function") window.renderRoseDefinitive(); }catch(e){}
+    try{ if(typeof window.setupPlayersPage==="function") window.setupPlayersPage(); }catch(e){}
+    try{ if(typeof window.renderPlayersPage==="function") window.renderPlayersPage(); }catch(e){}
+    try{ if(typeof window.renderTeam==="function") window.renderTeam(); }catch(e){}
+    try{ if(typeof window.setupResultPlayers==="function") window.setupResultPlayers(); }catch(e){}
+    try{ if(typeof window.renderWorldMatchesPage==="function") { const root=document.getElementById("worldMatchesByDate"); if(root) root.dataset.loaded="0"; window.renderWorldMatchesPage(true); } }catch(e){}
+  }
+  async function loadOne(item){
+    const url=DB_DIR+item.file+"?v="+Date.now();
+    try{
+      const res=await fetch(url,{cache:"no-store"});
+      if(!res.ok) throw new Error(String(res.status));
+      const text=await res.text();
+      setTextarea(item.kind,text); saveDb(item.kind,text); setStatus(item.kind,item.file,text,true);
+      return true;
+    }catch(e){
+      const existing=localStorage.getItem(key1(item.kind))||localStorage.getItem(key2(item.kind))||"";
+      if(existing){ setTextarea(item.kind,existing); setStatus(item.kind,item.file,existing,true); return true; }
+      setTextarea(item.kind,""); setStatus(item.kind,item.file,"",false); return false;
+    }
+  }
+  async function autoLoadDatabase(){
+    if(location.protocol==="file:") return;
+    await Promise.all(CSV_FILES.map(loadOne));
+    refreshApp();
+    setTimeout(refreshApp,250);
+    setTimeout(refreshApp,900);
+  }
+  window.fmAutoLoadGithubDatabase=autoLoadDatabase;
+  document.addEventListener("DOMContentLoaded",()=>setTimeout(autoLoadDatabase,80));
+  window.addEventListener("load",()=>setTimeout(autoLoadDatabase,120));
 })();
 </script>
+
 </body></html>
