@@ -1,31 +1,49 @@
-﻿team_id,team_name
-RSA,Sudafrica
-KOR,Corea del Sud
-BIH,Bosnia ed Erzegovina
-SUI,Svizzera
-BRA,Brasile
-MAR,Marocco
-HAI,Haiti
-SCO,Scozia
-USA,Stati Uniti
-GER,Germania
-CUW,Curaçao
-CIV,Costa d'Avorio
-NED,Paesi Bassi
-JPN,Giappone
-SWE,Svezia
-TUN,Tunisia
-BEL,Belgio
-NZL,Nuova Zelanda
-ESP,Spagna
-CPV,Capo Verde
-FRA,Francia
-NOR,Norvegia
-ARG,Argentina
-AUT,Austria
-POR,Portogallo
-COD,Congo DR
-COL,Colombia
-ENG,Inghilterra
-CRO,Croazia
-PAN,Panama
+team_code;team;squad_date;fotmob_team_id;fotmob_url
+MEX;Messico;31 maggio 2026;6710;https://www.fotmob.com/it/teams/6710/overview/mexico
+RSA;Sudafrica;27 maggio 2026;6316;https://www.fotmob.com/it/teams/6316/overview/south-africa
+KOR;Corea del Sud;16 maggio 2026;7804;https://www.fotmob.com/it/teams/7804/overview/south-korea
+CZE;Cechia;31 maggio 2026;8496;https://www.fotmob.com/it/teams/8496/overview/czechia
+BIH;Bosnia ed Erzegovina;11 maggio 2026;10106;https://www.fotmob.com/it/teams/10106/overview/bosnia-herzegovina
+CAN;Canada;29 maggio 2026;5810;https://www.fotmob.com/it/teams/5810/overview/canada
+QAT;Qatar;1 giugno 2026;5902;https://www.fotmob.com/it/teams/5902/overview/qatar
+SUI;Svizzera;20 maggio 2026;6717;https://www.fotmob.com/it/teams/6717/overview/switzerland
+BRA;Brasile;18 maggio 2026;8256;https://www.fotmob.com/it/teams/8256/overview/brazil
+MAR;Marocco;26 maggio 2026;6262;https://www.fotmob.com/it/teams/6262/overview/morocco
+HAI;Haiti;15 maggio 2026;5934;https://www.fotmob.com/it/teams/5934/overview/haiti
+SCO;Scozia;19 maggio 2026;8498;https://www.fotmob.com/it/teams/8498/overview/scotland
+USA;Stati Uniti;26 maggio 2026;6713;https://www.fotmob.com/it/teams/6713/overview/usa
+PAR;Paraguay;1 giugno 2026;6724;https://www.fotmob.com/it/teams/6724/overview/paraguay
+AUS;Australia;31 maggio 2026;6716;https://www.fotmob.com/it/teams/6716/overview/australia
+TUR;Turchia;2 giugno 2026;6595;https://www.fotmob.com/it/teams/6595/overview/turkiye
+CUW;Curaçao;18 maggio 2026;287981;https://www.fotmob.com/it/teams/287981/overview/curacao
+ECU;Ecuador;31 maggio 2026;6707;https://www.fotmob.com/it/teams/6707/overview/ecuador
+GER;Germania;21 maggio 2026;8570;https://www.fotmob.com/it/teams/8570/overview/germany
+CIV;Costa d'Avorio;15 maggio 2026;6709;https://www.fotmob.com/it/teams/6709/overview/ivory-coast
+JPN;Giappone;15 maggio 2026;6715;https://www.fotmob.com/it/teams/6715/overview/japan
+NED;Paesi Bassi;27 maggio 2026;6708;https://www.fotmob.com/it/teams/6708/overview/netherlands
+SWE;Svezia;12 maggio 2026;8520;https://www.fotmob.com/it/teams/8520/overview/sweden
+TUN;Tunisia;15 maggio 2026;6719;https://www.fotmob.com/it/teams/6719/overview/tunisia
+BEL;Belgio;15 maggio 2026;8263;https://www.fotmob.com/it/teams/8263/overview/belgium
+EGY;Egitto;30 maggio 2026;10255;https://www.fotmob.com/it/teams/10255/overview/egypt
+IRN;Iran;1 giugno 2026;6711;https://www.fotmob.com/it/teams/6711/overview/iran
+NZL;Nuova Zelanda;13 maggio 2026;5820;https://www.fotmob.com/it/teams/5820/overview/new-zealand
+CPV;Capo Verde;18 maggio 2026;5888;https://www.fotmob.com/it/teams/5888/overview/cape-verde
+KSA;Arabia Saudita;31 maggio 2026;7795;https://www.fotmob.com/it/teams/7795/overview/saudi-arabia
+ESP;Spagna;25 maggio 2026;6720;https://www.fotmob.com/it/teams/6720/overview/spain
+URU;Uruguay;31 maggio 2026;5796;https://www.fotmob.com/it/teams/5796/overview/uruguay
+FRA;Francia;14 maggio 2026;6723;https://www.fotmob.com/it/teams/6723/overview/france
+IRQ;Iraq;1 giugno 2026;5819;https://www.fotmob.com/it/teams/5819/overview/iraq
+NOR;Norvegia;21 maggio 2026;8492;https://www.fotmob.com/it/teams/8492/overview/norway
+SEN;Senegal;1 giugno 2026;6395;https://www.fotmob.com/it/teams/6395/overview/senegal
+ALG;Algeria;31 maggio 2026;6317;https://www.fotmob.com/it/teams/6317/overview/algeria
+ARG;Argentina;28 maggio 2026;6706;https://www.fotmob.com/it/teams/6706/overview/argentina
+AUT;Austria;18 maggio 2026;8255;https://www.fotmob.com/it/teams/8255/overview/austria
+JOR;Giordania;2 giugno 2026;5816;https://www.fotmob.com/it/teams/5816/overview/jordan
+COL;Colombia;25 maggio 2026;8258;https://www.fotmob.com/it/teams/8258/overview/colombia
+COD;RD Congo;18 maggio 2026;6321;https://www.fotmob.com/it/teams/6321/overview/dr-congo
+POR;Portogallo;19 maggio 2026;8361;https://www.fotmob.com/it/teams/8361/overview/portugal
+UZB;Uzbekistan;2 giugno 2026;8700;https://www.fotmob.com/it/teams/8700/overview/uzbekistan
+CRO;Croazia;18 maggio 2026;10155;https://www.fotmob.com/it/teams/10155/overview/croatia
+ENG;Inghilterra;22 maggio 2026;8491;https://www.fotmob.com/it/teams/8491/overview/england
+GHA;Ghana;2 giugno 2026;6714;https://www.fotmob.com/it/teams/6714/overview/ghana
+PAN;Panama;26 maggio 2026;5922;https://www.fotmob.com/it/teams/5922/overview/panama
