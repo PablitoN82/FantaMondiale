@@ -2526,7 +2526,7 @@ Nazionale più rappresentata: <b>${escapeHtml(t.topNation||"-")}</b></div><div c
     for(const dir of CANDIDATE_DIRS){
       const path = dir + kind + ".csv";
       try{
-        const res = await fetch(path, {cache:"no-store"});
+        const res = await fetch(path + "?v=" + Date.now(), {cache:"no-store"});
         if(res.ok){
           const text = await res.text();
           if(String(text||"").trim()) return {kind, path, text};
