@@ -1,0 +1,146 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-06-06T22:38:51.080Z",
+  "fantasyTeamName": "Paris Bidet FC",
+  "selectedTeam": "Argentina",
+  "slots": {
+    "Portieri": [
+      {
+        "raw": "Alisson Becker — Brasile — 15,00 mln €",
+        "ok": true,
+        "val": 15
+      },
+      {
+        "raw": "Thibaut Courtois — Belgio — 15,00 mln €",
+        "ok": true,
+        "val": 15
+      },
+      {
+        "raw": "Unai Simón — Spagna — 22,00 mln €",
+        "ok": true,
+        "val": 22
+      }
+    ],
+    "Difensori": [
+      {
+        "raw": "Pau Cubarsí — Spagna — 80,00 mln €",
+        "ok": true,
+        "val": 80
+      },
+      {
+        "raw": "Virgil van Dijk — Olanda — 15,00 mln €",
+        "ok": true,
+        "val": 15
+      },
+      {
+        "raw": "William Saliba — Francia — 100,00 mln €",
+        "ok": true,
+        "val": 100
+      },
+      {
+        "raw": "Nahuel Molina — Argentina — 15,00 mln €",
+        "ok": true,
+        "val": 15
+      },
+      {
+        "raw": "Nuno Mendes — Portogallo — 80,00 mln €",
+        "ok": true,
+        "val": 80
+      },
+      {
+        "raw": "Hiroki Ito — Giappone — 18,00 mln €",
+        "ok": true,
+        "val": 18
+      },
+      {
+        "raw": "Marquinhos — Brasile — 28,00 mln €",
+        "ok": true,
+        "val": 28
+      },
+      {
+        "raw": "Douglas Santos — Brasile — 7,50 mln €",
+        "ok": true,
+        "val": 7.5
+      }
+    ],
+    "Centrocampisti": [
+      {
+        "raw": "Scott McTominay — Scozia — 40,00 mln €",
+        "ok": true,
+        "val": 40
+      },
+      {
+        "raw": "Hakan Çalhanoglu — Turchia — 16,00 mln €",
+        "ok": true,
+        "val": 16
+      },
+      {
+        "raw": "Florian Wirtz — Germania — 100,00 mln €",
+        "ok": true,
+        "val": 100
+      },
+      {
+        "raw": "Bruno Fernandes — Portogallo — 35,00 mln €",
+        "ok": true,
+        "val": 35
+      },
+      {
+        "raw": "Fabián Ruiz — Spagna — 30,00 mln €",
+        "ok": true,
+        "val": 30
+      },
+      {
+        "raw": "Aurélien Tchouaméni — Francia — 70,00 mln €",
+        "ok": true,
+        "val": 70
+      },
+      {
+        "raw": "Martin Ødegaard — Norvegia — 65,00 mln €",
+        "ok": true,
+        "val": 65
+      },
+      {
+        "raw": "Daichi Kamada — Giappone — 10,00 mln €",
+        "ok": true,
+        "val": 10
+      }
+    ],
+    "Attaccanti": [
+      {
+        "raw": "Michael Olise — Francia — 150,00 mln €",
+        "ok": true,
+        "val": 150
+      },
+      {
+        "raw": "Kenan Yildiz — Turchia — 75,00 mln €",
+        "ok": true,
+        "val": 75
+      },
+      {
+        "raw": "Mikel Oyarzabal — Spagna — 25,00 mln €",
+        "ok": true,
+        "val": 25
+      },
+      {
+        "raw": "Harry Kane — Inghilterra — 60,00 mln €",
+        "ok": true,
+        "val": 60
+      },
+      {
+        "raw": "Kai Havertz — Germania — 55,00 mln €",
+        "ok": true,
+        "val": 55
+      },
+      {
+        "raw": "Vinícius Júnior — Brasile — 140,00 mln €",
+        "ok": true,
+        "val": 140
+      },
+      {
+        "raw": "Lautaro Martínez — Argentina — 85,00 mln €",
+        "ok": true,
+        "val": 85
+      }
+    ]
+  }
+}

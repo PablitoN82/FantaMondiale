@@ -1,0 +1,146 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-06-06T22:12:27.937Z",
+  "fantasyTeamName": "Cozzuolo Mundial FC",
+  "selectedTeam": "Argentina",
+  "slots": {
+    "Portieri": [
+      {
+        "raw": "Alisson Becker — Brasile — 15,00 mln €",
+        "ok": true,
+        "val": 15
+      },
+      {
+        "raw": "Mike Maignan — Francia — 20,00 mln €",
+        "ok": true,
+        "val": 20
+      },
+      {
+        "raw": "Manuel Neuer — Germania — 4,00 mln €",
+        "ok": true,
+        "val": 4
+      }
+    ],
+    "Difensori": [
+      {
+        "raw": "Wesley — Brasile — 40,00 mln €",
+        "ok": true,
+        "val": 40
+      },
+      {
+        "raw": "Joshua Kimmich — Germania — 35,00 mln €",
+        "ok": true,
+        "val": 35
+      },
+      {
+        "raw": "Virgil van Dijk — Olanda — 15,00 mln €",
+        "ok": true,
+        "val": 15
+      },
+      {
+        "raw": "Denzel Dumfries — Olanda — 25,00 mln €",
+        "ok": true,
+        "val": 25
+      },
+      {
+        "raw": "Marc Cucurella — Spagna — 50,00 mln €",
+        "ok": true,
+        "val": 50
+      },
+      {
+        "raw": "Theo Hernández — Francia — 20,00 mln €",
+        "ok": true,
+        "val": 20
+      },
+      {
+        "raw": "Nicolás Tagliafico — Argentina — 4,00 mln €",
+        "ok": true,
+        "val": 4
+      },
+      {
+        "raw": "Nuno Mendes — Portogallo — 80,00 mln €",
+        "ok": true,
+        "val": 80
+      }
+    ],
+    "Centrocampisti": [
+      {
+        "raw": "Alexis Mac Allister — Argentina — 70,00 mln €",
+        "ok": true,
+        "val": 70
+      },
+      {
+        "raw": "Jamal Musiala — Germania — 100,00 mln €",
+        "ok": true,
+        "val": 100
+      },
+      {
+        "raw": "Tijjani Reijnders — Olanda — 50,00 mln €",
+        "ok": true,
+        "val": 50
+      },
+      {
+        "raw": "Fabián Ruiz — Spagna — 30,00 mln €",
+        "ok": true,
+        "val": 30
+      },
+      {
+        "raw": "Bruno Fernandes — Portogallo — 35,00 mln €",
+        "ok": true,
+        "val": 35
+      },
+      {
+        "raw": "Aurélien Tchouaméni — Francia — 70,00 mln €",
+        "ok": true,
+        "val": 70
+      },
+      {
+        "raw": "Rodrigo De Paul — Argentina — 14,00 mln €",
+        "ok": true,
+        "val": 14
+      },
+      {
+        "raw": "Enzo Fernández — Argentina — 90,00 mln €",
+        "ok": true,
+        "val": 90
+      }
+    ],
+    "Attaccanti": [
+      {
+        "raw": "Vinícius Júnior — Brasile — 140,00 mln €",
+        "ok": true,
+        "val": 140
+      },
+      {
+        "raw": "Kai Havertz — Germania — 55,00 mln €",
+        "ok": true,
+        "val": 55
+      },
+      {
+        "raw": "Harry Kane — Inghilterra — 60,00 mln €",
+        "ok": true,
+        "val": 60
+      },
+      {
+        "raw": "Jérémy Doku — Belgio — 75,00 mln €",
+        "ok": true,
+        "val": 75
+      },
+      {
+        "raw": "Lamine Yamal — Spagna — 200,00 mln €",
+        "ok": true,
+        "val": 200
+      },
+      {
+        "raw": "Ousmane Dembélé — Francia — 100,00 mln €",
+        "ok": true,
+        "val": 100
+      },
+      {
+        "raw": "Kylian Mbappé — Francia — 180,00 mln €",
+        "ok": true,
+        "val": 180
+      }
+    ]
+  }
+}

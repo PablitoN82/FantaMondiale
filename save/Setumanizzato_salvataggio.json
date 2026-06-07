@@ -1,0 +1,146 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-06-06T22:34:43.115Z",
+  "fantasyTeamName": "Setumanizzato",
+  "selectedTeam": "Argentina",
+  "slots": {
+    "Portieri": [
+      {
+        "raw": "Emiliano Martínez — Argentina — 12,00 mln €",
+        "ok": true,
+        "val": 12
+      },
+      {
+        "raw": "Ørjan Håskjold Nyland — Norvegia — 800 mila €",
+        "ok": true,
+        "val": 0.8
+      },
+      {
+        "raw": "Unai Simón — Spagna — 22,00 mln €",
+        "ok": true,
+        "val": 22
+      }
+    ],
+    "Difensori": [
+      {
+        "raw": "Nicolás Tagliafico — Argentina — 4,00 mln €",
+        "ok": true,
+        "val": 4
+      },
+      {
+        "raw": "Douglas Santos — Brasile — 7,50 mln €",
+        "ok": true,
+        "val": 7.5
+      },
+      {
+        "raw": "Denzel Dumfries — Olanda — 25,00 mln €",
+        "ok": true,
+        "val": 25
+      },
+      {
+        "raw": "Nahuel Molina — Argentina — 15,00 mln €",
+        "ok": true,
+        "val": 15
+      },
+      {
+        "raw": "Johan Mojica — Colombia — 1,50 mln €",
+        "ok": true,
+        "val": 1.5
+      },
+      {
+        "raw": "Marquinhos — Brasile — 28,00 mln €",
+        "ok": true,
+        "val": 28
+      },
+      {
+        "raw": "Kristoffer Ajer — Norvegia — 18,00 mln €",
+        "ok": true,
+        "val": 18
+      },
+      {
+        "raw": "",
+        "ok": false,
+        "val": 0
+      }
+    ],
+    "Centrocampisti": [
+      {
+        "raw": "Rodrigo De Paul — Argentina — 14,00 mln €",
+        "ok": true,
+        "val": 14
+      },
+      {
+        "raw": "Pedri — Spagna — 150,00 mln €",
+        "ok": true,
+        "val": 150
+      },
+      {
+        "raw": "Jamal Musiala — Germania — 100,00 mln €",
+        "ok": true,
+        "val": 100
+      },
+      {
+        "raw": "Alexis Mac Allister — Argentina — 70,00 mln €",
+        "ok": true,
+        "val": 70
+      },
+      {
+        "raw": "Leon Goretzka — Germania — 12,00 mln €",
+        "ok": true,
+        "val": 12
+      },
+      {
+        "raw": "Martin Ødegaard — Norvegia — 65,00 mln €",
+        "ok": true,
+        "val": 65
+      },
+      {
+        "raw": "Tijjani Reijnders — Olanda — 50,00 mln €",
+        "ok": true,
+        "val": 50
+      },
+      {
+        "raw": "Enzo Fernández — Argentina — 90,00 mln €",
+        "ok": true,
+        "val": 90
+      }
+    ],
+    "Attaccanti": [
+      {
+        "raw": "Julian Ryerson — Norvegia — 25,00 mln €",
+        "ok": true,
+        "val": 25
+      },
+      {
+        "raw": "Erling Haaland — Norvegia — 200,00 mln €",
+        "ok": true,
+        "val": 200
+      },
+      {
+        "raw": "Kylian Mbappé — Francia — 180,00 mln €",
+        "ok": true,
+        "val": 180
+      },
+      {
+        "raw": "Lamine Yamal — Spagna — 200,00 mln €",
+        "ok": true,
+        "val": 200
+      },
+      {
+        "raw": "Harry Kane — Inghilterra — 60,00 mln €",
+        "ok": true,
+        "val": 60
+      },
+      {
+        "raw": "Michael Olise — Francia — 150,00 mln €",
+        "ok": true,
+        "val": 150
+      },
+      {
+        "raw": "Julián Álvarez — Argentina — 100,00 mln €",
+        "ok": true,
+        "val": 100
+      }
+    ]
+  }
+}

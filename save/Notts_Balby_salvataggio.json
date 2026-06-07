@@ -1,0 +1,146 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-06-06T22:25:29.019Z",
+  "fantasyTeamName": "Notts Balby",
+  "selectedTeam": "Argentina",
+  "slots": {
+    "Portieri": [
+      {
+        "raw": "Unai Simón — Spagna — 22,00 mln €",
+        "ok": true,
+        "val": 22
+      },
+      {
+        "raw": "Bart Verbruggen — Olanda — 40,00 mln €",
+        "ok": true,
+        "val": 40
+      },
+      {
+        "raw": "Yassine Bounou — Marocco — 3,00 mln €",
+        "ok": true,
+        "val": 3
+      }
+    ],
+    "Difensori": [
+      {
+        "raw": "Theo Hernández — Francia — 20,00 mln €",
+        "ok": true,
+        "val": 20
+      },
+      {
+        "raw": "Antonio Rüdiger — Germania — 6,00 mln €",
+        "ok": true,
+        "val": 6
+      },
+      {
+        "raw": "Manuel Akanji — Svizzera — 17,00 mln €",
+        "ok": true,
+        "val": 17
+      },
+      {
+        "raw": "Pau Cubarsí — Spagna — 80,00 mln €",
+        "ok": true,
+        "val": 80
+      },
+      {
+        "raw": "Antonee Robinson — Stati Uniti — 22,00 mln €",
+        "ok": true,
+        "val": 22
+      },
+      {
+        "raw": "Alistair Johnston — Canada — 8,00 mln €",
+        "ok": true,
+        "val": 8
+      },
+      {
+        "raw": "Johan Vásquez — Messico — 12,00 mln €",
+        "ok": true,
+        "val": 12
+      },
+      {
+        "raw": "César Montes — Messico — 7,50 mln €",
+        "ok": true,
+        "val": 7.5
+      }
+    ],
+    "Centrocampisti": [
+      {
+        "raw": "Jude Bellingham — Inghilterra — 130,00 mln €",
+        "ok": true,
+        "val": 130
+      },
+      {
+        "raw": "Jamal Musiala — Germania — 100,00 mln €",
+        "ok": true,
+        "val": 100
+      },
+      {
+        "raw": "Granit Xhaka — Svizzera — 8,00 mln €",
+        "ok": true,
+        "val": 8
+      },
+      {
+        "raw": "Federico Valverde — Uruguay — 90,00 mln €",
+        "ok": true,
+        "val": 90
+      },
+      {
+        "raw": "Kevin De Bruyne — Belgio — 8,00 mln €",
+        "ok": true,
+        "val": 8
+      },
+      {
+        "raw": "Lamine Camara — Senegal — 40,00 mln €",
+        "ok": true,
+        "val": 40
+      },
+      {
+        "raw": "Daichi Kamada — Giappone — 10,00 mln €",
+        "ok": true,
+        "val": 10
+      },
+      {
+        "raw": "Kendry Páez — Ecuador — 8,00 mln €",
+        "ok": true,
+        "val": 8
+      }
+    ],
+    "Attaccanti": [
+      {
+        "raw": "Kylian Mbappé — Francia — 180,00 mln €",
+        "ok": true,
+        "val": 180
+      },
+      {
+        "raw": "Lamine Yamal — Spagna — 200,00 mln €",
+        "ok": true,
+        "val": 200
+      },
+      {
+        "raw": "Nico Williams — Spagna — 40,00 mln €",
+        "ok": true,
+        "val": 40
+      },
+      {
+        "raw": "Kenan Yildiz — Turchia — 75,00 mln €",
+        "ok": true,
+        "val": 75
+      },
+      {
+        "raw": "Santiago Giménez — Messico — 18,00 mln €",
+        "ok": true,
+        "val": 18
+      },
+      {
+        "raw": "Lautaro Martínez — Argentina — 85,00 mln €",
+        "ok": true,
+        "val": 85
+      },
+      {
+        "raw": "Dan Ndoye — Svizzera — 32,00 mln €",
+        "ok": true,
+        "val": 32
+      }
+    ]
+  }
+}
