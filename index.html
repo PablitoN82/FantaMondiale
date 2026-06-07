@@ -2974,4 +2974,107 @@ Nazionale più rappresentata: <b>${escapeHtml(normalizeTopNationText(t.topNation
 })();
 </script>
 
+
+<script id="fm-login-emergency-fix">
+(function(){
+  "use strict";
+  var PUBLIC_PASSWORDS = [
+    "FantaMundial26@Pablo82",
+    "FantaMondial26@Pablo82",
+    "FantaMondiale26@Pablo82"
+  ];
+  var ADMIN_PASSWORDS = [
+    "Iscrizioni2026@FMundial",
+    "FantaMundial26@Pablo82",
+    "FantaMondial26@Pablo82",
+    "FantaMondiale26@Pablo82"
+  ];
+  function unique(list){
+    var out=[];
+    (list||[]).forEach(function(x){ x=String(x||"").trim(); if(x && out.indexOf(x)<0) out.push(x); });
+    return out;
+  }
+  function allPublicPasswords(){
+    return unique(PUBLIC_PASSWORDS.concat(Array.isArray(window.FM_PASSWORDS)?window.FM_PASSWORDS:[]));
+  }
+  function allAdminPasswords(){
+    return unique(ADMIN_PASSWORDS.concat(Array.isArray(window.FM_PASSWORDS)?window.FM_PASSWORDS:[]));
+  }
+  function show(el, value){ if(el) el.style.display = value; }
+  function unlockMain(){
+    var input=document.getElementById("password");
+    var value=input && input.value ? String(input.value).trim() : "";
+    var ok=allPublicPasswords().indexOf(value)>=0;
+    var err=document.getElementById("err");
+    if(err) err.style.display = ok ? "none" : "block";
+    if(!ok) return false;
+    show(document.getElementById("login"), "none");
+    show(document.getElementById("app"), "block");
+    setTimeout(function(){
+      try{ if(typeof window.init === "function") window.init(); }catch(e){ console.error("Errore init dopo login:", e); }
+    },0);
+    return false;
+  }
+  function unlockAdmin(){
+    var input=document.getElementById("adminPassword");
+    var value=input && input.value ? String(input.value).trim() : "";
+    var ok=allAdminPasswords().indexOf(value)>=0;
+    if(!ok){
+      if(typeof window.showAlert === "function") window.showAlert("Password Area Riservata errata.");
+      else alert("Password Area Riservata errata.");
+      return false;
+    }
+    window.ADMIN_AREA_UNLOCKED = true;
+    var pageAdmin=document.getElementById("pageAdmin");
+    if(pageAdmin) pageAdmin.classList.add("adminUnlocked");
+    show(document.getElementById("adminLoginBox"), "none");
+    show(document.getElementById("adminPanelBox"), "block");
+    var adminIntro=document.getElementById("adminIntroCard");
+    if(adminIntro) adminIntro.style.display="none";
+    var adminMenu=document.getElementById("appMenuAdmin");
+    if(adminMenu){ adminMenu.classList.remove("adminLocked"); adminMenu.classList.add("active"); }
+    try{ if(typeof window.showPage === "function") window.showPage("admin","database"); }catch(e){ console.error(e); }
+    try{ if(typeof window.showAdminSection === "function") window.showAdminSection("database"); }catch(e){ console.error(e); }
+    return false;
+  }
+  window.fmUnlock = unlockMain;
+  window.unlock = unlockMain;
+  window.unlockAdminArea = unlockAdmin;
+  function bindLogin(){
+    var input=document.getElementById("password");
+    if(input && !input.dataset.fmEmergencyLoginReady){
+      input.dataset.fmEmergencyLoginReady="1";
+      input.addEventListener("keydown", function(e){ if(e.key === "Enter"){ e.preventDefault(); unlockMain(); } });
+    }
+    var login=document.getElementById("login");
+    if(login){
+      Array.prototype.forEach.call(login.querySelectorAll("button,.btn"), function(btn){
+        if(!btn.dataset.fmEmergencyClickReady){
+          btn.dataset.fmEmergencyClickReady="1";
+          btn.addEventListener("click", function(e){ e.preventDefault(); unlockMain(); }, true);
+        }
+      });
+    }
+    var adminInput=document.getElementById("adminPassword");
+    if(adminInput && !adminInput.dataset.fmEmergencyAdminReady){
+      adminInput.dataset.fmEmergencyAdminReady="1";
+      adminInput.addEventListener("keydown", function(e){ if(e.key === "Enter"){ e.preventDefault(); unlockAdmin(); } });
+    }
+    var adminBox=document.getElementById("adminLoginBox");
+    if(adminBox){
+      Array.prototype.forEach.call(adminBox.querySelectorAll("button,.btn"), function(btn){
+        if(!btn.dataset.fmEmergencyAdminClickReady){
+          btn.dataset.fmEmergencyAdminClickReady="1";
+          btn.addEventListener("click", function(e){ e.preventDefault(); unlockAdmin(); }, true);
+        }
+      });
+    }
+  }
+  if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", bindLogin);
+  else bindLogin();
+  setTimeout(bindLogin, 200);
+  setTimeout(bindLogin, 800);
+})();
+</script>
+
 </body></html>
