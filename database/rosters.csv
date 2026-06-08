@@ -1,209 +1,209 @@
-﻿team_id;team_name;role;player_order;player_name;nationality;market_value_mln;market_value_text;club
-mq2xvanf;Cozzuolo Mundial FC;POR;1;Alisson Becker;Brasile;15.00;15,00 mln €;Liverpool FC
-mq2xvanf;Cozzuolo Mundial FC;POR;2;Mike Maignan;Francia;20.00;20,00 mln €;AC Milan
-mq2xvanf;Cozzuolo Mundial FC;POR;3;Manuel Neuer;Germania;4.00;4,00 mln €;FC Bayern München
-mq2xvanf;Cozzuolo Mundial FC;DIF;1;Achraf Hakimi;Marocco;80.00;80,00 mln €;Paris Saint-Germain
-mq2xvanf;Cozzuolo Mundial FC;DIF;2;Joshua Kimmich;Germania;35.00;35,00 mln €;FC Bayern München
-mq2xvanf;Cozzuolo Mundial FC;DIF;3;Virgil van Dijk;Paesi Bassi;15.00;15,00 mln €;Liverpool FC
-mq2xvanf;Cozzuolo Mundial FC;DIF;4;Denzel Dumfries;Paesi Bassi;25.00;25,00 mln €;FC Internazionale Milano
-mq2xvanf;Cozzuolo Mundial FC;DIF;5;Marc Cucurella;Spagna;50.00;50,00 mln €;Chelsea FC
-mq2xvanf;Cozzuolo Mundial FC;DIF;6;Theo Hernández;Francia;20.00;20,00 mln €;Al Hilal SC
-mq2xvanf;Cozzuolo Mundial FC;DIF;7;Nicolás Tagliafico;Argentina;4.00;4,00 mln €;Olympique Lyonnais
-mq2xvanf;Cozzuolo Mundial FC;DIF;8;Nuno Mendes;Portogallo;80.00;80,00 mln €;Paris Saint-Germain
-mq2xvanf;Cozzuolo Mundial FC;CEN;1;Alexis Mac Allister;Argentina;70.00;70,00 mln €;Liverpool FC
-mq2xvanf;Cozzuolo Mundial FC;CEN;2;Jamal Musiala;Germania;100.00;100,00 mln €;FC Bayern München
-mq2xvanf;Cozzuolo Mundial FC;CEN;3;Tijjani Reijnders;Paesi Bassi;50.00;50,00 mln €;Manchester City FC
-mq2xvanf;Cozzuolo Mundial FC;CEN;4;Fabián Ruiz;Spagna;30.00;30,00 mln €;Paris Saint-Germain
-mq2xvanf;Cozzuolo Mundial FC;CEN;5;Bruno Fernandes;Portogallo;35.00;35,00 mln €;Manchester United FC
-mq2xvanf;Cozzuolo Mundial FC;CEN;6;Aurélien Tchouaméni;Francia;70.00;70,00 mln €;Real Madrid C. F.
-mq2xvanf;Cozzuolo Mundial FC;CEN;7;Rodrigo De Paul;Argentina;14.00;14,00 mln €;Inter Miami CF
-mq2xvanf;Cozzuolo Mundial FC;CEN;8;Enzo Fernández;Argentina;90.00;90,00 mln €;Chelsea FC
-mq2xvanf;Cozzuolo Mundial FC;ATT;1;Vinícius Júnior;Brasile;140.00;140,00 mln €;Real Madrid C. F.
-mq2xvanf;Cozzuolo Mundial FC;ATT;2;Kai Havertz;Germania;55.00;55,00 mln €;Arsenal FC
-mq2xvanf;Cozzuolo Mundial FC;ATT;3;Harry Kane;Inghilterra;60.00;60,00 mln €;FC Bayern München
-mq2xvanf;Cozzuolo Mundial FC;ATT;4;Jérémy Doku;Belgio;75.00;75,00 mln €;Manchester City FC
-mq2xvanf;Cozzuolo Mundial FC;ATT;5;Lamine Yamal;Spagna;200.00;200,00 mln €;FC Barcelona
-mq2xvanf;Cozzuolo Mundial FC;ATT;6;Ousmane Dembélé;Francia;100.00;100,00 mln €;Paris Saint-Germain
-mq2xvanf;Cozzuolo Mundial FC;ATT;7;Kylian Mbappé;Francia;180.00;180,00 mln €;Real Madrid C. F.
-mq2xvksk;Cura ciao;POR;1;Emiliano Martínez;Argentina;12.00;12,00 mln €;Aston Villa FC
-mq2xvksk;Cura ciao;POR;2;Gerónimo Rulli;Argentina;6.00;6,00 mln €;Olympique Marseille
-mq2xvksk;Cura ciao;POR;3;Mike Maignan;Francia;20.00;20,00 mln €;AC Milan
-mq2xvksk;Cura ciao;DIF;1;Denzel Dumfries;Paesi Bassi;25.00;25,00 mln €;FC Internazionale Milano
-mq2xvksk;Cura ciao;DIF;2;Manuel Akanji;Svizzera;17.00;17,00 mln €;FC Internazionale Milano
-mq2xvksk;Cura ciao;DIF;3;Joshua Kimmich;Germania;35.00;35,00 mln €;FC Bayern München
-mq2xvksk;Cura ciao;DIF;4;Rúben Dias;Portogallo;55.00;55,00 mln €;Manchester City FC
-mq2xvksk;Cura ciao;DIF;5;Nico O'Reilly;Inghilterra;70.00;70,00 mln €;Manchester City FC
-mq2xvksk;Cura ciao;DIF;6;Dayot Upamecano;Francia;70.00;70,00 mln €;FC Bayern München
-mq2xvksk;Cura ciao;DIF;7;Pau Cubarsí;Spagna;80.00;80,00 mln €;FC Barcelona
-mq2xvksk;Cura ciao;DIF;8;Marc Cucurella;Spagna;50.00;50,00 mln €;Chelsea FC
-mq2xvksk;Cura ciao;CEN;1;Rayan Cherki;Francia;90.00;90,00 mln €;Manchester City FC
-mq2xvksk;Cura ciao;CEN;2;Florian Wirtz;Germania;100.00;100,00 mln €;Liverpool FC
-mq2xvksk;Cura ciao;CEN;3;Granit Xhaka;Svizzera;8.00;8,00 mln €;Sunderland AFC
-mq2xvksk;Cura ciao;CEN;4;Enzo Fernández;Argentina;90.00;90,00 mln €;Chelsea FC
-mq2xvksk;Cura ciao;CEN;5;Bruno Fernandes;Portogallo;35.00;35,00 mln €;Manchester United FC
-mq2xvksk;Cura ciao;CEN;6;Pedri;Spagna;150.00;150,00 mln €;FC Barcelona
-mq2xvksk;Cura ciao;CEN;7;Morgan Rogers;Inghilterra;90.00;90,00 mln €;Aston Villa FC
-mq2xvksk;Cura ciao;CEN;8;Scott McTominay;Scozia;40.00;40,00 mln €;SSC Napoli
-mq2xvksk;Cura ciao;ATT;1;Raphinha;Brasile;70.00;70,00 mln €;FC Barcelona
-mq2xvksk;Cura ciao;ATT;2;Mikel Oyarzabal;Spagna;25.00;25,00 mln €;Real Sociedad
-mq2xvksk;Cura ciao;ATT;3;Harry Kane;Inghilterra;60.00;60,00 mln €;FC Bayern München
-mq2xvksk;Cura ciao;ATT;4;Michael Olise;Francia;150.00;150,00 mln €;FC Bayern München
-mq2xvksk;Cura ciao;ATT;5;Vinícius Júnior;Brasile;140.00;140,00 mln €;Real Madrid C. F.
-mq2xvksk;Cura ciao;ATT;6;Erling Haaland;Norvegia;200.00;200,00 mln €;Manchester City FC
-mq2xvksk;Cura ciao;ATT;7;Lamine Yamal;Spagna;200.00;200,00 mln €;FC Barcelona
-mq2xvqbt;Notts Balby;POR;1;Unai Simón;Spagna;22.00;22,00 mln €;Athletic Club
-mq2xvqbt;Notts Balby;POR;2;Bart Verbruggen;Paesi Bassi;40.00;40,00 mln €;Brighton & Hove Albion FC
-mq2xvqbt;Notts Balby;POR;3;Yassine Bounou;Marocco;3.00;3,00 mln €;Al Hilal SC
-mq2xvqbt;Notts Balby;DIF;1;Theo Hernández;Francia;20.00;20,00 mln €;Al Hilal SC
-mq2xvqbt;Notts Balby;DIF;2;Antonio Rüdiger;Germania;6.00;6,00 mln €;Real Madrid C. F.
-mq2xvqbt;Notts Balby;DIF;3;Manuel Akanji;Svizzera;17.00;17,00 mln €;FC Internazionale Milano
-mq2xvqbt;Notts Balby;DIF;4;Pau Cubarsí;Spagna;80.00;80,00 mln €;FC Barcelona
-mq2xvqbt;Notts Balby;DIF;5;Antonee Robinson;Stati Uniti;22.00;22,00 mln €;Fulham FC
-mq2xvqbt;Notts Balby;DIF;6;Alistair Johnston;Canada;8.00;8,00 mln €;Celtic FC
-mq2xvqbt;Notts Balby;DIF;7;Johan Vásquez;Messico;12.00;12,00 mln €;Genoa CFC
-mq2xvqbt;Notts Balby;DIF;8;César Montes;Messico;7.50;7,50 mln €;FC Lokomotiv Moscow
-mq2xvqbt;Notts Balby;CEN;1;Jude Bellingham;Inghilterra;130.00;130,00 mln €;Real Madrid C. F.
-mq2xvqbt;Notts Balby;CEN;2;Jamal Musiala;Germania;100.00;100,00 mln €;FC Bayern München
-mq2xvqbt;Notts Balby;CEN;3;Granit Xhaka;Svizzera;8.00;8,00 mln €;Sunderland AFC
-mq2xvqbt;Notts Balby;CEN;4;Federico Valverde;Uruguay;90.00;90,00 mln €;Real Madrid C. F.
-mq2xvqbt;Notts Balby;CEN;5;Kevin De Bruyne;Belgio;8.00;8,00 mln €;SSC Napoli
-mq2xvqbt;Notts Balby;CEN;6;Lamine Camara;Senegal;40.00;40,00 mln €;AS Monaco
-mq2xvqbt;Notts Balby;CEN;7;Daichi Kamada;Giappone;10.00;10,00 mln €;Crystal Palace FC
-mq2xvqbt;Notts Balby;CEN;8;Kendry Páez;Ecuador;8.00;8,00 mln €;CA River Plate
-mq2xvqbt;Notts Balby;ATT;1;Kylian Mbappé;Francia;180.00;180,00 mln €;Real Madrid C. F.
-mq2xvqbt;Notts Balby;ATT;2;Lamine Yamal;Spagna;200.00;200,00 mln €;FC Barcelona
-mq2xvqbt;Notts Balby;ATT;3;Nico Williams;Spagna;40.00;40,00 mln €;Athletic Club
-mq2xvqbt;Notts Balby;ATT;4;Kenan Yildiz;Turchia;75.00;75,00 mln €;Juventus FC
-mq2xvqbt;Notts Balby;ATT;5;Santiago Giménez;Messico;18.00;18,00 mln €;AC Milan
-mq2xvqbt;Notts Balby;ATT;6;Lautaro Martínez;Argentina;85.00;85,00 mln €;FC Internazionale Milano
-mq2xvqbt;Notts Balby;ATT;7;Dan Ndoye;Svizzera;32.00;32,00 mln €;Nottingham Forest FC
-mq2xvvof;Paris Bidet FC;POR;1;Alisson Becker;Brasile;15.00;15,00 mln €;Liverpool FC
-mq2xvvof;Paris Bidet FC;POR;2;Thibaut Courtois;Belgio;15.00;15,00 mln €;Real Madrid C. F.
-mq2xvvof;Paris Bidet FC;POR;3;Unai Simón;Spagna;22.00;22,00 mln €;Athletic Club
-mq2xvvof;Paris Bidet FC;DIF;1;Pau Cubarsí;Spagna;80.00;80,00 mln €;FC Barcelona
-mq2xvvof;Paris Bidet FC;DIF;2;Virgil van Dijk;Paesi Bassi;15.00;15,00 mln €;Liverpool FC
-mq2xvvof;Paris Bidet FC;DIF;3;William Saliba;Francia;100.00;100,00 mln €;Arsenal FC
-mq2xvvof;Paris Bidet FC;DIF;4;Nahuel Molina;Argentina;15.00;15,00 mln €;Atlético De Madrid
-mq2xvvof;Paris Bidet FC;DIF;5;Nuno Mendes;Portogallo;80.00;80,00 mln €;Paris Saint-Germain
-mq2xvvof;Paris Bidet FC;DIF;6;Hiroki Ito;Giappone;18.00;18,00 mln €;FC Bayern München
-mq2xvvof;Paris Bidet FC;DIF;7;Marquinhos;Brasile;28.00;28,00 mln €;Paris Saint-Germain
-mq2xvvof;Paris Bidet FC;DIF;8;Douglas Santos;Brasile;7.50;7,50 mln €;FC Zenit St. Petersburg
-mq2xvvof;Paris Bidet FC;CEN;1;Scott McTominay;Scozia;40.00;40,00 mln €;SSC Napoli
-mq2xvvof;Paris Bidet FC;CEN;2;Hakan Çalhanoglu;Turchia;16.00;16,00 mln €;FC Internazionale Milano
-mq2xvvof;Paris Bidet FC;CEN;3;Florian Wirtz;Germania;100.00;100,00 mln €;Liverpool FC
-mq2xvvof;Paris Bidet FC;CEN;4;Bruno Fernandes;Portogallo;35.00;35,00 mln €;Manchester United FC
-mq2xvvof;Paris Bidet FC;CEN;5;Fabián Ruiz;Spagna;30.00;30,00 mln €;Paris Saint-Germain
-mq2xvvof;Paris Bidet FC;CEN;6;Aurélien Tchouaméni;Francia;70.00;70,00 mln €;Real Madrid C. F.
-mq2xvvof;Paris Bidet FC;CEN;7;Martin Ødegaard;Norvegia;65.00;65,00 mln €;Arsenal FC
-mq2xvvof;Paris Bidet FC;CEN;8;Daichi Kamada;Giappone;10.00;10,00 mln €;Crystal Palace FC
-mq2xvvof;Paris Bidet FC;ATT;1;Michael Olise;Francia;150.00;150,00 mln €;FC Bayern München
-mq2xvvof;Paris Bidet FC;ATT;2;Kenan Yildiz;Turchia;75.00;75,00 mln €;Juventus FC
-mq2xvvof;Paris Bidet FC;ATT;3;Mikel Oyarzabal;Spagna;25.00;25,00 mln €;Real Sociedad
-mq2xvvof;Paris Bidet FC;ATT;4;Harry Kane;Inghilterra;60.00;60,00 mln €;FC Bayern München
-mq2xvvof;Paris Bidet FC;ATT;5;Kai Havertz;Germania;55.00;55,00 mln €;Arsenal FC
-mq2xvvof;Paris Bidet FC;ATT;6;Vinícius Júnior;Brasile;140.00;140,00 mln €;Real Madrid C. F.
-mq2xvvof;Paris Bidet FC;ATT;7;Lautaro Martínez;Argentina;85.00;85,00 mln €;FC Internazionale Milano
-mq3jmp2x;Setumanizzato;POR;1;Emiliano Martínez;Argentina;12.00;12,00 mln €;Aston Villa FC
-mq3jmp2x;Setumanizzato;POR;2;Ørjan Håskjold Nyland;Norvegia;0.80;800 mila €;Sevilla FC
-mq3jmp2x;Setumanizzato;POR;3;Unai Simón;Spagna;22.00;22,00 mln €;Athletic Club
-mq3jmp2x;Setumanizzato;DIF;1;Nicolás Tagliafico;Argentina;4.00;4,00 mln €;Olympique Lyonnais
-mq3jmp2x;Setumanizzato;DIF;2;Douglas Santos;Brasile;7.50;7,50 mln €;FC Zenit St. Petersburg
-mq3jmp2x;Setumanizzato;DIF;3;Denzel Dumfries;Paesi Bassi;25.00;25,00 mln €;FC Internazionale Milano
-mq3jmp2x;Setumanizzato;DIF;4;Nahuel Molina;Argentina;15.00;15,00 mln €;Atlético De Madrid
-mq3jmp2x;Setumanizzato;DIF;5;Johan Mojica;Colombia;1.50;1,50 mln €;RCD Mallorca
-mq3jmp2x;Setumanizzato;DIF;6;Marquinhos;Brasile;28.00;28,00 mln €;Paris Saint-Germain
-mq3jmp2x;Setumanizzato;DIF;7;Kristoffer Ajer;Norvegia;18.00;18,00 mln €;Brentford FC
-mq3jmp2x;Setumanizzato;DIF;8;Virgil van Dijk;Paesi Bassi;15.00;15,00 mln €;Liverpool FC
-mq3jmp2x;Setumanizzato;CEN;1;Rodrigo De Paul;Argentina;14.00;14,00 mln €;Inter Miami CF
-mq3jmp2x;Setumanizzato;CEN;2;Pedri;Spagna;150.00;150,00 mln €;FC Barcelona
-mq3jmp2x;Setumanizzato;CEN;3;Jamal Musiala;Germania;100.00;100,00 mln €;FC Bayern München
-mq3jmp2x;Setumanizzato;CEN;4;Alexis Mac Allister;Argentina;70.00;70,00 mln €;Liverpool FC
-mq3jmp2x;Setumanizzato;CEN;5;Leon Goretzka;Germania;12.00;12,00 mln €;FC Bayern München
-mq3jmp2x;Setumanizzato;CEN;6;Martin Ødegaard;Norvegia;65.00;65,00 mln €;Arsenal FC
-mq3jmp2x;Setumanizzato;CEN;7;Tijjani Reijnders;Paesi Bassi;50.00;50,00 mln €;Manchester City FC
-mq3jmp2x;Setumanizzato;CEN;8;Enzo Fernández;Argentina;90.00;90,00 mln €;Chelsea FC
-mq3jmp2x;Setumanizzato;ATT;1;Matheus Cunha;Brasile;75.00;75,00 mln €;Manchester United FC
-mq3jmp2x;Setumanizzato;ATT;2;Erling Haaland;Norvegia;200.00;200,00 mln €;Manchester City FC
-mq3jmp2x;Setumanizzato;ATT;3;Kylian Mbappé;Francia;180.00;180,00 mln €;Real Madrid C. F.
-mq3jmp2x;Setumanizzato;ATT;4;Lamine Yamal;Spagna;200.00;200,00 mln €;FC Barcelona
-mq3jmp2x;Setumanizzato;ATT;5;Harry Kane;Inghilterra;60.00;60,00 mln €;FC Bayern München
-mq3jmp2x;Setumanizzato;ATT;6;Michael Olise;Francia;150.00;150,00 mln €;FC Bayern München
-mq3jmp2x;Setumanizzato;ATT;7;Julián Álvarez;Argentina;100.00;100,00 mln €;Atlético De Madrid
-mq3q8xcg;Zheneda Mundial;POR;1;Unai Simón;Spagna;22.00;22,00 mln €;Athletic Club
-mq3q8xcg;Zheneda Mundial;POR;2;Mike Maignan;Francia;20.00;20,00 mln €;AC Milan
-mq3q8xcg;Zheneda Mundial;POR;3;Alisson Becker;Brasile;15.00;15,00 mln €;Liverpool FC
-mq3q8xcg;Zheneda Mundial;DIF;1;Joshua Kimmich;Germania;35.00;35,00 mln €;FC Bayern München
-mq3q8xcg;Zheneda Mundial;DIF;2;Josko Gvardiol;Croazia;70.00;70,00 mln €;Manchester City FC
-mq3q8xcg;Zheneda Mundial;DIF;3;Noussair Mazraoui;Marocco;18.00;18,00 mln €;Manchester United FC
-mq3q8xcg;Zheneda Mundial;DIF;4;Merih Demiral;Turchia;12.00;12,00 mln €;Al Ahli FC
-mq3q8xcg;Zheneda Mundial;DIF;5;José Giménez;Uruguay;9.00;9,00 mln €;Atlético De Madrid
-mq3q8xcg;Zheneda Mundial;DIF;6;Jules Koundé;Francia;60.00;60,00 mln €;FC Barcelona
-mq3q8xcg;Zheneda Mundial;DIF;7;Ángelo Preciado;Ecuador;3.50;3,50 mln €;Atlético Mineiro
-mq3q8xcg;Zheneda Mundial;DIF;8;Davinson Sánchez;Colombia;16.00;16,00 mln €;Galatasaray SK
-mq3q8xcg;Zheneda Mundial;CEN;1;Martin Ødegaard;Norvegia;65.00;65,00 mln €;Arsenal FC
-mq3q8xcg;Zheneda Mundial;CEN;2;Marcel Sabitzer;Austria;6.00;6,00 mln €;Borussia Dortmund
-mq3q8xcg;Zheneda Mundial;CEN;3;Tomás Soucek;Cechia;10.00;10,00 mln €;West Ham United FC
-mq3q8xcg;Zheneda Mundial;CEN;4;Bruno Fernandes;Portogallo;35.00;35,00 mln €;Manchester United FC
-mq3q8xcg;Zheneda Mundial;CEN;5;Alexis Mac Allister;Argentina;70.00;70,00 mln €;Liverpool FC
-mq3q8xcg;Zheneda Mundial;CEN;6;Bruno Guimarães;Brasile;70.00;70,00 mln €;Newcastle United FC
-mq3q8xcg;Zheneda Mundial;CEN;7;Luka Modric;Croazia;3.50;3,50 mln €;AC Milan
-mq3q8xcg;Zheneda Mundial;CEN;8;Rodri;Spagna;50.00;50,00 mln €;Manchester City FC
-mq3q8xcg;Zheneda Mundial;ATT;1;Edin Dzeko;Bosnia ed Erzegovina;1.00;1,00 mln €;FC Schalke 04
-mq3q8xcg;Zheneda Mundial;ATT;2;Lamine Yamal;Spagna;200.00;200,00 mln €;FC Barcelona
-mq3q8xcg;Zheneda Mundial;ATT;3;Cristiano Ronaldo;Portogallo;10.00;10,00 mln €;Al Nassr FC
-mq3q8xcg;Zheneda Mundial;ATT;4;Ousmane Dembélé;Francia;100.00;100,00 mln €;Paris Saint-Germain
-mq3q8xcg;Zheneda Mundial;ATT;5;Harry Kane;Inghilterra;60.00;60,00 mln €;FC Bayern München
-mq3q8xcg;Zheneda Mundial;ATT;6;Raul Jiménez;Messico;3.00;3,00 mln €;Fulham FC
-mq3q8xcg;Zheneda Mundial;ATT;7;Julián Álvarez;Argentina;100.00;100,00 mln €;Atlético De Madrid
-mq43k8g6;Treviland;POR;1;Ederson;Brasile;10.00;10,00 mln €;Fenerbahçe SK
-mq43k8g6;Treviland;POR;2;Alisson Becker;Brasile;15.00;15,00 mln €;Liverpool FC
-mq43k8g6;Treviland;POR;3;Emiliano Martínez;Argentina;12.00;12,00 mln €;Aston Villa FC
-mq43k8g6;Treviland;DIF;1;Marc Cucurella;Spagna;50.00;50,00 mln €;Chelsea FC
-mq43k8g6;Treviland;DIF;2;José Giménez;Uruguay;9.00;9,00 mln €;Atlético De Madrid
-mq43k8g6;Treviland;DIF;3;Reece James;Inghilterra;60.00;60,00 mln €;Chelsea FC
-mq43k8g6;Treviland;DIF;4;Josko Gvardiol;Croazia;70.00;70,00 mln €;Manchester City FC
-mq43k8g6;Treviland;DIF;5;Danilo;Brasile;2.00;2,00 mln €;CR Flamengo
-mq43k8g6;Treviland;DIF;6;Antonio Rüdiger;Germania;6.00;6,00 mln €;Real Madrid C. F.
-mq43k8g6;Treviland;DIF;7;Denzel Dumfries;Paesi Bassi;25.00;25,00 mln €;FC Internazionale Milano
-mq43k8g6;Treviland;DIF;8;Marcos Llorente;Spagna;20.00;20,00 mln €;Atlético De Madrid
-mq43k8g6;Treviland;CEN;1;Scott McTominay;Scozia;40.00;40,00 mln €;SSC Napoli
-mq43k8g6;Treviland;CEN;2;Jamal Musiala;Germania;100.00;100,00 mln €;FC Bayern München
-mq43k8g6;Treviland;CEN;3;Frenkie de Jong;Paesi Bassi;35.00;35,00 mln €;FC Barcelona
-mq43k8g6;Treviland;CEN;4;Enzo Fernández;Argentina;90.00;90,00 mln €;Chelsea FC
-mq43k8g6;Treviland;CEN;5;Bernardo Silva;Portogallo;22.00;22,00 mln €;Manchester City FC
-mq43k8g6;Treviland;CEN;6;Rodri;Spagna;50.00;50,00 mln €;Manchester City FC
-mq43k8g6;Treviland;CEN;7;Hakan Çalhanoglu;Turchia;16.00;16,00 mln €;FC Internazionale Milano
-mq43k8g6;Treviland;CEN;8;N'Golo Kanté;Francia;4.00;4,00 mln €;Fenerbahçe SK
-mq43k8g6;Treviland;ATT;1;Heung-Min Son;Corea del Sud;15.00;15,00 mln €;LAFC
-mq43k8g6;Treviland;ATT;2;Nico Williams;Spagna;40.00;40,00 mln €;Athletic Club
-mq43k8g6;Treviland;ATT;3;Cristiano Ronaldo;Portogallo;10.00;10,00 mln €;Al Nassr FC
-mq43k8g6;Treviland;ATT;4;Kylian Mbappé;Francia;180.00;180,00 mln €;Real Madrid C. F.
-mq43k8g6;Treviland;ATT;5;Harry Kane;Inghilterra;60.00;60,00 mln €;FC Bayern München
-mq43k8g6;Treviland;ATT;6;Romelu Lukaku;Belgio;6.00;6,00 mln €;SSC Napoli
-mq43k8g6;Treviland;ATT;7;Memphis Depay;Paesi Bassi;7.00;7,00 mln €;SC Corinthians
-mq43kvs0;River Mésch National FC;POR;1;Mike Maignan;Francia;20.00;20,00 mln €;AC Milan
-mq43kvs0;River Mésch National FC;POR;2;Unai Simón;Spagna;22.00;22,00 mln €;Athletic Club
-mq43kvs0;River Mésch National FC;POR;3;Jordan Pickford;Inghilterra;13.00;13,00 mln €;Everton FC
-mq43kvs0;River Mésch National FC;DIF;1;Theo Hernández;Francia;20.00;20,00 mln €;Al Hilal SC
-mq43kvs0;River Mésch National FC;DIF;2;Joshua Kimmich;Germania;35.00;35,00 mln €;FC Bayern München
-mq43kvs0;River Mésch National FC;DIF;3;Nuno Mendes;Portogallo;80.00;80,00 mln €;Paris Saint-Germain
-mq43kvs0;River Mésch National FC;DIF;4;Denzel Dumfries;Paesi Bassi;25.00;25,00 mln €;FC Internazionale Milano
-mq43kvs0;River Mésch National FC;DIF;5;Gabriel;Brasile;75.00;75,00 mln €;Arsenal FC
-mq43kvs0;River Mésch National FC;DIF;6;Rúben Dias;Portogallo;55.00;55,00 mln €;Manchester City FC
-mq43kvs0;River Mésch National FC;DIF;7;Cristian Romero;Argentina;45.00;45,00 mln €;Tottenham Hotspur FC
-mq43kvs0;River Mésch National FC;DIF;8;Diogo Dalot;Portogallo;30.00;30,00 mln €;Manchester United FC
-mq43kvs0;River Mésch National FC;CEN;1;Jude Bellingham;Inghilterra;130.00;130,00 mln €;Real Madrid C. F.
-mq43kvs0;River Mésch National FC;CEN;2;Bruno Fernandes;Portogallo;35.00;35,00 mln €;Manchester United FC
-mq43kvs0;River Mésch National FC;CEN;3;Rodri;Spagna;50.00;50,00 mln €;Manchester City FC
-mq43kvs0;River Mésch National FC;CEN;4;Fabián Ruiz;Spagna;30.00;30,00 mln €;Paris Saint-Germain
-mq43kvs0;River Mésch National FC;CEN;5;Jamal Musiala;Germania;100.00;100,00 mln €;FC Bayern München
-mq43kvs0;River Mésch National FC;CEN;6;Tijjani Reijnders;Paesi Bassi;50.00;50,00 mln €;Manchester City FC
-mq43kvs0;River Mésch National FC;CEN;7;Frenkie de Jong;Paesi Bassi;35.00;35,00 mln €;FC Barcelona
-mq43kvs0;River Mésch National FC;CEN;8;Mikel Merino;Spagna;25.00;25,00 mln €;Arsenal FC
-mq43kvs0;River Mésch National FC;ATT;1;Kylian Mbappé;Francia;180.00;180,00 mln €;Real Madrid C. F.
-mq43kvs0;River Mésch National FC;ATT;2;Harry Kane;Inghilterra;60.00;60,00 mln €;FC Bayern München
-mq43kvs0;River Mésch National FC;ATT;3;Lamine Yamal;Spagna;200.00;200,00 mln €;FC Barcelona
-mq43kvs0;River Mésch National FC;ATT;4;Julián Álvarez;Argentina;100.00;100,00 mln €;Atlético De Madrid
-mq43kvs0;River Mésch National FC;ATT;5;Raphinha;Brasile;70.00;70,00 mln €;FC Barcelona
-mq43kvs0;River Mésch National FC;ATT;6;Cristiano Ronaldo;Portogallo;10.00;10,00 mln €;Al Nassr FC
-mq43kvs0;River Mésch National FC;ATT;7;Lionel Messi;Argentina;15.00;15,00 mln €;Inter Miami CF
+﻿team_id;team_name;role;player_order;player_name;nationality
+mq2xvanf;Cozzuolo Mundial FC;POR;1;Alisson Becker;Brasile
+mq2xvanf;Cozzuolo Mundial FC;POR;2;Mike Maignan;Francia
+mq2xvanf;Cozzuolo Mundial FC;POR;3;Manuel Neuer;Germania
+mq2xvanf;Cozzuolo Mundial FC;DIF;1;Achraf Hakimi;Marocco
+mq2xvanf;Cozzuolo Mundial FC;DIF;2;Joshua Kimmich;Germania
+mq2xvanf;Cozzuolo Mundial FC;DIF;3;Virgil van Dijk;Paesi Bassi
+mq2xvanf;Cozzuolo Mundial FC;DIF;4;Denzel Dumfries;Paesi Bassi
+mq2xvanf;Cozzuolo Mundial FC;DIF;5;Marc Cucurella;Spagna
+mq2xvanf;Cozzuolo Mundial FC;DIF;6;Theo Hernández;Francia
+mq2xvanf;Cozzuolo Mundial FC;DIF;7;Nicolás Tagliafico;Argentina
+mq2xvanf;Cozzuolo Mundial FC;DIF;8;Nuno Mendes;Portogallo
+mq2xvanf;Cozzuolo Mundial FC;CEN;1;Alexis Mac Allister;Argentina
+mq2xvanf;Cozzuolo Mundial FC;CEN;2;Jamal Musiala;Germania
+mq2xvanf;Cozzuolo Mundial FC;CEN;3;Tijjani Reijnders;Paesi Bassi
+mq2xvanf;Cozzuolo Mundial FC;CEN;4;Fabián Ruiz;Spagna
+mq2xvanf;Cozzuolo Mundial FC;CEN;5;Bruno Fernandes;Portogallo
+mq2xvanf;Cozzuolo Mundial FC;CEN;6;Aurélien Tchouaméni;Francia
+mq2xvanf;Cozzuolo Mundial FC;CEN;7;Rodrigo De Paul;Argentina
+mq2xvanf;Cozzuolo Mundial FC;CEN;8;Enzo Fernández;Argentina
+mq2xvanf;Cozzuolo Mundial FC;ATT;1;Vinícius Júnior;Brasile
+mq2xvanf;Cozzuolo Mundial FC;ATT;2;Kai Havertz;Germania
+mq2xvanf;Cozzuolo Mundial FC;ATT;3;Harry Kane;Inghilterra
+mq2xvanf;Cozzuolo Mundial FC;ATT;4;Jérémy Doku;Belgio
+mq2xvanf;Cozzuolo Mundial FC;ATT;5;Lamine Yamal;Spagna
+mq2xvanf;Cozzuolo Mundial FC;ATT;6;Ousmane Dembélé;Francia
+mq2xvanf;Cozzuolo Mundial FC;ATT;7;Kylian Mbappé;Francia
+mq2xvksk;Cura ciao;POR;1;Emiliano Martínez;Argentina
+mq2xvksk;Cura ciao;POR;2;Gerónimo Rulli;Argentina
+mq2xvksk;Cura ciao;POR;3;Mike Maignan;Francia
+mq2xvksk;Cura ciao;DIF;1;Denzel Dumfries;Paesi Bassi
+mq2xvksk;Cura ciao;DIF;2;Manuel Akanji;Svizzera
+mq2xvksk;Cura ciao;DIF;3;Joshua Kimmich;Germania
+mq2xvksk;Cura ciao;DIF;4;Rúben Dias;Portogallo
+mq2xvksk;Cura ciao;DIF;5;Nico O'Reilly;Inghilterra
+mq2xvksk;Cura ciao;DIF;6;Dayot Upamecano;Francia
+mq2xvksk;Cura ciao;DIF;7;Pau Cubarsí;Spagna
+mq2xvksk;Cura ciao;DIF;8;Marc Cucurella;Spagna
+mq2xvksk;Cura ciao;CEN;1;Rayan Cherki;Francia
+mq2xvksk;Cura ciao;CEN;2;Florian Wirtz;Germania
+mq2xvksk;Cura ciao;CEN;3;Granit Xhaka;Svizzera
+mq2xvksk;Cura ciao;CEN;4;Enzo Fernández;Argentina
+mq2xvksk;Cura ciao;CEN;5;Bruno Fernandes;Portogallo
+mq2xvksk;Cura ciao;CEN;6;Pedri;Spagna
+mq2xvksk;Cura ciao;CEN;7;Morgan Rogers;Inghilterra
+mq2xvksk;Cura ciao;CEN;8;Scott McTominay;Scozia
+mq2xvksk;Cura ciao;ATT;1;Raphinha;Brasile
+mq2xvksk;Cura ciao;ATT;2;Mikel Oyarzabal;Spagna
+mq2xvksk;Cura ciao;ATT;3;Harry Kane;Inghilterra
+mq2xvksk;Cura ciao;ATT;4;Michael Olise;Francia
+mq2xvksk;Cura ciao;ATT;5;Vinícius Júnior;Brasile
+mq2xvksk;Cura ciao;ATT;6;Erling Haaland;Norvegia
+mq2xvksk;Cura ciao;ATT;7;Lamine Yamal;Spagna
+mq2xvqbt;Notts Balby;POR;1;Unai Simón;Spagna
+mq2xvqbt;Notts Balby;POR;2;Bart Verbruggen;Paesi Bassi
+mq2xvqbt;Notts Balby;POR;3;Yassine Bounou;Marocco
+mq2xvqbt;Notts Balby;DIF;1;Theo Hernández;Francia
+mq2xvqbt;Notts Balby;DIF;2;Antonio Rüdiger;Germania
+mq2xvqbt;Notts Balby;DIF;3;Manuel Akanji;Svizzera
+mq2xvqbt;Notts Balby;DIF;4;Pau Cubarsí;Spagna
+mq2xvqbt;Notts Balby;DIF;5;Antonee Robinson;Stati Uniti
+mq2xvqbt;Notts Balby;DIF;6;Alistair Johnston;Canada
+mq2xvqbt;Notts Balby;DIF;7;Johan Vásquez;Messico
+mq2xvqbt;Notts Balby;DIF;8;César Montes;Messico
+mq2xvqbt;Notts Balby;CEN;1;Jude Bellingham;Inghilterra
+mq2xvqbt;Notts Balby;CEN;2;Jamal Musiala;Germania
+mq2xvqbt;Notts Balby;CEN;3;Granit Xhaka;Svizzera
+mq2xvqbt;Notts Balby;CEN;4;Federico Valverde;Uruguay
+mq2xvqbt;Notts Balby;CEN;5;Kevin De Bruyne;Belgio
+mq2xvqbt;Notts Balby;CEN;6;Lamine Camara;Senegal
+mq2xvqbt;Notts Balby;CEN;7;Daichi Kamada;Giappone
+mq2xvqbt;Notts Balby;CEN;8;Kendry Páez;Ecuador
+mq2xvqbt;Notts Balby;ATT;1;Kylian Mbappé;Francia
+mq2xvqbt;Notts Balby;ATT;2;Lamine Yamal;Spagna
+mq2xvqbt;Notts Balby;ATT;3;Nico Williams;Spagna
+mq2xvqbt;Notts Balby;ATT;4;Kenan Yildiz;Turchia
+mq2xvqbt;Notts Balby;ATT;5;Santiago Giménez;Messico
+mq2xvqbt;Notts Balby;ATT;6;Lautaro Martínez;Argentina
+mq2xvqbt;Notts Balby;ATT;7;Dan Ndoye;Svizzera
+mq2xvvof;Paris Bidet FC;POR;1;Alisson Becker;Brasile
+mq2xvvof;Paris Bidet FC;POR;2;Thibaut Courtois;Belgio
+mq2xvvof;Paris Bidet FC;POR;3;Unai Simón;Spagna
+mq2xvvof;Paris Bidet FC;DIF;1;Pau Cubarsí;Spagna
+mq2xvvof;Paris Bidet FC;DIF;2;Virgil van Dijk;Paesi Bassi
+mq2xvvof;Paris Bidet FC;DIF;3;William Saliba;Francia
+mq2xvvof;Paris Bidet FC;DIF;4;Nahuel Molina;Argentina
+mq2xvvof;Paris Bidet FC;DIF;5;Nuno Mendes;Portogallo
+mq2xvvof;Paris Bidet FC;DIF;6;Hiroki Ito;Giappone
+mq2xvvof;Paris Bidet FC;DIF;7;Marquinhos;Brasile
+mq2xvvof;Paris Bidet FC;DIF;8;Douglas Santos;Brasile
+mq2xvvof;Paris Bidet FC;CEN;1;Scott McTominay;Scozia
+mq2xvvof;Paris Bidet FC;CEN;2;Hakan Çalhanoglu;Turchia
+mq2xvvof;Paris Bidet FC;CEN;3;Florian Wirtz;Germania
+mq2xvvof;Paris Bidet FC;CEN;4;Bruno Fernandes;Portogallo
+mq2xvvof;Paris Bidet FC;CEN;5;Fabián Ruiz;Spagna
+mq2xvvof;Paris Bidet FC;CEN;6;Aurélien Tchouaméni;Francia
+mq2xvvof;Paris Bidet FC;CEN;7;Martin Ødegaard;Norvegia
+mq2xvvof;Paris Bidet FC;CEN;8;Daichi Kamada;Giappone
+mq2xvvof;Paris Bidet FC;ATT;1;Michael Olise;Francia
+mq2xvvof;Paris Bidet FC;ATT;2;Kenan Yildiz;Turchia
+mq2xvvof;Paris Bidet FC;ATT;3;Mikel Oyarzabal;Spagna
+mq2xvvof;Paris Bidet FC;ATT;4;Harry Kane;Inghilterra
+mq2xvvof;Paris Bidet FC;ATT;5;Kai Havertz;Germania
+mq2xvvof;Paris Bidet FC;ATT;6;Vinícius Júnior;Brasile
+mq2xvvof;Paris Bidet FC;ATT;7;Lautaro Martínez;Argentina
+mq3jmp2x;Setumanizzato;POR;1;Emiliano Martínez;Argentina
+mq3jmp2x;Setumanizzato;POR;2;Ørjan Håskjold Nyland;Norvegia
+mq3jmp2x;Setumanizzato;POR;3;Unai Simón;Spagna
+mq3jmp2x;Setumanizzato;DIF;1;Nicolás Tagliafico;Argentina
+mq3jmp2x;Setumanizzato;DIF;2;Douglas Santos;Brasile
+mq3jmp2x;Setumanizzato;DIF;3;Denzel Dumfries;Paesi Bassi
+mq3jmp2x;Setumanizzato;DIF;4;Nahuel Molina;Argentina
+mq3jmp2x;Setumanizzato;DIF;5;Johan Mojica;Colombia
+mq3jmp2x;Setumanizzato;DIF;6;Marquinhos;Brasile
+mq3jmp2x;Setumanizzato;DIF;7;Kristoffer Ajer;Norvegia
+mq3jmp2x;Setumanizzato;DIF;8;Virgil van Dijk;Paesi Bassi
+mq3jmp2x;Setumanizzato;CEN;1;Rodrigo De Paul;Argentina
+mq3jmp2x;Setumanizzato;CEN;2;Pedri;Spagna
+mq3jmp2x;Setumanizzato;CEN;3;Jamal Musiala;Germania
+mq3jmp2x;Setumanizzato;CEN;4;Alexis Mac Allister;Argentina
+mq3jmp2x;Setumanizzato;CEN;5;Leon Goretzka;Germania
+mq3jmp2x;Setumanizzato;CEN;6;Martin Ødegaard;Norvegia
+mq3jmp2x;Setumanizzato;CEN;7;Tijjani Reijnders;Paesi Bassi
+mq3jmp2x;Setumanizzato;CEN;8;Enzo Fernández;Argentina
+mq3jmp2x;Setumanizzato;ATT;1;Matheus Cunha;Brasile
+mq3jmp2x;Setumanizzato;ATT;2;Erling Haaland;Norvegia
+mq3jmp2x;Setumanizzato;ATT;3;Kylian Mbappé;Francia
+mq3jmp2x;Setumanizzato;ATT;4;Lamine Yamal;Spagna
+mq3jmp2x;Setumanizzato;ATT;5;Harry Kane;Inghilterra
+mq3jmp2x;Setumanizzato;ATT;6;Michael Olise;Francia
+mq3jmp2x;Setumanizzato;ATT;7;Julián Álvarez;Argentina
+mq3q8xcg;Zheneda Mundial;POR;1;Unai Simón;Spagna
+mq3q8xcg;Zheneda Mundial;POR;2;Mike Maignan;Francia
+mq3q8xcg;Zheneda Mundial;POR;3;Alisson Becker;Brasile
+mq3q8xcg;Zheneda Mundial;DIF;1;Joshua Kimmich;Germania
+mq3q8xcg;Zheneda Mundial;DIF;2;Josko Gvardiol;Croazia
+mq3q8xcg;Zheneda Mundial;DIF;3;Noussair Mazraoui;Marocco
+mq3q8xcg;Zheneda Mundial;DIF;4;Merih Demiral;Turchia
+mq3q8xcg;Zheneda Mundial;DIF;5;José Giménez;Uruguay
+mq3q8xcg;Zheneda Mundial;DIF;6;Jules Koundé;Francia
+mq3q8xcg;Zheneda Mundial;DIF;7;Ángelo Preciado;Ecuador
+mq3q8xcg;Zheneda Mundial;DIF;8;Davinson Sánchez;Colombia
+mq3q8xcg;Zheneda Mundial;CEN;1;Martin Ødegaard;Norvegia
+mq3q8xcg;Zheneda Mundial;CEN;2;Marcel Sabitzer;Austria
+mq3q8xcg;Zheneda Mundial;CEN;3;Tomás Soucek;Cechia
+mq3q8xcg;Zheneda Mundial;CEN;4;Bruno Fernandes;Portogallo
+mq3q8xcg;Zheneda Mundial;CEN;5;Alexis Mac Allister;Argentina
+mq3q8xcg;Zheneda Mundial;CEN;6;Bruno Guimarães;Brasile
+mq3q8xcg;Zheneda Mundial;CEN;7;Luka Modric;Croazia
+mq3q8xcg;Zheneda Mundial;CEN;8;Rodri;Spagna
+mq3q8xcg;Zheneda Mundial;ATT;1;Edin Dzeko;Bosnia ed Erzegovina
+mq3q8xcg;Zheneda Mundial;ATT;2;Lamine Yamal;Spagna
+mq3q8xcg;Zheneda Mundial;ATT;3;Cristiano Ronaldo;Portogallo
+mq3q8xcg;Zheneda Mundial;ATT;4;Ousmane Dembélé;Francia
+mq3q8xcg;Zheneda Mundial;ATT;5;Harry Kane;Inghilterra
+mq3q8xcg;Zheneda Mundial;ATT;6;Raul Jiménez;Messico
+mq3q8xcg;Zheneda Mundial;ATT;7;Julián Álvarez;Argentina
+mq43k8g6;Treviland;POR;1;Ederson;Brasile
+mq43k8g6;Treviland;POR;2;Alisson Becker;Brasile
+mq43k8g6;Treviland;POR;3;Emiliano Martínez;Argentina
+mq43k8g6;Treviland;DIF;1;Marc Cucurella;Spagna
+mq43k8g6;Treviland;DIF;2;José Giménez;Uruguay
+mq43k8g6;Treviland;DIF;3;Reece James;Inghilterra
+mq43k8g6;Treviland;DIF;4;Josko Gvardiol;Croazia
+mq43k8g6;Treviland;DIF;5;Danilo;Brasile
+mq43k8g6;Treviland;DIF;6;Antonio Rüdiger;Germania
+mq43k8g6;Treviland;DIF;7;Denzel Dumfries;Paesi Bassi
+mq43k8g6;Treviland;DIF;8;Marcos Llorente;Spagna
+mq43k8g6;Treviland;CEN;1;Scott McTominay;Scozia
+mq43k8g6;Treviland;CEN;2;Jamal Musiala;Germania
+mq43k8g6;Treviland;CEN;3;Frenkie de Jong;Paesi Bassi
+mq43k8g6;Treviland;CEN;4;Enzo Fernández;Argentina
+mq43k8g6;Treviland;CEN;5;Bernardo Silva;Portogallo
+mq43k8g6;Treviland;CEN;6;Rodri;Spagna
+mq43k8g6;Treviland;CEN;7;Hakan Çalhanoglu;Turchia
+mq43k8g6;Treviland;CEN;8;N'Golo Kanté;Francia
+mq43k8g6;Treviland;ATT;1;Heung-Min Son;Corea del Sud
+mq43k8g6;Treviland;ATT;2;Nico Williams;Spagna
+mq43k8g6;Treviland;ATT;3;Cristiano Ronaldo;Portogallo
+mq43k8g6;Treviland;ATT;4;Kylian Mbappé;Francia
+mq43k8g6;Treviland;ATT;5;Harry Kane;Inghilterra
+mq43k8g6;Treviland;ATT;6;Romelu Lukaku;Belgio
+mq43k8g6;Treviland;ATT;7;Memphis Depay;Paesi Bassi
+mq43kvs0;River Mésch National FC;POR;1;Mike Maignan;Francia
+mq43kvs0;River Mésch National FC;POR;2;Unai Simón;Spagna
+mq43kvs0;River Mésch National FC;POR;3;Jordan Pickford;Inghilterra
+mq43kvs0;River Mésch National FC;DIF;1;Theo Hernández;Francia
+mq43kvs0;River Mésch National FC;DIF;2;Joshua Kimmich;Germania
+mq43kvs0;River Mésch National FC;DIF;3;Nuno Mendes;Portogallo
+mq43kvs0;River Mésch National FC;DIF;4;Denzel Dumfries;Paesi Bassi
+mq43kvs0;River Mésch National FC;DIF;5;Gabriel;Brasile
+mq43kvs0;River Mésch National FC;DIF;6;Rúben Dias;Portogallo
+mq43kvs0;River Mésch National FC;DIF;7;Cristian Romero;Argentina
+mq43kvs0;River Mésch National FC;DIF;8;Diogo Dalot;Portogallo
+mq43kvs0;River Mésch National FC;CEN;1;Jude Bellingham;Inghilterra
+mq43kvs0;River Mésch National FC;CEN;2;Bruno Fernandes;Portogallo
+mq43kvs0;River Mésch National FC;CEN;3;Rodri;Spagna
+mq43kvs0;River Mésch National FC;CEN;4;Fabián Ruiz;Spagna
+mq43kvs0;River Mésch National FC;CEN;5;Jamal Musiala;Germania
+mq43kvs0;River Mésch National FC;CEN;6;Tijjani Reijnders;Paesi Bassi
+mq43kvs0;River Mésch National FC;CEN;7;Frenkie de Jong;Paesi Bassi
+mq43kvs0;River Mésch National FC;CEN;8;Mikel Merino;Spagna
+mq43kvs0;River Mésch National FC;ATT;1;Kylian Mbappé;Francia
+mq43kvs0;River Mésch National FC;ATT;2;Harry Kane;Inghilterra
+mq43kvs0;River Mésch National FC;ATT;3;Lamine Yamal;Spagna
+mq43kvs0;River Mésch National FC;ATT;4;Julián Álvarez;Argentina
+mq43kvs0;River Mésch National FC;ATT;5;Raphinha;Brasile
+mq43kvs0;River Mésch National FC;ATT;6;Cristiano Ronaldo;Portogallo
+mq43kvs0;River Mésch National FC;ATT;7;Lionel Messi;Argentina
