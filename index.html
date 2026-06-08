@@ -3231,8 +3231,7 @@ Nazionale più rappresentata: <b>${escapeHtml(normalizeTopNationText(t.topNation
     });
     return Array.from(byId.values()).map(f => {
       f.rawLines.sort((a,b)=>a.lineOrder-b.lineOrder);
-      f.rawText = f.rawLines.map(x=>x.line).join("
-");
+      f.rawText = f.rawLines.map(x=>x.line).join("\n");
       delete f.rawLines;
       return f;
     }).filter(f => f.teamName && f.round);
