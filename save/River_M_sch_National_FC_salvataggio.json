@@ -1,0 +1,146 @@
+{
+  "version": "1.0",
+  "savedAt": "2026-06-07T17:24:26.649Z",
+  "fantasyTeamName": "River Mésch National FC",
+  "selectedTeam": "Paesi Bassi",
+  "slots": {
+    "Portieri": [
+      {
+        "raw": "Mike Maignan — Francia — 20,00 mln €",
+        "ok": true,
+        "val": 20
+      },
+      {
+        "raw": "Unai Simón — Spagna — 22,00 mln €",
+        "ok": true,
+        "val": 22
+      },
+      {
+        "raw": "Jordan Pickford — Inghilterra — 13,00 mln €",
+        "ok": true,
+        "val": 13
+      }
+    ],
+    "Difensori": [
+      {
+        "raw": "Theo Hernández — Francia — 20,00 mln €",
+        "ok": true,
+        "val": 20
+      },
+      {
+        "raw": "Joshua Kimmich — Germania — 35,00 mln €",
+        "ok": true,
+        "val": 35
+      },
+      {
+        "raw": "Nuno Mendes — Portogallo — 80,00 mln €",
+        "ok": true,
+        "val": 80
+      },
+      {
+        "raw": "Denzel Dumfries — Paesi Bassi — 25,00 mln €",
+        "ok": true,
+        "val": 25
+      },
+      {
+        "raw": "Gabriel — Brasile — 75,00 mln €",
+        "ok": true,
+        "val": 75
+      },
+      {
+        "raw": "Rúben Dias — Portogallo — 55,00 mln €",
+        "ok": true,
+        "val": 55
+      },
+      {
+        "raw": "Cristian Romero — Argentina — 45,00 mln €",
+        "ok": true,
+        "val": 45
+      },
+      {
+        "raw": "Diogo Dalot — Portogallo — 30,00 mln €",
+        "ok": true,
+        "val": 30
+      }
+    ],
+    "Centrocampisti": [
+      {
+        "raw": "Jude Bellingham — Inghilterra — 130,00 mln €",
+        "ok": true,
+        "val": 130
+      },
+      {
+        "raw": "Bruno Fernandes — Portogallo — 35,00 mln €",
+        "ok": true,
+        "val": 35
+      },
+      {
+        "raw": "Rodri — Spagna — 50,00 mln €",
+        "ok": true,
+        "val": 50
+      },
+      {
+        "raw": "Fabián Ruiz — Spagna — 30,00 mln €",
+        "ok": true,
+        "val": 30
+      },
+      {
+        "raw": "Jamal Musiala — Germania — 100,00 mln €",
+        "ok": true,
+        "val": 100
+      },
+      {
+        "raw": "Tijjani Reijnders — Paesi Bassi — 50,00 mln €",
+        "ok": true,
+        "val": 50
+      },
+      {
+        "raw": "Frenkie de Jong — Paesi Bassi — 35,00 mln €",
+        "ok": true,
+        "val": 35
+      },
+      {
+        "raw": "Mikel Merino — Spagna — 25,00 mln €",
+        "ok": true,
+        "val": 25
+      }
+    ],
+    "Attaccanti": [
+      {
+        "raw": "Kylian Mbappé — Francia — 180,00 mln €",
+        "ok": true,
+        "val": 180
+      },
+      {
+        "raw": "Harry Kane — Inghilterra — 60,00 mln €",
+        "ok": true,
+        "val": 60
+      },
+      {
+        "raw": "Lamine Yamal — Spagna — 200,00 mln €",
+        "ok": true,
+        "val": 200
+      },
+      {
+        "raw": "Julián Álvarez — Argentina — 100,00 mln €",
+        "ok": true,
+        "val": 100
+      },
+      {
+        "raw": "Raphinha — Brasile — 70,00 mln €",
+        "ok": true,
+        "val": 70
+      },
+      {
+        "raw": "Cristiano Ronaldo — Portogallo — 10,00 mln €",
+        "ok": true,
+        "val": 10
+      },
+      {
+        "raw": "Lionel Messi — Argentina — 15,00 mln €",
+        "ok": true,
+        "val": 15
+      }
+    ]
+  }
+}
