@@ -2289,30 +2289,45 @@ async function fetchWorldCupStatsCsv(){
   return localStorage.getItem("fm_database_csv_worldcup_stats")||window.FM_WORLDCUP_STATS_CSV||"";
 }
 function parseWorldCupStatsCsv(text){
-  text=String(text||"").replace(/^﻿/,"").replace(/
-/g,"
-").replace(/
-/g,"
-");
+  text=String(text||"").replace(/^\uFEFF/,"").replace(/\r\n/g,"\n").replace(/\r/g,"\n");
   if(!text.trim())return[];
-  const first=text.split("
-").find(l=>l.trim())||"";
+  const first=text.split("\n").find(l=>l.trim())||"";
   const delimiter=(first.match(/;/g)||[]).length>=(first.match(/,/g)||[]).length?";":",";
-  const rows=[];let row=[],cell="",quote=false;
+  const rows=[];
+  let row=[];
+  let cell="";
+  let quote=false;
   for(let i=0;i<text.length;i++){
-    const ch=text[i],next=text[i+1];
-    if(ch==='"'){quote&&next==='"'?(cell+='"',i++):quote=!quote;}
-    else if(ch===delimiter&&!quote){row.push(cell);cell="";}
-    else if(ch==="
-"&&!quote){row.push(cell);rows.push(row);row=[];cell="";}
-    else cell+=ch;
+    const ch=text[i];
+    const next=text[i+1];
+    if(ch==='"'){
+      if(quote&&next==='"'){
+        cell+='"';
+        i++;
+      }else{
+        quote=!quote;
+      }
+    }else if(ch===delimiter&&!quote){
+      row.push(cell);
+      cell="";
+    }else if(ch==="\n"&&!quote){
+      row.push(cell);
+      rows.push(row);
+      row=[];
+      cell="";
+    }else{
+      cell+=ch;
+    }
   }
-  row.push(cell);rows.push(row);
+  row.push(cell);
+  rows.push(row);
   while(rows.length&&rows[rows.length-1].every(c=>!String(c).trim()))rows.pop();
   if(!rows.length)return[];
   const headers=rows.shift().map(h=>String(h||"").trim());
-  return rows.filter(r=>r.some(c=>String(c).trim())).map(r=>{
-    const o={};headers.forEach((h,i)=>o[h]=String(r[i]??"").trim());return o;
+  return rows.filter(r=>r.some(c=>String(c||"").trim())).map(r=>{
+    const obj={};
+    headers.forEach((h,i)=>obj[h]=String(r[i]||"").trim());
+    return obj;
   });
 }
 function worldStatsEsc(v){return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]||m));}
