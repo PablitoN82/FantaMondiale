@@ -1,0 +1,84 @@
+section;category;item;value;details;nation;players;percent;outside_national_squad;lower_tier_players
+ETA;Giocatori di movimento;Più anziano;Cristiano Ronaldo;41 anni, 126 giorni;Portogallo;;;;
+ETA;Giocatori di movimento;Più giovane;Gilberto Mora;17 anni, 240 giorni;Messico;;;;
+ETA;Portieri;Più anziano;Craig Gordon;43 anni, 162 giorni;Scozia;;;;
+ETA;Portieri;Più giovane;Mladen Jurkas;18 anni, 247 giorni;Bosnia ed Erzegovina;;;;
+ETA;Capitani;Più anziano;Cristiano Ronaldo;41 anni, 126 giorni;Portogallo;;;;
+ETA;Capitani;Più giovane;Alphonso Davies;25 anni, 221 giorni;Canada;;;;
+ETA;Allenatori;Più anziano;Dick Advocaat;78 anni, 257 giorni;Curaçao;;;;
+ETA;Allenatori;Più giovane;Julian Nagelsmann;38 anni, 323 giorni;Germania;;;;
+CLUB;Rappresentanza per club;Manchester City;19;giocatori;Inghilterra;;;;
+CLUB;Rappresentanza per club;Bayern Monaco;17;giocatori;Germania;;;;
+CLUB;Rappresentanza per club;Paris Saint-Germain;16;giocatori;Francia;;;;
+CLUB;Rappresentanza per club;Arsenal;15;giocatori;Inghilterra;;;;
+CLUB;Rappresentanza per club;Barcellona;15;giocatori;Spagna;;;;
+CLUB;Rappresentanza per club;Crystal Palace;12;giocatori;Inghilterra;;;;
+CLUB;Rappresentanza per club;Manchester United;12;giocatori;Inghilterra;;;;
+CLUB;Rappresentanza per club;Al-Hilal;12;giocatori;Arabia Saudita;;;;
+CLUB;Rappresentanza per club;Atlético Madrid;12;giocatori;Spagna;;;;
+CLUB;Rappresentanza per club;Liverpool;11;giocatori;Inghilterra;;;;
+CLUB;Rappresentanza per club;Borussia Dortmund;11;giocatori;Germania;;;;
+CLUB;Rappresentanza per club;Galatasaray;11;giocatori;Turchia;;;;
+CLUB;Rappresentanza per club;Slavia Praga;10;giocatori;Cechia;;;;
+CLUB;Rappresentanza per club;Milan;10;giocatori;Italia;;;;
+CLUB;Rappresentanza per club;PSV Eindhoven;10;giocatori;Paesi Bassi;;;;
+CLUB;Rappresentanza per club;Real Madrid;10;giocatori;Spagna;;;;
+CLUB;Rappresentanza per club;Fenerbahçe;10;giocatori;Turchia;;;;
+CLUB;Rappresentanza per club;Sunderland;10;giocatori;Inghilterra;;;;
+CAMPIONATI;Rappresentanza per campionato;Inghilterra;205;giocatori;Inghilterra;205;16,47%;184;42
+CAMPIONATI;Rappresentanza per campionato;Germania;108;giocatori;Germania;108;8,67%;89;8
+CAMPIONATI;Rappresentanza per campionato;Francia;86;giocatori;Francia;86;6,91%;78;7
+CAMPIONATI;Rappresentanza per campionato;Italia;71;giocatori;Italia;71;5,70%;71;5
+CAMPIONATI;Rappresentanza per campionato;Spagna;69;giocatori;Spagna;69;5,54%;;
+CAMPIONATI;Rappresentanza per campionato;Arabia Saudita;49;giocatori;Arabia Saudita;49;3,94%;24;2
+CAMPIONATI;Rappresentanza per campionato;Stati Uniti;48;giocatori;Stati Uniti;48;3,86%;41;4
+CAMPIONATI;Rappresentanza per campionato;Turchia;45;giocatori;Turchia;45;3,61%;30;2
+CAMPIONATI;Rappresentanza per campionato;Paesi Bassi;38;giocatori;Paesi Bassi;38;3,05%;36;5
+CAMPIONATI;Rappresentanza per campionato;Brasile;32;giocatori;Brasile;32;2,57%;25;0
+CAMPIONATI;Rappresentanza per campionato;Belgio;29;giocatori;Belgio;29;2,33%;26;1
+CAMPIONATI;Rappresentanza per campionato;Portogallo;27;giocatori;Portogallo;27;2,17%;;5
+CAMPIONATI;Rappresentanza per campionato;Messico;26;giocatori;Messico;26;2,09%;14;
+CAMPIONATI;Rappresentanza per campionato;Iran;23;giocatori;Iran;23;1,85%;6;
+CAMPIONATI;Rappresentanza per campionato;Cechia;22;giocatori;Cechia;22;1,77%;;5
+CAMPIONATI;Rappresentanza per campionato;Egitto;20;giocatori;Egitto;20;1,61%;;3
+CAMPIONATI;Rappresentanza per campionato;Sudafrica;19;giocatori;Sudafrica;19;1,53%;0;0
+CAMPIONATI;Rappresentanza per campionato;Argentina;17;giocatori;Argentina;17;1,37%;15;
+CAMPIONATI;Rappresentanza per campionato;Uzbekistan;16;giocatori;Uzbekistan;16;1,29%;;1
+CAMPIONATI;Rappresentanza per campionato;Australia;15;giocatori;Australia;15;1,20%;10;
+CAMPIONATI;Rappresentanza per campionato;Emirati Arabi Uniti;15;giocatori;Emirati Arabi Uniti;15;;;
+CAMPIONATI;Rappresentanza per campionato;Danimarca;14;giocatori;Danimarca;14;1,12%;14;
+CAMPIONATI;Rappresentanza per campionato;Scozia;12;giocatori;Scozia;12;;;
+CAMPIONATI;Rappresentanza per campionato;Grecia;12;giocatori;Grecia;12;0,96%;12;
+CAMPIONATI;Rappresentanza per campionato;Giordania;11;giocatori;Giordania;11;0,88%;0;0
+CAMPIONATI;Rappresentanza per campionato;Svizzera;10;giocatori;Svizzera;10;;;1
+CAMPIONATI;Rappresentanza per campionato;Cipro;10;giocatori;Cipro;10;0,80%;10;
+CAMPIONATI;Rappresentanza per campionato;Corea del Sud;8;giocatori;Corea del Sud;8;0,64%;1;
+CAMPIONATI;Rappresentanza per campionato;Austria;7;giocatori;Austria;7;0,56%;4;
+CAMPIONATI;Rappresentanza per campionato;Croazia;6;giocatori;Croazia;6;0,48%;4;
+CAMPIONATI;Rappresentanza per campionato;Iraq;5;giocatori;Iraq;5;;;
+CAMPIONATI;Rappresentanza per campionato;Ecuador;5;giocatori;Ecuador;5;0,40%;3;
+CAMPIONATI;Rappresentanza per campionato;Polonia;5;giocatori;Polonia;5;;;
+CAMPIONATI;Rappresentanza per campionato;Israele;4;giocatori;Israele;4;0,32%;4;
+CAMPIONATI;Rappresentanza per campionato;Qatar;4;giocatori;Qatar;4;;0;
+CAMPIONATI;Rappresentanza per campionato;Norvegia;3;giocatori;Norvegia;3;;0;
+CAMPIONATI;Rappresentanza per campionato;Algeria;3;giocatori;Algeria;3;0,24%;0;0
+CAMPIONATI;Rappresentanza per campionato;Ungheria;3;giocatori;Ungheria;3;;;
+CAMPIONATI;Rappresentanza per campionato;Bulgaria;2;giocatori;Bulgaria;2;0,16%;2;
+CAMPIONATI;Rappresentanza per campionato;Romania;2;giocatori;Romania;2;;;
+CAMPIONATI;Rappresentanza per campionato;Armenia;1;giocatori;Armenia;1;0,08%;1;
+CAMPIONATI;Rappresentanza per campionato;Cina;1;giocatori;Cina;1;;;
+CAMPIONATI;Rappresentanza per campionato;Finlandia;1;giocatori;Finlandia;1;;;
+CAMPIONATI;Rappresentanza per campionato;Honduras;1;giocatori;Honduras;1;;;
+CAMPIONATI;Rappresentanza per campionato;Giappone;1;giocatori;Giappone;1;;;
+CAMPIONATI;Rappresentanza per campionato;Tunisia;1;giocatori;Tunisia;1;;;
+CAMPIONATI;Rappresentanza per campionato;Svezia;1;giocatori;Svezia;1;;;1
+CAMPIONATI;Rappresentanza per campionato;Marocco;1;giocatori;Marocco;1;;;
+CAMPIONATI;Rappresentanza per campionato;Paraguay;0;giocatori;Paraguay;0;;;
+CAMPIONATI;Rappresentanza per campionato;Bosnia ed Erzegovina;0;giocatori;Bosnia ed Erzegovina;0;;;
+CAMPIONATI;Rappresentanza per campionato;Colombia;0;giocatori;Colombia;0;;;
+CAMPIONATI;Rappresentanza per campionato;Ghana;0;giocatori;Ghana;0;;;
+CAMPIONATI;Rappresentanza per campionato;Panama;0;giocatori;Panama;0;;;
+CAMPIONATI;Rappresentanza per campionato;Uruguay;0;giocatori;Uruguay;0;;;
+TORNEO;Totali;Giocatori convocati;1245;100%;;;;;
+TORNEO;Totali;Giocatori all'estero;913;73,33%;;;;;
+TORNEO;Totali;Giocatori categorie inferiori;89;7,15%;;;;;
