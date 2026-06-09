@@ -2287,21 +2287,16 @@ async function fetchWorldCupStatsCsv(){
   return localStorage.getItem("fm_database_csv_worldcup_stats")||window.FM_WORLDCUP_STATS_CSV||"";
 }
 function parseWorldCupStatsCsv(text){
-  text=String(text||"").replace(/^﻿/,"").replace(/
-/g,"
-").replace(//g,"
-");
+  text=String(text||"").replace(/^\ufeff/,"").replace(/\r\n/g,"\n").replace(/\r/g,"\n");
   if(!text.trim())return[];
-  const first=text.split("
-").find(l=>l.trim())||"";
+  const first=text.split("\n").find(l=>l.trim())||"";
   const delimiter=(first.match(/;/g)||[]).length>=(first.match(/,/g)||[]).length?";":",";
   const rows=[];let row=[],cell="",quote=false;
   for(let i=0;i<text.length;i++){
     const ch=text[i],next=text[i+1];
     if(ch==='"'){quote&&next==='"'?(cell+='"',i++):quote=!quote;}
     else if(ch===delimiter&&!quote){row.push(cell);cell="";}
-    else if(ch==='
-'&&!quote){row.push(cell);rows.push(row);row=[];cell="";}
+    else if(ch==="\n"&&!quote){row.push(cell);rows.push(row);row=[];cell="";}
     else cell+=ch;
   }
   row.push(cell);rows.push(row);
