@@ -1,0 +1,32 @@
+match_id;round_name;match;team;player;role_type;rating;minutes;goals;assists;yellow_cards;red_cards;own_goals;penalty_missed;saves;goals_conceded;clean_sheet;xg;xa;xg_xa;def_actions;shots;goal_minutes;assist_minutes;card_minutes;total
+4667751;Giornata 1;Messico vs Sudafrica;;Sphephelo Sithole;player;3,6;49;0;0;0;1;0;0;;;;0;0;0;3;;;;49 rosso;2,6
+4667751;Giornata 1;Messico vs Sudafrica;Messico;Alexis Vega;player;6,0;11;0;0;0;0;0;0;;;;0;0,01;0,01;0;;;;;6,0
+4667751;Giornata 1;Messico vs Sudafrica;Messico;Álvaro Fidalgo;player;7,1;66;0;0;0;0;0;0;;;;0;0,01;0,01;0;;;;;7,1
+4667751;Giornata 1;Messico vs Sudafrica;Messico;Armando González;player;5,9;14;0;0;0;0;0;0;;;;0;0;0;0;;;;;5,9
+4667751;Giornata 1;Messico vs Sudafrica;Messico;Brian Gutiérrez;player;6,6;66;0;0;1;0;0;0;;;;0,18;0,17;0,35;0;;;;23 giallo;6,1
+4667751;Giornata 1;Messico vs Sudafrica;Messico;César Montes;player;6,1;90;0;0;0;1;0;0;;;;0;0,03;0,03;4;;;;90 rosso;5,1
+4667751;Giornata 1;Messico vs Sudafrica;Messico;Edson Álvarez;player;6,6;14;0;0;0;0;0;0;;;;0;0,01;0,01;1;;;;;6,6
+4667751;Giornata 1;Messico vs Sudafrica;Messico;Érik Lira;player;7,9;76;0;1;0;0;0;0;;;;0;0;0;4;;;9;;8,9
+4667751;Giornata 1;Messico vs Sudafrica;Messico;Gilberto Mora;player;6,3;24;0;0;0;0;0;0;;;;0;0,05;0,05;1;;;;;6,3
+4667751;Giornata 1;Messico vs Sudafrica;Messico;Israel Reyes;player;7,4;90;0;0;0;0;0;0;;;;0,01;0,03;0,04;4;;;;;7,4
+4667751;Giornata 1;Messico vs Sudafrica;Messico;Jesús Gallardo;player;7,2;90;0;0;0;0;0;0;;;;0,04;0,05;0,09;6;;;;;7,2
+4667751;Giornata 1;Messico vs Sudafrica;Messico;Johan Vásquez;player;7,2;90;0;0;0;0;0;0;;;;0;0;0;5;;;;;7,2
+4667751;Giornata 1;Messico vs Sudafrica;Messico;Julián Quiñones;player;8,8;79;1;0;0;0;0;0;;;;0,37;0,07;0,44;0;;9;;;11,8
+4667751;Giornata 1;Messico vs Sudafrica;Messico;Luis Chávez;player;6,5;24;0;0;0;0;0;0;;;;0;0,01;0,01;3;;;;;6,5
+4667751;Giornata 1;Messico vs Sudafrica;Messico;Raul Jiménez;player;8,0;76;1;0;0;0;0;0;;;;0,81;0,01;0,82;2;;67;;;11,0
+4667751;Giornata 1;Messico vs Sudafrica;Messico;Raúl Rangel;goalkeeper;7,5;90;0;0;0;0;0;0;2;0;1;0;0;0;0;;;;;8,5
+4667751;Giornata 1;Messico vs Sudafrica;Messico;Roberto Alvarado;player;8,2;90;0;1;0;0;0;0;;;;0;0,48;0,48;4;;;67;;9,2
+4667751;Giornata 1;Messico vs Sudafrica;Sudafrica;Aubrey Modiba;player;5,9;77;0;0;0;0;0;0;;;;0,02;0;0,02;3;;;;;5,9
+4667751;Giornata 1;Messico vs Sudafrica;Sudafrica;Evidence Makgopa;player;6,3;13;0;0;0;0;0;0;;;;0;0,01;0,01;0;;;;;6,3
+4667751;Giornata 1;Messico vs Sudafrica;Sudafrica;Ime Okon;player;6,0;90;0;0;0;0;0;0;;;;0;0;0;8;;;;;6,0
+4667751;Giornata 1;Messico vs Sudafrica;Sudafrica;Iqraam Rayners;player;5,5;77;0;0;0;0;0;0;;;;0;0;0;1;;;;;5,5
+4667751;Giornata 1;Messico vs Sudafrica;Sudafrica;Jayden Adams;player;6,2;61;0;0;0;0;0;0;;;;0;0,06;0,06;1;;;;;6,2
+4667751;Giornata 1;Messico vs Sudafrica;Sudafrica;Khuliso Mudau;player;6,5;90;0;0;0;0;0;0;;;;0;0,01;0,01;7;;;;;6,5
+4667751;Giornata 1;Messico vs Sudafrica;Sudafrica;Lyle Foster;player;5,6;56;0;0;0;0;0;0;;;;0,04;0;0,04;0;;;;;5,6
+4667751;Giornata 1;Messico vs Sudafrica;Sudafrica;Mbekezeli Mbokazi;player;6,3;90;0;0;0;0;0;0;;;;0,01;0,05;0,06;8;;;;;6,3
+4667751;Giornata 1;Messico vs Sudafrica;Sudafrica;Nkosinathi Sibisi;player;5,8;90;0;0;1;0;0;0;;;;0;0;0;2;;;;74 giallo;5,3
+4667751;Giornata 1;Messico vs Sudafrica;Sudafrica;Oswin Appollis;player;6,3;13;0;0;0;0;0;0;;;;0;0;0;1;;;;;6,3
+4667751;Giornata 1;Messico vs Sudafrica;Sudafrica;Ronwen Williams;goalkeeper;6,4;90;0;0;0;0;0;0;2;2;0;0;0;0;4;;;;;4,4
+4667751;Giornata 1;Messico vs Sudafrica;Sudafrica;Teboho Mokoena;player;6,5;90;0;0;1;0;0;0;;;;0;0,01;0,01;3;;;;17 giallo;6,0
+4667751;Giornata 1;Messico vs Sudafrica;Sudafrica;Thalente Mbatha;player;6,2;34;0;0;0;0;0;0;;;;0;0;0;2;;;;;6,2
+4667751;Giornata 1;Messico vs Sudafrica;Sudafrica;Themba Zwane;player;4,9;23;0;0;0;1;0;0;;;;0;0;0;0;;;;84 rosso;3,9
