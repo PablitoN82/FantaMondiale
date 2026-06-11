@@ -51,6 +51,14 @@
 .worldStatsLeagueNums b{color:var(--value-blue);font-size:clamp(17px,4.2vw,22px);}
 .worldStatsTiny{font-size:clamp(13px,3.2vw,16px);color:var(--muted);line-height:1.45;margin-top:4px;display:grid;gap:2px;}
 .worldStatsTinyLine{display:block;}
+
+/* Pulizia tabellino e FantaPartite: mantiene struttura esistente */
+.worldRatingBadgeBonus{border-color:rgba(56,189,248,.75)!important;background:rgba(56,189,248,.12)!important;color:#38bdf8!important;}
+.worldRatingBadgeBonus b{color:#38bdf8!important;}
+#pageFantaPartite .resultScoreBadge{background:transparent!important;color:#38bdf8!important;border:0!important;box-shadow:none!important;font-size:28px!important;font-weight:1000!important;padding:0!important;min-width:auto!important;}
+#pageFantaPartite .fantaPlayerNameLine{display:grid!important;grid-template-columns:minmax(0,1fr) auto auto!important;align-items:center!important;gap:10px!important;}
+#pageFantaPartite .fantaPlayerFlag{width:30px!important;height:30px!important;min-width:30px!important;max-width:30px!important;max-height:30px!important;margin:0!important;}
+#pageWorldMatches .worldRatingName .flagCircle,#pageWorldMatches .worldEventMain .flagCircle,#pageWorldMatches .worldRatingsTeamTitle .flagCircle,#pageWorldMatches .worldEventTeamTitle .flagCircle{width:28px!important;height:28px!important;min-width:28px!important;max-width:28px!important;max-height:28px!important;margin:0 8px 0 0!important;}
 </style>
 <style id="fm-world-matches-stadium-tabellino-style">
 .worldCalendarMetaModern{display:grid;gap:8px;margin-top:12px;}
@@ -2572,9 +2580,11 @@ Nazionale più rappresentata: <b>${escapeHtml(normalizeTopNationText(t.topNation
   if(!hasEvent)return"";
   return hs+" - "+as;
 }function fantaPartitePlayerTotalHtml(player,resultMap){
+  const hasResults = resultMap && Object.keys(resultMap).length > 0;
+  if(!hasResults) return "";
   const r=resultMap[normalizeResultName(player.name)]||null;
-  if(!r||!String(r.total||"").trim())return"";
-  return '<span class="resultScoreBadge">'+escapeHtml(r.total)+'</span>';
+  const val = r && String(r.total || r.rating || "").trim() ? String(r.total || r.rating).trim() : "SV";
+  return '<span class="resultScoreBadge">'+escapeHtml(val)+'</span>';
 }function fantaPartiteRenderTabellino(fx){const rows=fantaPartiteResultRows(fx);if(!rows.length)return"";const goals=[];rows.forEach(r=>{const gm=String(r.goal_minutes||"").trim();if(gm)goals.push(`${escapeHtml(r.player)} ${escapeHtml(gm)}'`);const own=Number(String(r.own_goals||"0").replace(",","."))||0;if(own)goals.push(`${escapeHtml(r.player)} autogol`)});const assists=rows.filter(r=>String(r.assist_minutes||"").trim()).map(r=>`${escapeHtml(r.player)} ${escapeHtml(r.assist_minutes)}`);const cards=[];rows.forEach(r=>{if(Number(r.yellow_cards||0))cards.push(`${escapeHtml(r.player)} giallo ${escapeHtml(r.card_minutes||"")}`);if(Number(r.red_cards||0))cards.push(`${escapeHtml(r.player)} rosso ${escapeHtml(r.card_minutes||"")}`)});const keepers=rows.filter(r=>r.role_type==="goalkeeper").map(r=>`${escapeHtml(r.player)} — Parate ${escapeHtml(r.saves||"0")} · Gol subiti ${escapeHtml(r.goals_conceded||"0")}`);const ratings=rows.filter(r=>String(r.rating||"").trim()).slice().sort((a,b)=>numVal(b.rating)-numVal(a.rating)).slice(0,8).map(r=>`${escapeHtml(r.player)} ${escapeHtml(r.rating)}`);return`<div class="fantaPlayersBox"><div class="fantaPlayersTitle">Tabellino FotMob</div>${goals.length?`<div class="fantaPlayerRow"><b>Marcatori</b><div>${goals.join("<br>")}</div></div>`:""}${assists.length?`<div class="fantaPlayerRow"><b>Assist</b><div>${assists.join("<br>")}</div></div>`:""}${cards.length?`<div class="fantaPlayerRow"><b>Cartellini</b><div>${cards.join("<br>")}</div></div>`:""}${keepers.length?`<div class="fantaPlayerRow"><b>Portieri</b><div>${keepers.join("<br>")}</div></div>`:""}${ratings.length?`<div class="fantaPlayerRow"><b>Pagelle</b><div>${ratings.join("<br>")}</div></div>`:""}</div>`}function fantaPartiteRenderMatch(fx,usage){
   const home=normalizeTeamName(fx.home_team||fx.home_team_name||fx.home||""),
         away=normalizeTeamName(fx.away_team||fx.away_team_name||fx.away||""),
@@ -3084,11 +3094,34 @@ Nazionale più rappresentata: <b>${escapeHtml(normalizeTopNationText(t.topNation
 
   function playerIndexByName(){
     const idx = {};
+    function addName(name, rec){
+      const key = normResultPlayerName(name);
+      if(key && !idx[key]) idx[key] = rec;
+    }
+    try{
+      (window.FM_PLAYERS_DB||[]).forEach(function(r){
+        const team = normalizeTeamName(r.team || r.national_team || r.team_name || r.nation || "");
+        const rec = {
+          name: r.player_name || r.name || r.FIFA_player_name || [r.first_names,r.last_names].filter(Boolean).join(" ") || r.name_on_shirt || "",
+          nation: team,
+          nationality: team,
+          team_code: r.team_code || "",
+          role: r.position || r.role || ""
+        };
+        [
+          r.player_name,
+          r.name,
+          r.FIFA_player_name,
+          [r.first_names,r.last_names].filter(Boolean).join(" "),
+          r.name_on_shirt
+        ].forEach(function(n){ addName(n, rec); });
+      });
+    }catch(e){}
     try{
       if(typeof window.getAllPlayers === "function"){
         (window.getAllPlayers()||[]).forEach(function(p){
-          const key = normResultPlayerName(p.name);
-          if(key) idx[key] = p;
+          const rec = {name:p.name||"", nation:normalizeTeamName(p.nation||p.team||""), nationality:normalizeTeamName(p.nation||p.team||""), role:p.role||""};
+          addName(p.name, rec);
         });
       }
     }catch(e){}
@@ -3096,22 +3129,22 @@ Nazionale più rappresentata: <b>${escapeHtml(normalizeTopNationText(t.topNation
   }
 
   function resolveRowTeam(row, fixture, playersIdx){
-    const own = String(row && row.team || "").trim();
+    let own = String(row && row.team || "").trim();
     const home = teamName(fixture,"home"), away = teamName(fixture,"away");
-    if(own){
+    const isUnknown = !own || /^senza\s+squadra$/i.test(own) || /^unknown$/i.test(own);
+    if(!isUnknown){
       const low = own.toLowerCase();
       if(low === home.toLowerCase()) return home;
       if(low === away.toLowerCase()) return away;
-      return own;
     }
     const p = playersIdx && playersIdx[normResultPlayerName(row && row.player)];
-    const nation = String(p && (p.nation || p.nationality) || "").trim();
+    const nation = String(p && (p.nation || p.nationality || p.team) || "").trim();
     if(nation){
       if(nation.toLowerCase() === home.toLowerCase()) return home;
       if(nation.toLowerCase() === away.toLowerCase()) return away;
       return nation;
     }
-    return "";
+    return isUnknown ? "" : own;
   }
 
   function rowFlag(row, fixture, playersIdx){
@@ -3147,7 +3180,9 @@ Nazionale più rappresentata: <b>${escapeHtml(normalizeTopNationText(t.topNation
 
   function chip(label, value){
     const v = String(value ?? "").trim();
-    return v ? '<span class="worldRatingBadge"><b>'+esc(label)+'</b> '+esc(v)+'</span>' : "";
+    if(!v) return "";
+    const bonus = /^(Gol|Assist|Ammonizione|Espulsione|Autogol|Porta inviolata)$/i.test(String(label||""));
+    return '<span class="worldRatingBadge'+(bonus?' worldRatingBadgeBonus':'')+'"><b>'+esc(label)+'</b> '+esc(v)+'</span>';
   }
 
   function tableRows(rows, fixture){
