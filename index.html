@@ -2377,7 +2377,7 @@ P1. Nome Giocatore - Flag_Nation Nome Nazionale
 
 DIFENSORI
 D1. Nome Giocatore - Flag_Nation Nome Nazionale
-..."></textarea><div class="adminActions fmRegistrationActions"><button class="adminActionBtn primary" onclick="registerFormationFromAdmin()">Registra Formazione</button><button class="adminActionBtn secondary" onclick="exportRegisteredFormationsCsv()">Esporta formations.csv</button><button class="adminActionBtn danger" onclick="clearRegisteredFormations()">Svuota tutto</button></div><div class="adminResult" id="formationAdminResult">Formazioni svuotate.</div><div class="adminListTitle">Formazioni già registrate</div><div id="adminFormationsList"><div class="empty">Nessuna Formazione registrata.</div></div></div></div><div class="adminSubPage" id="adminPageRisultati"><div class="resultsAdminBox" id="adminResultsBlock"><div class="adminSectionHeader"><span class="pageTitleIcon small"><svg aria-label="Risultati" class="pageTitlePngIcon svgInlineIcon" focusable="false" role="img"><use href="#fm-icon-risultati"></use></svg></span><span>Risultati</span></div><div class="adminSectionText">Registra i risultati partendo da FotMob. Scegli prima la giornata, poi la partita, incolla Pagelle, Portieri ed Eventi e registra il match nel file unico match_results.csv.</div><div class="resultsControls"><select id="resultRoundSelect" onchange="updateResultMatchOptions()"><option value="">Nessuna giornata caricata</option></select><select id="resultMatchSelect" onchange="updateMatchResultImportPreview()"><option value="">Nessuna partita caricata</option></select></div><div class="resultsUsefulMeta" id="resultUsefulMeta"><b>Incolla le tre sezioni FotMob:</b><br/>Pagelle: <code>match_id;match;player;rating;goals;assists;xg;xa;xg_xa;def_actions;shots</code><br/>Portieri: <code>match_id;match;player;saves;goals_conceded;xgot_faced;goals_prevented...</code><br/>Eventi: <code>minute;player;event;assist</code></div><div class="resultsControls"><textarea class="adminTextarea" id="resultRatingsInput" placeholder="Incolla qui PAGELLE FotMob"></textarea><textarea class="adminTextarea" id="resultKeepersInput" placeholder="Incolla qui PORTIERI FotMob"></textarea><textarea class="adminTextarea" id="resultEventsInput" placeholder="Incolla qui EVENTI FotMob"></textarea></div><div class="resultPreview" id="resultPreview">Seleziona giornata e partita, poi incolla le tre sezioni FotMob.</div><div class="adminActions fmRegistrationActions"><button class="adminActionBtn primary" onclick="importMatchResultsFromFotMob()">Registra Risultato</button><button class="adminActionBtn secondary" onclick="downloadMatchResultsCsv()">Esporta match_results.csv</button><button class="adminActionBtn danger" onclick="clearMatchResultsDatabaseCsv()">Svuota tutto</button></div><div class="adminResult" id="resultAdminMessage"></div><textarea class="adminTextarea" id="matchResultsCsvOutput" style="display:none" aria-hidden="true"></textarea><div class="adminListTitle">Risultati già registrati</div><div class="resultsList" id="adminResultsList"><div class="empty">Nessun match importato.</div></div></div></div></div></section></div></main></div><div class="manualCopy" id="manualCopy"><b>Copia manuale</b><div style="font-size:13px;color:#555;margin-top:2px">Se il telefono blocca la copia automatica, usa i pulsanti qui sotto.</div><textarea id="manualCopyText" readonly=""></textarea><div class="manualCopyActions"><button class="manualActionBtn select" onclick="selectManualText()" type="button">Seleziona Testo</button><button class="manualActionBtn copy" onclick="copyManualText()" type="button">Copia</button><button class="manualActionBtn close" onclick="closeManualCopy()" type="button">Chiudi</button></div></div><script>window.fmNoStorage=window.fmNoStorage||{_d:Object.create(null),getItem:function(k){return Object.prototype.hasOwnProperty.call(this._d,k)?this._d[k]:""},setItem:function(k,v){this._d[k]=String(v==null?"":v)},removeItem:function(k){delete this._d[k]},clear:function(){this._d=Object.create(null)}};!function(){"use strict";try{["players","teams","groups","coaches","roster","calendar","risultati_mondiale_2026","world_results"].forEach(function(kind){fmNoStorage.removeItem("fm_database_csv_"+kind),fmNoStorage.removeItem("FANTAMONDIALE_2026_DATABASE_"+String(kind).toUpperCase())})}catch(e){}}(),window.FM_PASSWORDS=["FantaMundial26@Pablo82","FantaMondial26@Pablo82","FantaMondiale26@Pablo82"],window.fmUnlock=function(){var input=document.getElementById("password"),value=input&&input.value?input.value.trim():"",ok=-1!==window.FM_PASSWORDS.indexOf(value),err=document.getElementById("err");if(err&&(err.style.display=ok?"none":"block"),!ok)return!1;var login=document.getElementById("login"),app=document.getElementById("app");return login&&(login.style.display="none"),app&&(app.style.display="block"),setTimeout(function(){try{"function"==typeof window.init&&window.init()}catch(e){console.error("Errore init dopo login:",e)}},0),!1},window.unlock=window.fmUnlock,document.addEventListener("DOMContentLoaded",function(){var input=document.getElementById("password");input&&!input.dataset.fmEnterReady&&(input.dataset.fmEnterReady="1",input.addEventListener("keydown",function(e){"Enter"===e.key&&(e.preventDefault(),window.fmUnlock())}))});const PASSWORD="FantaMundial26@Pablo82",ALL_TEAMS=[],GROUP_TEAMS={},TEAM_FLAGS={Messico:"",Sudafrica:"","Corea del Sud":"","Repubblica Ceca":"",Cechia:"",Canada:"","Bosnia ed Erzegovina":"",Qatar:"",Svizzera:"",Brasile:"",Marocco:"",Haiti:"",Scozia:"","Stati Uniti":"",Paraguay:"",Australia:"",Turchia:"",Germania:"",Curaçao:"","Costa d'Avorio":"",Ecuador:"",Olanda:"","Paesi Bassi":"",Giappone:"",Svezia:"",Tunisia:"",Belgio:"",Egitto:"",Iran:"","Nuova Zelanda":"",Spagna:"","Capo Verde":"","Arabia Saudita":"",Uruguay:"",Francia:"",Senegal:"",Iraq:"",Norvegia:"",Argentina:"",Algeria:"",Austria:"",Giordania:"",Portogallo:"","Congo DR":"","RD Congo":"",Uzbekistan:"",Colombia:"",Inghilterra:"",Croazia:"",Ghana:"",Panama:""},FM_TEAM_FLAG_CODES={Messico:"mx",Sudafrica:"za","Corea del Sud":"kr","Repubblica Ceca":"cz",Cechia:"cz",Canada:"ca","Bosnia ed Erzegovina":"ba",Qatar:"qa",Svizzera:"ch",Brasile:"br",Marocco:"ma",Haiti:"ht",Scozia:"gb-sct","Stati Uniti":"us",Paraguay:"py",Australia:"au",Turchia:"tr",Germania:"de",Curaçao:"cw","Costa d'Avorio":"ci",Ecuador:"ec",Olanda:"nl","Paesi Bassi":"nl",Giappone:"jp",Svezia:"se",Tunisia:"tn",Belgio:"be",Egitto:"eg",Iran:"ir","Nuova Zelanda":"nz",Spagna:"es","Capo Verde":"cv","Arabia Saudita":"sa",Uruguay:"uy",Francia:"fr",Senegal:"sn",Iraq:"iq",Norvegia:"no",Argentina:"ar",Algeria:"dz",Austria:"at",Giordania:"jo",Portogallo:"pt","Congo DR":"cd","RD Congo":"cd",Uzbekistan:"uz",Colombia:"co",Inghilterra:"gb-eng",Croazia:"hr",Ghana:"gh",Panama:"pa"};function fmCircleFlagHtml(nation){const src="function"==typeof fmEnsureLocalFlagData?fmEnsureLocalFlagData(nation):"";return src?`<span class="flagCircle" aria-hidden="true"><img alt="" loading="lazy" decoding="async" src="${src}"></span>`:""}window.FM_LOCAL_FLAG_DATA={};
+..."></textarea><div class="adminActions fmRegistrationActions"><button class="adminActionBtn primary" onclick="registerFormationFromAdmin()">Registra Formazione</button><button class="adminActionBtn secondary" onclick="exportRegisteredFormationsCsv()">Esporta formations.csv</button><button class="adminActionBtn danger" onclick="clearRegisteredFormations()">Svuota tutto</button></div><div class="adminResult" id="formationAdminResult">Formazioni svuotate.</div><div class="adminListTitle">Formazioni già registrate</div><div id="adminFormationsList"><div class="empty">Nessuna Formazione registrata.</div></div></div></div><div class="adminSubPage" id="adminPageRisultati"><div class="resultsAdminBox" id="adminResultsBlock"><div class="adminSectionHeader"><span class="pageTitleIcon small"><svg aria-label="Risultati" class="pageTitlePngIcon svgInlineIcon" focusable="false" role="img"><use href="#fm-icon-risultati"></use></svg></span><span>Risultati</span></div><div class="adminSectionText">Registra i risultati incollando il CSV completo generato dal bot Telegram. Il file contiene già voti, bonus, malus e totale finale: l’HTML non ricalcola nulla, prepara soltanto il contenuto di <code>match_results.csv</code> da caricare online in <code>database/</code>.</div><div class="resultsControls"><select id="resultRoundSelect" onchange="updateResultMatchOptions()"><option value="">Nessuna giornata caricata</option></select><select id="resultMatchSelect" onchange="updateMatchResultImportPreview()"><option value="">Nessuna partita caricata</option></select></div><div class="resultsUsefulMeta" id="resultUsefulMeta"><b>Incolla il blocco completo del bot Telegram:</b><br/>Può contenere la parola <code>PAGELLE</code>, righe vuote e intestazione CSV. In fase di registrazione vengono mantenute solo intestazione e righe dati valide.</div><div class="resultsControls"><textarea class="adminTextarea" id="resultBotInput" placeholder="Incolla qui il blocco PAGELLE completo del bot Telegram"></textarea></div><div class="resultPreview" id="resultPreview">Seleziona giornata e partita, poi incolla il CSV completo del match.</div><div class="adminActions fmRegistrationActions"><button class="adminActionBtn primary" onclick="importMatchResultsFromFotMob()">Registra Risultato</button><button class="adminActionBtn secondary" onclick="downloadMatchResultsCsv()">Esporta match_results.csv</button><button class="adminActionBtn danger" onclick="clearMatchResultsDatabaseCsv()">Svuota tutto</button></div><div class="adminResult" id="resultAdminMessage"></div><textarea class="adminTextarea" id="matchResultsCsvOutput" style="display:none" aria-hidden="true"></textarea><div class="adminListTitle">Risultati già registrati</div><div class="resultsList" id="adminResultsList"><div class="empty">Nessun match importato.</div></div></div></div></div></section></div></main></div><div class="manualCopy" id="manualCopy"><b>Copia manuale</b><div style="font-size:13px;color:#555;margin-top:2px">Se il telefono blocca la copia automatica, usa i pulsanti qui sotto.</div><textarea id="manualCopyText" readonly=""></textarea><div class="manualCopyActions"><button class="manualActionBtn select" onclick="selectManualText()" type="button">Seleziona Testo</button><button class="manualActionBtn copy" onclick="copyManualText()" type="button">Copia</button><button class="manualActionBtn close" onclick="closeManualCopy()" type="button">Chiudi</button></div></div><script>window.fmNoStorage=window.fmNoStorage||{_d:Object.create(null),getItem:function(k){return Object.prototype.hasOwnProperty.call(this._d,k)?this._d[k]:""},setItem:function(k,v){this._d[k]=String(v==null?"":v)},removeItem:function(k){delete this._d[k]},clear:function(){this._d=Object.create(null)}};!function(){"use strict";try{["players","teams","groups","coaches","roster","calendar","risultati_mondiale_2026","world_results"].forEach(function(kind){fmNoStorage.removeItem("fm_database_csv_"+kind),fmNoStorage.removeItem("FANTAMONDIALE_2026_DATABASE_"+String(kind).toUpperCase())})}catch(e){}}(),window.FM_PASSWORDS=["FantaMundial26@Pablo82","FantaMondial26@Pablo82","FantaMondiale26@Pablo82"],window.fmUnlock=function(){var input=document.getElementById("password"),value=input&&input.value?input.value.trim():"",ok=-1!==window.FM_PASSWORDS.indexOf(value),err=document.getElementById("err");if(err&&(err.style.display=ok?"none":"block"),!ok)return!1;var login=document.getElementById("login"),app=document.getElementById("app");return login&&(login.style.display="none"),app&&(app.style.display="block"),setTimeout(function(){try{"function"==typeof window.init&&window.init()}catch(e){console.error("Errore init dopo login:",e)}},0),!1},window.unlock=window.fmUnlock,document.addEventListener("DOMContentLoaded",function(){var input=document.getElementById("password");input&&!input.dataset.fmEnterReady&&(input.dataset.fmEnterReady="1",input.addEventListener("keydown",function(e){"Enter"===e.key&&(e.preventDefault(),window.fmUnlock())}))});const PASSWORD="FantaMundial26@Pablo82",ALL_TEAMS=[],GROUP_TEAMS={},TEAM_FLAGS={Messico:"",Sudafrica:"","Corea del Sud":"","Repubblica Ceca":"",Cechia:"",Canada:"","Bosnia ed Erzegovina":"",Qatar:"",Svizzera:"",Brasile:"",Marocco:"",Haiti:"",Scozia:"","Stati Uniti":"",Paraguay:"",Australia:"",Turchia:"",Germania:"",Curaçao:"","Costa d'Avorio":"",Ecuador:"",Olanda:"","Paesi Bassi":"",Giappone:"",Svezia:"",Tunisia:"",Belgio:"",Egitto:"",Iran:"","Nuova Zelanda":"",Spagna:"","Capo Verde":"","Arabia Saudita":"",Uruguay:"",Francia:"",Senegal:"",Iraq:"",Norvegia:"",Argentina:"",Algeria:"",Austria:"",Giordania:"",Portogallo:"","Congo DR":"","RD Congo":"",Uzbekistan:"",Colombia:"",Inghilterra:"",Croazia:"",Ghana:"",Panama:""},FM_TEAM_FLAG_CODES={Messico:"mx",Sudafrica:"za","Corea del Sud":"kr","Repubblica Ceca":"cz",Cechia:"cz",Canada:"ca","Bosnia ed Erzegovina":"ba",Qatar:"qa",Svizzera:"ch",Brasile:"br",Marocco:"ma",Haiti:"ht",Scozia:"gb-sct","Stati Uniti":"us",Paraguay:"py",Australia:"au",Turchia:"tr",Germania:"de",Curaçao:"cw","Costa d'Avorio":"ci",Ecuador:"ec",Olanda:"nl","Paesi Bassi":"nl",Giappone:"jp",Svezia:"se",Tunisia:"tn",Belgio:"be",Egitto:"eg",Iran:"ir","Nuova Zelanda":"nz",Spagna:"es","Capo Verde":"cv","Arabia Saudita":"sa",Uruguay:"uy",Francia:"fr",Senegal:"sn",Iraq:"iq",Norvegia:"no",Argentina:"ar",Algeria:"dz",Austria:"at",Giordania:"jo",Portogallo:"pt","Congo DR":"cd","RD Congo":"cd",Uzbekistan:"uz",Colombia:"co",Inghilterra:"gb-eng",Croazia:"hr",Ghana:"gh",Panama:"pa"};function fmCircleFlagHtml(nation){const src="function"==typeof fmEnsureLocalFlagData?fmEnsureLocalFlagData(nation):"";return src?`<span class="flagCircle" aria-hidden="true"><img alt="" loading="lazy" decoding="async" src="${src}"></span>`:""}window.FM_LOCAL_FLAG_DATA={};
 window.fmCountryIdToFlagCode=function(raw){
   const original=String(raw||"").trim();
   if(!original)return"";
@@ -2801,159 +2801,123 @@ async function renderFantaPartitePage(){
     return '<details class="fantaDateBlock"><summary onclick="document.querySelectorAll(\'.fantaDateBlock[open]\').forEach(el=>{if(el!==this.parentElement)el.removeAttribute(\'open\')})"><span class="fantaDateTitle">'+escapeHtml(fantaPartiteDateIt(d))+'</span><span class="fantaDateCount">'+rows.length+' '+(rows.length===1?'partita':'partite')+'</span></summary><div class="fantaDateMatches">'+rows.map(fx=>fantaPartiteRenderMatch(fx,usage,resultsRows)).join("")+'</div></details>';
   }).join("");
 }
-function resultsStoreKey(){return"fm_database_csv_match_results"}function matchResultsHeader(){return["match_id","round_name","match","team","player","role_type","rating","minutes","goals","assists","yellow_cards","red_cards","own_goals","penalty_missed","saves","goals_conceded","clean_sheet","xg","xa","xg_xa","def_actions","shots","goal_minutes","assist_minutes","card_minutes","total"].join(";")}function matchResultsReadCsv(){return fmNoStorage.getItem("fm_database_csv_match_results")||fmNoStorage.getItem("FANTAMONDIALE_2026_DATABASE_MATCH_RESULTS")||String(document.getElementById("databaseCsvMatch_results")?.value||"")||String(document.getElementById("matchResultsCsvOutput")?.value||"")}function loadRegisteredResults(){REGISTERED_RESULTS=parseCsvGeneric(matchResultsReadCsv())}function saveRegisteredResults(){const csv=matchResultsToCsv(REGISTERED_RESULTS);fmNoStorage.setItem("fm_database_csv_match_results",csv);fmNoStorage.setItem("FANTAMONDIALE_2026_DATABASE_MATCH_RESULTS",csv);const db=document.getElementById("databaseCsvMatch_results");db&&(db.value=csv);const out=document.getElementById("matchResultsCsvOutput");out&&(out.value=csv);try{window.updateDatabaseCsvStatus&&window.updateDatabaseCsvStatus("match_results")}catch(e){}}function csvEscape(v){v=String(v??"");return /[";\n\r]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v}function csvSplitLine(line,sep){const out=[];let cur="",q=false;for(let i=0;i<line.length;i++){const ch=line[i],nx=line[i+1];if(ch==='"'){if(q&&nx==='"'){cur+='"';i++}else q=!q}else if(ch===sep&&!q){out.push(cur);cur=""}else cur+=ch}out.push(cur);return out}function parseCsvGeneric(text){text=String(text||"").replace(/^\uFEFF/,"").replace(/\r\n/g,"\n").replace(/\r/g,"\n");const lines=text.split("\n").filter(x=>x.trim());if(!lines.length)return[];const first=lines[0],sep=(first.match(/;/g)||[]).length>=(first.match(/,/g)||[]).length?";":",";const head=csvSplitLine(first,sep).map(x=>String(x||"").replace(/^\uFEFF/,"").trim());return lines.slice(1).map(line=>{const cells=csvSplitLine(line,sep),o={};head.forEach((h,i)=>o[h]=String(cells[i]??"").trim());return o}).filter(o=>Object.values(o).some(v=>String(v).trim()))}function matchResultsToCsv(rows){const head=matchResultsHeader().split(";");return[head.join(";"),...(rows||[]).map(r=>head.map(h=>csvEscape(r[h]??"")).join(";"))].join("\n")}function numVal(v){return parseFloat(String(v??"").replace(",","."))||0}function fmtScore(n){return String((Math.round(10*(parseFloat(n)||0))/10).toFixed(1)).replace(".",",")}function normalizeResultName(v){return String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"").trim()}function getAllFixturesForResults(){return parseCsvGeneric(fantaPartiteReadCsv("fixtures"))}function matchFixtureTitle(fx){const home=normalizeTeamName(fx.home_team||fx.home_team_name||fx.home||""),away=normalizeTeamName(fx.away_team||fx.away_team_name||fx.away||"");return home&&away?home+" vs "+away:String(fx.match||fx.partita||"")}function resultFixtureRoundKey(fx){return String(fx.round_code||fx.round_name||fx.round||fx.giornata||"").trim()}function resultFixtureRoundLabel(fx){return String(fx.round_name||fx.round||fx.giornata||fx.round_code||"Giornata").trim()}function setupResultsAdmin(){loadRegisteredResults();const fixtures=getAllFixturesForResults(),roundSel=document.getElementById("resultRoundSelect");if(roundSel){const cur=roundSel.value,rounds=[];fixtures.forEach(fx=>{const key=resultFixtureRoundKey(fx);if(!key)return;if(!rounds.some(r=>r.key===key))rounds.push({key,label:resultFixtureRoundLabel(fx)})});roundSel.innerHTML=rounds.length?rounds.map(r=>'<option value="'+escapeHtml(r.key)+'">'+escapeHtml(r.label)+'</option>').join(""):'<option value="">Nessuna giornata caricata</option>';roundSel.value=rounds.some(r=>r.key===cur)?cur:rounds[0]?.key||""}updateResultMatchOptions();const out=document.getElementById("matchResultsCsvOutput");out&&(out.value=matchResultsToCsv(REGISTERED_RESULTS));renderAdminResultsList();updateMatchResultImportPreview()}function updateResultMatchOptions(){const roundSel=document.getElementById("resultRoundSelect"),matchSel=document.getElementById("resultMatchSelect");if(!matchSel)return;const fixtures=getAllFixturesForResults(),round=roundSel?.value||"",cur=matchSel.value,list=fixtures.filter(fx=>!round||resultFixtureRoundKey(fx)===round);matchSel.innerHTML=list.length?list.map(fx=>{const id=String(fx.match_id||fx.id||fx.fotmob_match_id||"").trim(),date=fx.match_date||fx.date||fx.data||"",time=fx.kickoff_time||fx.time_it||fx.ora||"";return'<option value="'+escapeHtml(id)+'">'+escapeHtml([matchFixtureTitle(fx),date,time].filter(Boolean).join(" • "))+'</option>'}).join(""):'<option value="">Nessuna partita per questa giornata</option>';matchSel.value=[...matchSel.options].some(o=>o.value===cur)?cur:matchSel.options[0]?.value||"";updateMatchResultImportPreview()}function findFixtureByMatchId(id){return getAllFixturesForResults().find(fx=>String(fx.match_id||fx.id||fx.fotmob_match_id||"").trim()===String(id||"").trim())||null}function playersIndexForResults(){
-  const idx={};
-  function add(name, rec){
-    const key=normalizeResultName(name);
-    if(key && !idx[key]) idx[key]=rec;
-  }
-  try{
-    (window.FM_PLAYERS_DB||[]).forEach(function(r){
-      const team=normalizeTeamName(r.team||r.national_team||r.team_name||r.nation||"");
-      const role=resultRoleType(r.position||r.role||"");
-      const primary=r.player_name||r.name||r.FIFA_player_name||[r.first_names,r.last_names].filter(Boolean).join(" ")||r.name_on_shirt||"";
-      const rec={team:team,team_code:r.team_code||"",role:role,name:primary};
-      [r.player_name,r.name,r.FIFA_player_name,[r.first_names,r.last_names].filter(Boolean).join(" "),r.name_on_shirt].forEach(function(n){add(n,rec)});
-    });
-  }catch(e){}
-  try{
-    getAllPlayers().forEach(function(p){
-      const rec={team:normalizeTeamName(p.nation||p.team||""),team_code:p.team_code||"",role:resultRoleType(p.role||""),name:p.name||""};
-      add(p.name,rec);
-    });
-  }catch(e){}
-  return idx;
-}function inferResultTeam(player,fx,idx){const rec=idx[normalizeResultName(player)]||{};if(rec.team)return normalizeTeamName(rec.team);return""}function resultRoleType(role){return normalizeTeamName(role).includes("portier")?"goalkeeper":"player"}function updateMatchResultImportPreview(){const box=document.getElementById("resultPreview"),id=document.getElementById("resultMatchSelect")?.value||"";if(!box)return;if(!id){box.textContent="Seleziona una partita da fixtures.csv.";return}const fx=findFixtureByMatchId(id);box.innerHTML=fx?`<b>${escapeHtml(matchFixtureTitle(fx))}</b><br>${escapeHtml(fx.round_name||"")} ${escapeHtml(fx.match_date||fx.date||"")} ${escapeHtml(fx.kickoff_time||fx.time_it||"")}<br>Incolla Pagelle, Portieri ed Eventi FotMob, poi premi <b>Elabora match</b>.`:"Partita non trovata in fixtures.csv."}function clearMatchResultInputs(){["resultRatingsInput","resultKeepersInput","resultEventsInput"].forEach(id=>{const el=document.getElementById(id);el&&(el.value="")});updateMatchResultImportPreview()}function ensureResultPlayer(map,name,matchId,match,fx,idx){const key=normalizeResultName(name);if(!key)return null;if(!map[key]){const rec=idx[key]||{};map[key]={match_id:matchId,round_name:fx?.round_name||fx?.fase||fx?.stage||"",match:match||matchFixtureTitle(fx),team:inferResultTeam(name,fx,idx),player:rec.name||name,role_type:resultRoleType(rec.role),rating:"",minutes:"",goals:"0",assists:"0",yellow_cards:"0",red_cards:"0",own_goals:"0",penalty_missed:"0",saves:"",goals_conceded:"",clean_sheet:"",xg:"",xa:"",xg_xa:"",def_actions:"",shots:"",goal_minutes:"",assist_minutes:"",card_minutes:"",total:""}}return map[key]}function importMatchResultsFromFotMob(){
+function resultsStoreKey(){return"fm_database_csv_match_results"}
+function matchResultsHeader(){return["match_id","match","home_team","away_team","home_score","away_score","score_str","status","penalty_score","winner_after_penalties","team","player","rating","minutes","goals","assists","yellow_cards","red_cards","own_goals","penalty_missed","penalties_saved","saves","goals_conceded","clean_sheet","draw_decisive_goal","win_decisive_goal","goal_minutes","assist_minutes","card_minutes","penalty_shootout_goals","penalty_shootout_missed","total"].join(";")}
+function matchResultsReadCsv(){return fmNoStorage.getItem("fm_database_csv_match_results")||fmNoStorage.getItem("FANTAMONDIALE_2026_DATABASE_MATCH_RESULTS")||String(document.getElementById("databaseCsvMatch_results")?.value||"")||String(document.getElementById("matchResultsCsvOutput")?.value||"")}
+function loadRegisteredResults(){REGISTERED_RESULTS=parseCsvGeneric(cleanBotMatchResultsText(matchResultsReadCsv()))}
+function saveRegisteredResults(){const csv=matchResultsToCsv(REGISTERED_RESULTS);fmNoStorage.setItem("fm_database_csv_match_results",csv);fmNoStorage.setItem("FANTAMONDIALE_2026_DATABASE_MATCH_RESULTS",csv);const db=document.getElementById("databaseCsvMatch_results");db&&(db.value=csv);const out=document.getElementById("matchResultsCsvOutput");out&&(out.value=csv);try{window.updateDatabaseCsvStatus&&window.updateDatabaseCsvStatus("match_results")}catch(e){}}
+function csvEscape(v){v=String(v??"");return/[";\n\r]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v}
+function cleanBotMatchResultsText(text){
+  const raw=String(text||"").replace(/^\uFEFF/,"").replace(/\r\n/g,"\n").replace(/\r/g,"\n");
+  const lines=raw.split("\n").map(l=>l.trim()).filter(Boolean);
+  const headerIndex=lines.findIndex(l=>/^match_id\s*;/i.test(l));
+  if(headerIndex<0)return lines.filter(l=>!/^PAGELLE$/i.test(l)).join("\n");
+  return lines.slice(headerIndex).filter((l,i)=>i===0||!/^match_id\s*;/i.test(l)).join("\n");
+}
+function matchResultsToCsv(rows){const head=matchResultsHeader().split(";");return[head.join(";"),...(rows||[]).map(r=>head.map(h=>csvEscape(r[h]??"")).join(";"))].join("\n")}
+function numVal(v){return parseFloat(String(v??"").replace(",","."))||0}
+function fmtScore(n){return String((Math.round(10*(parseFloat(n)||0))/10).toFixed(1)).replace(".",",")}
+function normalizeResultName(v){return String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"").trim()}
+function getAllFixturesForResults(){return parseCsvGeneric(fantaPartiteReadCsv("fixtures"))}
+function resultFixtureId(fx){return String(fx.match_id||fx.id||fx.fotmob_match_id||"").trim()}
+function matchFixtureTitle(fx){const home=normalizeTeamName(fx.home_team||fx.home_team_name||fx.home||""),away=normalizeTeamName(fx.away_team||fx.away_team_name||fx.away||"");return home&&away?home+" vs "+away:String(fx.match||fx.partita||"")}
+function resultFixtureRoundKey(fx){return String(fx.round_code||fx.round_name||fx.round||fx.giornata||"").trim()}
+function resultFixtureRoundLabel(fx){return String(fx.round_name||fx.round||fx.giornata||fx.round_code||"Giornata").trim()}
+function registeredResultMatchIds(){loadRegisteredResults();const ids=new Set();REGISTERED_RESULTS.forEach(r=>{const id=String(r.match_id||"").trim();if(id)ids.add(id)});return ids}
+function firstUnregisteredFixture(fixtures,round){const done=registeredResultMatchIds();return fixtures.find(fx=>(!round||resultFixtureRoundKey(fx)===round)&&!done.has(resultFixtureId(fx)))||fixtures.find(fx=>!done.has(resultFixtureId(fx)))||fixtures[0]||null}
+function setupResultsAdmin(){loadRegisteredResults();const fixtures=getAllFixturesForResults(),roundSel=document.getElementById("resultRoundSelect");const next=firstUnregisteredFixture(fixtures,"");if(roundSel){const rounds=[];fixtures.forEach(fx=>{const key=resultFixtureRoundKey(fx);if(!key)return;if(!rounds.some(r=>r.key===key))rounds.push({key,label:resultFixtureRoundLabel(fx)})});roundSel.innerHTML=rounds.length?rounds.map(r=>'<option value="'+escapeHtml(r.key)+'">'+escapeHtml(r.label)+'</option>').join(""):'<option value="">Nessuna giornata caricata</option>';roundSel.value=next?resultFixtureRoundKey(next):(rounds[0]?.key||"")}updateResultMatchOptions(next?resultFixtureId(next):"");const out=document.getElementById("matchResultsCsvOutput");out&&(out.value=matchResultsToCsv(REGISTERED_RESULTS));renderAdminResultsList();updateMatchResultImportPreview()}
+function updateResultMatchOptions(preferredId){const roundSel=document.getElementById("resultRoundSelect"),matchSel=document.getElementById("resultMatchSelect");if(!matchSel)return;const fixtures=getAllFixturesForResults(),round=roundSel?.value||"",cur=preferredId||matchSel.value,list=fixtures.filter(fx=>!round||resultFixtureRoundKey(fx)===round);matchSel.innerHTML=list.length?list.map(fx=>{const id=resultFixtureId(fx),date=fx.match_date||fx.date||fx.data||"",time=fx.kickoff_time||fx.time_it||fx.ora||"",done=registeredResultMatchIds().has(id);return'<option value="'+escapeHtml(id)+'">'+escapeHtml([matchFixtureTitle(fx),date,time,done?"registrata":"da registrare"].filter(Boolean).join(" • "))+'</option>'}).join(""):'<option value="">Nessuna partita per questa giornata</option>';const next=firstUnregisteredFixture(list,round);matchSel.value=[...matchSel.options].some(o=>o.value===cur)?cur:(next?resultFixtureId(next):(matchSel.options[0]?.value||""));updateMatchResultImportPreview()}
+function findFixtureByMatchId(id){return getAllFixturesForResults().find(fx=>resultFixtureId(fx)===String(id||"").trim())||null}
+function updateMatchResultImportPreview(){const box=document.getElementById("resultPreview"),id=document.getElementById("resultMatchSelect")?.value||"";if(!box)return;if(!id){box.textContent="Seleziona una partita da fixtures.csv.";return}const fx=findFixtureByMatchId(id);box.innerHTML=fx?`<b>${escapeHtml(matchFixtureTitle(fx))}</b><br>${escapeHtml(fx.round_name||"")} ${escapeHtml(fx.match_date||fx.date||"")} ${escapeHtml(fx.kickoff_time||fx.time_it||"")}<br>Incolla il CSV completo del bot Telegram e premi <b>Registra Risultato</b>.`:"Partita non trovata in fixtures.csv."}
+function clearMatchResultInputs(){const el=document.getElementById("resultBotInput");el&&(el.value="");updateMatchResultImportPreview()}
+function importMatchResultsFromFotMob(){
   const matchId=document.getElementById("resultMatchSelect")?.value||"";
-  if(!matchId) return showAlert("Seleziona la partita da fixtures.csv.");
+  if(!matchId)return showAlert("Seleziona la partita da fixtures.csv.");
   const fx=findFixtureByMatchId(matchId);
-  if(!fx) return showAlert("Partita non trovata in fixtures.csv.");
-  const ratings=parseCsvGeneric(document.getElementById("resultRatingsInput")?.value||""),
-        keepers=parseCsvGeneric(document.getElementById("resultKeepersInput")?.value||""),
-        events=parseCsvGeneric(document.getElementById("resultEventsInput")?.value||"");
-  if(!ratings.length&&!keepers.length&&!events.length) return showAlert("Incolla almeno una sezione FotMob.");
-  const idx=playersIndexForResults(),match=matchFixtureTitle(fx),map={};
-
-  ratings.forEach(function(r){
-    const p=ensureResultPlayer(map,r.player||r.giocatore||r.nome,matchId,match,fx,idx);
-    if(!p) return;
-    p.rating=r.rating||r.voto||"";
-    const rawMinutes=r.minutes||r.minuti||r.min||"";
-    const rawGoals=r.goals||r.goal||r.gol||"0";
-    const rawAssists=r.assists||r.assist||"0";
-    const rawXg=r.xg||r.xG||"";
-    const rawXa=r.xa||r.xA||"";
-    const rawXgXa=r.xg_xa||r["xG + xA"]||r["xg+xa"]||"";
-    const rawDef=r.def_actions||r["Azioni difensive"]||"";
-    const rawShots=r.shots||r["Tiri totali"]||"";
-
-    if(rawMinutes){
-      p.minutes=rawMinutes;
-      p.xg=rawXg; p.xa=rawXa; p.xg_xa=rawXgXa; p.def_actions=rawDef; p.shots=rawShots;
-    }else if(numVal(rawGoals)>10){
-      p.minutes=rawGoals;
-      p.xg=rawXa; p.xa=rawXgXa; p.xg_xa=rawDef; p.def_actions=rawShots; p.shots=r.extra||"";
-    }else{
-      p.xg=rawXg; p.xa=rawXa; p.xg_xa=rawXgXa; p.def_actions=rawDef; p.shots=rawShots;
-    }
-    /* Gol e assist ufficiali vengono ricostruiti dagli EVENTI, non dalla tabella pagelle. */
-    p.goals="0";
-    p.assists="0";
-  });
-
-  keepers.forEach(function(r){
-    const p=ensureResultPlayer(map,r.player||r.giocatore||r.nome,matchId,match,fx,idx);
-    if(!p) return;
-    p.role_type="goalkeeper";
-    p.saves=r.saves||r.parate||"";
-    p.goals_conceded=r.goals_conceded||r["Gol subiti"]||"";
-    p.clean_sheet=String(numVal(p.goals_conceded)===0?1:0);
-  });
-
-  events.forEach(function(e){
-    const player=e.player||e.giocatore||e.nome||"";
-    const assist=e.assist||"";
-    const event=String(e.event||e.event_type||e.type||"").toUpperCase();
-    const minute=e.minute||e.minuto||"";
-    const p=ensureResultPlayer(map,player,matchId,match,fx,idx);
-    if(p){
-      if(event.includes("YELLOW")){
-        p.yellow_cards=String(numVal(p.yellow_cards)+1);
-        p.card_minutes=[p.card_minutes,minute+" giallo"].filter(Boolean).join(", ");
-      }else if(event.includes("RED")){
-        p.red_cards=String(numVal(p.red_cards)+1);
-        p.card_minutes=[p.card_minutes,minute+" rosso"].filter(Boolean).join(", ");
-      }else if(event.includes("OWN")){
-        p.own_goals=String(numVal(p.own_goals)+1);
-        p.goal_minutes=[p.goal_minutes,minute+" autogol"].filter(Boolean).join(", ");
-      }else if(event.includes("GOAL")){
-        p.goals=String(numVal(p.goals)+1);
-        p.goal_minutes=[p.goal_minutes,minute].filter(Boolean).join(", ");
-      }
-    }
-    if(assist){
-      const a=ensureResultPlayer(map,assist,matchId,match,fx,idx);
-      if(a){
-        a.assists=String(numVal(a.assists)+1);
-        a.assist_minutes=[a.assist_minutes,minute].filter(Boolean).join(", ");
-      }
-    }
-  });
-
-  Object.values(map).forEach(function(p){
-    const rating=numVal(p.rating),goals=numVal(p.goals),ass=numVal(p.assists),yel=numVal(p.yellow_cards),red=numVal(p.red_cards),own=numVal(p.own_goals),pm=numVal(p.penalty_missed),gc=numVal(p.goals_conceded),cs=numVal(p.clean_sheet);
-    let total=rating+goals*3+ass-yel*.5-red-own*2-pm*3;
-    if(p.role_type==="goalkeeper") total+=cs-gc;
-    p.total=rating?fmtScore(total):"";
-  });
+  if(!fx)return showAlert("Partita non trovata in fixtures.csv.");
+  const raw=document.getElementById("resultBotInput")?.value||"";
+  const cleaned=cleanBotMatchResultsText(raw);
+  const rows=parseCsvGeneric(cleaned);
+  if(!rows.length)return showAlert("Incolla il blocco PAGELLE completo generato dal bot Telegram.");
+  const required=["match_id","player","team","rating","total"];
+  const missing=required.filter(h=>!(h in rows[0]));
+  if(missing.length)return showAlert("CSV non valido: mancano le colonne "+missing.join(", ")+".");
+  const pastedIds=[...new Set(rows.map(r=>String(r.match_id||"").trim()).filter(Boolean))];
+  if(pastedIds.length&&(!pastedIds.includes(String(matchId))||pastedIds.length>1))return showAlert("Il match_id incollato non corrisponde alla partita selezionata.");
   loadRegisteredResults();
-  REGISTERED_RESULTS=REGISTERED_RESULTS.filter(r=>String(r.match_id)!==String(matchId));
-  REGISTERED_RESULTS=REGISTERED_RESULTS.concat(Object.values(map).sort((a,b)=>(a.team||"").localeCompare(b.team||"","it")||(a.player||"").localeCompare(b.player||"","it")));
+  REGISTERED_RESULTS=REGISTERED_RESULTS.filter(r=>String(r.match_id||"").trim()!==String(matchId));
+  const normalized=rows.map(function(r){const o={};matchResultsHeader().split(";").forEach(h=>o[h]=String(r[h]??"").trim());o.match_id=String(matchId);o.match=o.match||matchFixtureTitle(fx);o.home_team=o.home_team||normalizeTeamName(fx.home_team||fx.home||"");o.away_team=o.away_team||normalizeTeamName(fx.away_team||fx.away||"");return o;});
+  REGISTERED_RESULTS=REGISTERED_RESULTS.concat(normalized);
   saveRegisteredResults();
+  clearMatchResultInputs();
   renderAdminResultsList();
   renderPublicResults();
-  const msg=document.getElementById("resultAdminMessage");
-  msg&&(msg.innerHTML=`Match importato: <b>${escapeHtml(match)}</b>. Righe generate: <b>${Object.keys(map).length}</b>.`);
   try{const root=document.getElementById("worldMatchesByDate");root&&(root.dataset.loaded="");window.renderWorldMatchesPage&&window.renderWorldMatchesPage(true)}catch(e){}
-}function copyMatchResultsCsv(){const csv=String(document.getElementById("matchResultsCsvOutput")?.value||matchResultsToCsv(REGISTERED_RESULTS));const box=document.createElement("textarea");box.value=csv;document.body.appendChild(box);box.select();document.execCommand("copy");box.remove();showAlert("match_results.csv copiato negli appunti.")}function saveMatchResultsDatabaseCsv(){loadRegisteredResults();saveRegisteredResults();showAlert("match_results.csv salvato nel Database locale. Per GitHub, copia/scarica il file e mettilo in Database/match_results.csv.")}function downloadMatchResultsCsv(){const csv=String(document.getElementById("matchResultsCsvOutput")?.value||matchResultsToCsv(REGISTERED_RESULTS));const blob=new Blob([csv],{type:"text/csv;charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="match_results.csv";document.body.appendChild(a);a.click();a.remove()}function clearMatchResultsDatabaseCsv(){if(!confirm("Vuoi svuotare tutto match_results.csv?"))return;REGISTERED_RESULTS=[];saveRegisteredResults();renderAdminResultsList();renderPublicResults()}function renderAdminResultsList(){loadRegisteredResults();const list=document.getElementById("adminResultsList");if(!list)return;if(!REGISTERED_RESULTS.length){list.innerHTML='<div class="empty">Nessun match importato.</div>';return}const by={};REGISTERED_RESULTS.forEach(r=>{const id=r.match_id||"senza_id";(by[id]||(by[id]={match:r.match||id,rows:[]})).rows.push(r)});list.innerHTML=Object.keys(by).map(id=>`<div class="resultRowCard"><div class="resultRowTop"><div><div class="resultPlayerName">${escapeHtml(by[id].match)}</div><div class="resultPlayerMeta">Match ID: ${escapeHtml(id)} • Giocatori: ${by[id].rows.length}</div></div><button class="deleteBtn" onclick="deleteResultEntry('${escapeHtml(id)}')">Elimina match</button></div></div>`).join("")}async function renderPublicResults(){
+  try{window.renderFantaPartitePage&&window.renderFantaPartitePage()}catch(e){}
+  const msg=document.getElementById("resultAdminMessage");msg&&(msg.innerHTML=`Match registrato: <b>${escapeHtml(matchFixtureTitle(fx))}</b>. Righe importate: <b>${normalized.length}</b>. Scarica <b>match_results.csv</b> e caricalo in <b>database/</b> su GitHub.`);
+  const fixtures=getAllFixturesForResults(),next=firstUnregisteredFixture(fixtures,"");const roundSel=document.getElementById("resultRoundSelect");if(next&&roundSel)roundSel.value=resultFixtureRoundKey(next);updateResultMatchOptions(next?resultFixtureId(next):"");
+}
+function copyMatchResultsCsv(){const csv=String(document.getElementById("matchResultsCsvOutput")?.value||matchResultsToCsv(REGISTERED_RESULTS));const box=document.createElement("textarea");box.value=csv;document.body.appendChild(box);box.select();document.execCommand("copy");box.remove();showAlert("match_results.csv copiato negli appunti.")}
+function saveMatchResultsDatabaseCsv(){loadRegisteredResults();saveRegisteredResults();showAlert("match_results.csv preparato. Per GitHub scarica il file e caricalo in database/match_results.csv.")}
+function downloadMatchResultsCsv(){const csv=String(document.getElementById("matchResultsCsvOutput")?.value||matchResultsToCsv(REGISTERED_RESULTS));const blob=new Blob([csv],{type:"text/csv;charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="match_results.csv";document.body.appendChild(a);a.click();a.remove()}
+function clearMatchResultsDatabaseCsv(){if(!confirm("Vuoi svuotare tutto match_results.csv?"))return;REGISTERED_RESULTS=[];saveRegisteredResults();renderAdminResultsList();renderPublicResults();setupResultsAdmin()}
+function renderAdminResultsList(){loadRegisteredResults();const list=document.getElementById("adminResultsList");if(!list)return;if(!REGISTERED_RESULTS.length){list.innerHTML='<div class="empty">Nessun match importato.</div>';return}const by={};REGISTERED_RESULTS.forEach(r=>{const id=r.match_id||"senza_id";(by[id]||(by[id]={match:r.match||id,rows:[]})).rows.push(r)});list.innerHTML=Object.keys(by).map(id=>`<div class="resultRowCard"><div class="resultRowTop"><div><div class="resultPlayerName">${escapeHtml(by[id].match)}</div><div class="resultPlayerMeta">Match ID: ${escapeHtml(id)} • Giocatori: ${by[id].rows.length}</div></div><button class="deleteBtn" onclick="deleteResultEntry('${escapeHtml(id)}')">Elimina match</button></div></div>`).join("")}
+async function renderPublicResults(){
   const grid=document.getElementById("resultsPublicGrid");
   if(!grid)return;
   grid.innerHTML='<div class="empty">Caricamento Risultati dai CSV...</div>';
 
-  let formationsCsv="", playersCsv="", resultsCsv="";
+  let formationsCsv="", playersCsv="", resultsCsv="", fixturesCsv="";
   try{
-    formationsCsv=await fantaPartiteFetchCsv("formations");
-    playersCsv=await fantaPartiteFetchCsv("players");
-    resultsCsv=await fantaPartiteFetchCsv("match_results");
+    [formationsCsv,playersCsv,resultsCsv,fixturesCsv]=await Promise.all([fantaPartiteFetchCsv("formations"),fantaPartiteFetchCsv("players"),fantaPartiteFetchCsv("match_results"),fantaPartiteFetchCsv("fixtures")]);
   }catch(e){
     formationsCsv=fantaPartiteReadCsv("formations");
     playersCsv=fantaPartiteReadCsv("players");
     resultsCsv=fantaPartiteReadCsv("match_results");
+    fixturesCsv=fantaPartiteReadCsv("fixtures");
   }
 
   const playersIndex=fantaPartiteBuildPlayersIndex(fantaPartiteParseCsv(playersCsv));
   const formations=fantaPartiteParseFormationsCsv(formationsCsv,playersIndex);
-  const resultRows=fantaPartiteParseCsv(resultsCsv);
+  const resultRows=fantaPartiteParseCsv(cleanBotMatchResultsText(resultsCsv));
+  const fixtures=fantaPartiteParseCsv(fixturesCsv);
 
   if(!formations.length){grid.innerHTML='<div class="empty">Nessuna Formazione registrata.</div>';return}
 
-  const resultIndex={};
-  const resultIndexByPlayer={};
+  const resultByMatchPlayer={};
+  const resultByPlayer={};
   resultRows.forEach(function(r){
-    const roundKey=fantaPartiteRoundKey(r.round_name||r.round||r.giornata||"");
+    const matchId=String(r.match_id||"").trim();
     const playerKey=normalizeResultName(r.player||r.player_name||r.giocatore||"");
-    if(playerKey){
-      if(roundKey) resultIndex[roundKey+"|"+playerKey]=r;
-      if(!resultIndexByPlayer[playerKey]) resultIndexByPlayer[playerKey]=r;
-    }
+    if(!playerKey)return;
+    if(matchId)resultByMatchPlayer[matchId+"|"+playerKey]=r;
+    if(!resultByPlayer[playerKey])resultByPlayer[playerKey]=r;
   });
 
-  function scoreRow(roundKey, playerName){
-    const key=normalizeResultName(playerName);
-    return resultIndex[roundKey+"|"+key]||resultIndexByPlayer[key]||null;
+  const fixturesByRound={};
+  fixtures.forEach(function(fx){
+    const key=fantaPartiteRoundKey(fx.round_code||fx.round_name||fx.round||fx.giornata||"");
+    if(!key)return;
+    (fixturesByRound[key]||(fixturesByRound[key]=[])).push(fx);
+  });
+
+  function fixtureForPlayer(roundKey,p){
+    const nation=normalizeTeamName(p.nation||p.dbNation||"");
+    const list=fixturesByRound[roundKey]||[];
+    return list.find(function(fx){
+      const home=normalizeTeamName(fx.home_team||fx.home_team_name||fx.home||"");
+      const away=normalizeTeamName(fx.away_team||fx.away_team_name||fx.away||"");
+      return home===nation||away===nation;
+    })||null;
   }
-  function scoreForPlayer(roundKey, playerName){
-    const r=scoreRow(roundKey,playerName);
+  function scoreRow(roundKey,p){
+    const key=normalizeResultName(p.dbPlayerName||p.playerName||p.name||"");
+    const fx=fixtureForPlayer(roundKey,p);
+    const matchId=fx?String(fx.match_id||fx.id||fx.fotmob_match_id||"").trim():"";
+    return (matchId&&resultByMatchPlayer[matchId+"|"+key])||resultByPlayer[key]||null;
+  }
+  function scoreForPlayer(roundKey,p){
+    const r=scoreRow(roundKey,p);
     if(!r)return "SV";
     return String(r.total||r.rating||"SV").trim()||"SV";
   }
@@ -2961,7 +2925,7 @@ function resultsStoreKey(){return"fm_database_csv_match_results"}function matchR
     const name=escapeHtml(p.name||p.playerName||"");
     const nation=normalizeTeamName(p.nation||p.dbNation||"");
     const slot=escapeHtml(p.slot||"");
-    const score=escapeHtml(scoreForPlayer(roundKey,p.dbPlayerName||p.playerName||p.name));
+    const score=escapeHtml(scoreForPlayer(roundKey,p));
     return '<div class="resultsFormationPlayer"><div class="resultsFormationPlayerMain"><span class="resultsFormationSlot">'+slot+'</span><span class="resultsFormationName">'+name+'</span>'+fmCircleFlagHtml(nation)+'</div><span class="resultsFormationVote">'+score+'</span></div>';
   }
   function formationBody(f, roundKey){
@@ -2992,7 +2956,7 @@ function resultsStoreKey(){return"fm_database_csv_match_results"}function matchR
       const players=f.players||[];
       let total=0,hasScore=false;
       players.forEach(function(p){
-        const v=scoreForPlayer(key,p.dbPlayerName||p.playerName||p.name);
+        const v=scoreForPlayer(key,p);
         if(v!=="SV"&&String(v).trim()!==""){
           total+=numVal(v);
           hasScore=true;
@@ -3001,7 +2965,8 @@ function resultsStoreKey(){return"fm_database_csv_match_results"}function matchR
       return '<details class="resultsFormationCard"><summary><span>'+escapeHtml(f.teamName||"Squadra")+'</span><span class="resultsFormationTotal">'+(hasScore?fmtScore(total):'SV')+'</span></summary><div class="resultsFormationBody">'+formationBody(f,key)+'</div></details>';
     }).join("")+'</div></details>';
   }).join("")||'<div class="empty">Nessun risultato pubblicato al momento.</div>';
-}function deleteResultEntry(id){loadRegisteredResults();const rows=REGISTERED_RESULTS.filter(r=>String(r.match_id)===String(id));if(!rows.length)return;if(confirm(`Vuoi eliminare il match "${rows[0].match||id}" da match_results.csv?`)){REGISTERED_RESULTS=REGISTERED_RESULTS.filter(r=>String(r.match_id)!==String(id));saveRegisteredResults();renderAdminResultsList();renderPublicResults()}}function editResultEntry(id){return}function resetResultEntry(){clearMatchResultInputs()}function clearResultsForCurrentRound(){clearMatchResultsDatabaseCsv()}function exportRegisteredTeamsHtml(){loadRegisteredTeams(),loadRegisteredFormations(),loadRegisteredResults();let html=document.documentElement.outerHTML;const data="let REGISTERED_TEAMS = "+JSON.stringify(REGISTERED_TEAMS,null,2)+"; // __REGISTERED_TEAMS_DATA__",formationData="let REGISTERED_FORMATIONS = "+JSON.stringify(REGISTERED_FORMATIONS,null,2)+"; // __REGISTERED_FORMATIONS_DATA__",resultsData="let REGISTERED_RESULTS = "+JSON.stringify(REGISTERED_RESULTS,null,2)+"; // __REGISTERED_RESULTS_DATA__";html=html.replace(/let REGISTERED_TEAMS\s*=\s*[\s\S]*?;\s*\/\/ __REGISTERED_TEAMS_DATA__/,data),html=html.replace(/let REGISTERED_FORMATIONS\s*=\s*[\s\S]*?;\s*\/\/ __REGISTERED_FORMATIONS_DATA__/,formationData),html=html.replace(/let REGISTERED_RESULTS\s*=\s*[\s\S]*?;\s*\/\/ __REGISTERED_RESULTS_DATA__/,resultsData),html=resetHtmlLocksBeforeExport(html),html="<!doctype html>\n"+html;const blob=new Blob([html],{type:"text/html;charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(blob),a.download="index_fantamondiale_aggiornato.html",document.body.appendChild(a),a.click(),document.body.removeChild(a),URL.revokeObjectURL(a.href),showAlert("HTML aggiornato esportato con Iscrizioni, Formazioni e Risultati salvati. Le password e i blocchi restano attivi.")}document.addEventListener("input",function(e){e.target&&"resultVote"===e.target.id&&updateResultPreview()}),document.addEventListener("change",function(e){e.target&&"resultPlayer"===e.target.id&&updateResultPreview()}),window.addEventListener("beforeunload",function(e){isDirty&&hasMeaningfulChanges()&&(e.preventDefault(),e.returnValue="")}),window.fmEnhanceIcons=function(){return!1},function(){function fmForceCreaSquadraLabels(){var title=document.querySelector("#pageTeam .teamIntroTitle");title&&(title.innerHTML='<svg aria-hidden="true" class="fmIcon"><use href="#fm-icon-crea-squadra"></use></svg><span>Crea Squadra</span>');var label=document.querySelector('label[for="fantasyTeamName"]');label&&(label.textContent="Scegli il nome da dare alla tua Squadra");var menu=document.getElementById("menuTeam");if(menu){var icon=menu.querySelector(".appMenuIcon");menu.innerHTML="",icon&&menu.appendChild(icon),menu.appendChild(document.createTextNode("Crea Squadra"))}}document.addEventListener("DOMContentLoaded",fmForceCreaSquadraLabels),setTimeout(fmForceCreaSquadraLabels,0),setTimeout(fmForceCreaSquadraLabels,300)}(),function(){function fixCreaSquadraHeaderIcon(){var title=document.querySelector("#pageTeam .teamIntroTitle");title&&(title.classList.add("pageTitleWithPng"),title.innerHTML='<span class="pageTitleIcon"><svg class="pageTitlePngIcon svgInlineIcon" role="img" aria-label="Crea Squadra" focusable="false"><use href="#fm-icon-crea-squadra"></use></svg></span><span>Crea Squadra</span>');var label=document.querySelector('label[for="fantasyTeamName"]');label&&(label.textContent="Scegli il nome da dare alla tua Squadra")}document.addEventListener("DOMContentLoaded",fixCreaSquadraHeaderIcon),setTimeout(fixCreaSquadraHeaderIcon,0),setTimeout(fixCreaSquadraHeaderIcon,300),setTimeout(fixCreaSquadraHeaderIcon,900);var oldShowPage=window.showPage;"function"!=typeof oldShowPage||oldShowPage.__fmCreaSquadraIconFixed||(window.showPage=function(){var res=oldShowPage.apply(this,arguments);return setTimeout(fixCreaSquadraHeaderIcon,30),res},window.showPage.__fmCreaSquadraIconFixed=!0)}(),function(){"use strict";const K1=k=>"FANTAMONDIALE_2026_DATABASE_"+String(k||"").toUpperCase(),K2=k=>"fm_database_csv_"+String(k||"").toLowerCase(),KINDS=["players","teams","groups","coaches","fixtures","match_results"],ROLES=["Portieri","Difensori","Centrocampisti","Attaccanti"],ROLE_MAP={GK:"Portieri",P:"Portieri",PORTIERE:"Portieri",PORTIERI:"Portieri",GOALKEEPER:"Portieri",DEF:"Difensori",D:"Difensori",DIFENSORE:"Difensori",DIFENSORI:"Difensori",DF:"Difensori",MID:"Centrocampisti",C:"Centrocampisti",CENTROCAMPISTA:"Centrocampisti",CENTROCAMPISTI:"Centrocampisti",MF:"Centrocampisti",FWD:"Attaccanti",A:"Attaccanti",ATTACCANTE:"Attaccanti",ATTACCANTI:"Attaccanti",FW:"Attaccanti"},TEAM_BY_ID=window.TEAM_NAME_BY_ID||{};function q(id){return document.getElementById(id)}function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}function stripBom(s){return String(s||"").replace(/^\ufeff/,"")}function norm(s){return stripBom(s).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toUpperCase().replace(/[’'`´.]/g,"").replace(/&/g,"E").replace(/[^A-Z0-9]+/g,"").trim()}function canon(s){return"function"==typeof window.fmCanonicalTeamName?window.fmCanonicalTeamName(s):String(s||"").trim()}function read(kind){
+}
+function deleteResultEntry(id){loadRegisteredResults();const rows=REGISTERED_RESULTS.filter(r=>String(r.match_id)===String(id));if(!rows.length)return;if(confirm(`Vuoi eliminare il match "${rows[0].match||id}" da match_results.csv?`)){REGISTERED_RESULTS=REGISTERED_RESULTS.filter(r=>String(r.match_id)!==String(id));saveRegisteredResults();renderAdminResultsList();renderPublicResults()}}function editResultEntry(id){return}function resetResultEntry(){clearMatchResultInputs()}function clearResultsForCurrentRound(){clearMatchResultsDatabaseCsv()}function exportRegisteredTeamsHtml(){loadRegisteredTeams(),loadRegisteredFormations(),loadRegisteredResults();let html=document.documentElement.outerHTML;const data="let REGISTERED_TEAMS = "+JSON.stringify(REGISTERED_TEAMS,null,2)+"; // __REGISTERED_TEAMS_DATA__",formationData="let REGISTERED_FORMATIONS = "+JSON.stringify(REGISTERED_FORMATIONS,null,2)+"; // __REGISTERED_FORMATIONS_DATA__",resultsData="let REGISTERED_RESULTS = "+JSON.stringify(REGISTERED_RESULTS,null,2)+"; // __REGISTERED_RESULTS_DATA__";html=html.replace(/let REGISTERED_TEAMS\s*=\s*[\s\S]*?;\s*\/\/ __REGISTERED_TEAMS_DATA__/,data),html=html.replace(/let REGISTERED_FORMATIONS\s*=\s*[\s\S]*?;\s*\/\/ __REGISTERED_FORMATIONS_DATA__/,formationData),html=html.replace(/let REGISTERED_RESULTS\s*=\s*[\s\S]*?;\s*\/\/ __REGISTERED_RESULTS_DATA__/,resultsData),html=resetHtmlLocksBeforeExport(html),html="<!doctype html>\n"+html;const blob=new Blob([html],{type:"text/html;charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(blob),a.download="index_fantamondiale_aggiornato.html",document.body.appendChild(a),a.click(),document.body.removeChild(a),URL.revokeObjectURL(a.href),showAlert("HTML aggiornato esportato con Iscrizioni, Formazioni e Risultati salvati. Le password e i blocchi restano attivi.")}document.addEventListener("input",function(e){e.target&&"resultVote"===e.target.id&&updateResultPreview()}),document.addEventListener("change",function(e){e.target&&"resultPlayer"===e.target.id&&updateResultPreview()}),window.addEventListener("beforeunload",function(e){isDirty&&hasMeaningfulChanges()&&(e.preventDefault(),e.returnValue="")}),window.fmEnhanceIcons=function(){return!1},function(){function fmForceCreaSquadraLabels(){var title=document.querySelector("#pageTeam .teamIntroTitle");title&&(title.innerHTML='<svg aria-hidden="true" class="fmIcon"><use href="#fm-icon-crea-squadra"></use></svg><span>Crea Squadra</span>');var label=document.querySelector('label[for="fantasyTeamName"]');label&&(label.textContent="Scegli il nome da dare alla tua Squadra");var menu=document.getElementById("menuTeam");if(menu){var icon=menu.querySelector(".appMenuIcon");menu.innerHTML="",icon&&menu.appendChild(icon),menu.appendChild(document.createTextNode("Crea Squadra"))}}document.addEventListener("DOMContentLoaded",fmForceCreaSquadraLabels),setTimeout(fmForceCreaSquadraLabels,0),setTimeout(fmForceCreaSquadraLabels,300)}(),function(){function fixCreaSquadraHeaderIcon(){var title=document.querySelector("#pageTeam .teamIntroTitle");title&&(title.classList.add("pageTitleWithPng"),title.innerHTML='<span class="pageTitleIcon"><svg class="pageTitlePngIcon svgInlineIcon" role="img" aria-label="Crea Squadra" focusable="false"><use href="#fm-icon-crea-squadra"></use></svg></span><span>Crea Squadra</span>');var label=document.querySelector('label[for="fantasyTeamName"]');label&&(label.textContent="Scegli il nome da dare alla tua Squadra")}document.addEventListener("DOMContentLoaded",fixCreaSquadraHeaderIcon),setTimeout(fixCreaSquadraHeaderIcon,0),setTimeout(fixCreaSquadraHeaderIcon,300),setTimeout(fixCreaSquadraHeaderIcon,900);var oldShowPage=window.showPage;"function"!=typeof oldShowPage||oldShowPage.__fmCreaSquadraIconFixed||(window.showPage=function(){var res=oldShowPage.apply(this,arguments);return setTimeout(fixCreaSquadraHeaderIcon,30),res},window.showPage.__fmCreaSquadraIconFixed=!0)}(),function(){"use strict";const K1=k=>"FANTAMONDIALE_2026_DATABASE_"+String(k||"").toUpperCase(),K2=k=>"fm_database_csv_"+String(k||"").toLowerCase(),KINDS=["players","teams","groups","coaches","fixtures","match_results"],ROLES=["Portieri","Difensori","Centrocampisti","Attaccanti"],ROLE_MAP={GK:"Portieri",P:"Portieri",PORTIERE:"Portieri",PORTIERI:"Portieri",GOALKEEPER:"Portieri",DEF:"Difensori",D:"Difensori",DIFENSORE:"Difensori",DIFENSORI:"Difensori",DF:"Difensori",MID:"Centrocampisti",C:"Centrocampisti",CENTROCAMPISTA:"Centrocampisti",CENTROCAMPISTI:"Centrocampisti",MF:"Centrocampisti",FWD:"Attaccanti",A:"Attaccanti",ATTACCANTE:"Attaccanti",ATTACCANTI:"Attaccanti",FW:"Attaccanti"},TEAM_BY_ID=window.TEAM_NAME_BY_ID||{};function q(id){return document.getElementById(id)}function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}function stripBom(s){return String(s||"").replace(/^\ufeff/,"")}function norm(s){return stripBom(s).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toUpperCase().replace(/[’'`´.]/g,"").replace(/&/g,"E").replace(/[^A-Z0-9]+/g,"").trim()}function canon(s){return"function"==typeof window.fmCanonicalTeamName?window.fmCanonicalTeamName(s):String(s||"").trim()}function read(kind){
   kind=String(kind||"").toLowerCase();
   if(kind==="fixtures"){
     const ta=q("databaseCsvFixtures");
@@ -3520,13 +3485,17 @@ function resultsStoreKey(){return"fm_database_csv_match_results"}function matchR
   }
 
   function scoreFromRows(rows, fixture){
+    const first = Array.isArray(rows) && rows.length ? rows[0] : null;
+    if(first && (String(first.home_score||"").trim()!=="" || String(first.away_score||"").trim()!=="")){
+      return {home:numVal(first.home_score), away:numVal(first.away_score)};
+    }
     const playersIdx = playerIndexByName();
     const home = teamName(fixture,"home"), away = teamName(fixture,"away");
     let hg = 0, ag = 0;
     rows.forEach(function(x){
       const team = resolveRowTeam(x, fixture, playersIdx);
       const teamLow = String(team||"").toLowerCase();
-      const normalGoals = splitResultMinutes(x.goal_minutes).filter(function(m){return !/autogol/i.test(m);}).length;
+      const normalGoals = splitResultMinutes(x.goal_minutes).filter(function(m){return !/autogol/i.test(m);}).length || numVal(x.goals);
       const ownGoals = splitResultMinutes(x.goal_minutes).filter(function(m){return /autogol/i.test(m);}).length || numVal(x.own_goals);
       if(normalGoals > 0){
         if(teamLow === home.toLowerCase()) hg += normalGoals;
