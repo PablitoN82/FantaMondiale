@@ -2915,21 +2915,45 @@ function resultsStoreKey(){return"fm_database_csv_match_results"}function matchR
   const msg=document.getElementById("resultAdminMessage");
   msg&&(msg.innerHTML=`Match importato: <b>${escapeHtml(match)}</b>. Righe generate: <b>${Object.keys(map).length}</b>.`);
   try{const root=document.getElementById("worldMatchesByDate");root&&(root.dataset.loaded="");window.renderWorldMatchesPage&&window.renderWorldMatchesPage(true)}catch(e){}
-}function copyMatchResultsCsv(){const csv=String(document.getElementById("matchResultsCsvOutput")?.value||matchResultsToCsv(REGISTERED_RESULTS));const box=document.createElement("textarea");box.value=csv;document.body.appendChild(box);box.select();document.execCommand("copy");box.remove();showAlert("match_results.csv copiato negli appunti.")}function saveMatchResultsDatabaseCsv(){loadRegisteredResults();saveRegisteredResults();showAlert("match_results.csv salvato nel Database locale. Per GitHub, copia/scarica il file e mettilo in Database/match_results.csv.")}function downloadMatchResultsCsv(){const csv=String(document.getElementById("matchResultsCsvOutput")?.value||matchResultsToCsv(REGISTERED_RESULTS));const blob=new Blob([csv],{type:"text/csv;charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="match_results.csv";document.body.appendChild(a);a.click();a.remove()}function clearMatchResultsDatabaseCsv(){if(!confirm("Vuoi svuotare tutto match_results.csv?"))return;REGISTERED_RESULTS=[];saveRegisteredResults();renderAdminResultsList();renderPublicResults()}function renderAdminResultsList(){loadRegisteredResults();const list=document.getElementById("adminResultsList");if(!list)return;if(!REGISTERED_RESULTS.length){list.innerHTML='<div class="empty">Nessun match importato.</div>';return}const by={};REGISTERED_RESULTS.forEach(r=>{const id=r.match_id||"senza_id";(by[id]||(by[id]={match:r.match||id,rows:[]})).rows.push(r)});list.innerHTML=Object.keys(by).map(id=>`<div class="resultRowCard"><div class="resultRowTop"><div><div class="resultPlayerName">${escapeHtml(by[id].match)}</div><div class="resultPlayerMeta">Match ID: ${escapeHtml(id)} • Giocatori: ${by[id].rows.length}</div></div><button class="deleteBtn" onclick="deleteResultEntry('${escapeHtml(id)}')">Elimina match</button></div></div>`).join("")}function renderPublicResults(){
-  loadRegisteredResults();
-  loadRegisteredFormations();
+}function copyMatchResultsCsv(){const csv=String(document.getElementById("matchResultsCsvOutput")?.value||matchResultsToCsv(REGISTERED_RESULTS));const box=document.createElement("textarea");box.value=csv;document.body.appendChild(box);box.select();document.execCommand("copy");box.remove();showAlert("match_results.csv copiato negli appunti.")}function saveMatchResultsDatabaseCsv(){loadRegisteredResults();saveRegisteredResults();showAlert("match_results.csv salvato nel Database locale. Per GitHub, copia/scarica il file e mettilo in Database/match_results.csv.")}function downloadMatchResultsCsv(){const csv=String(document.getElementById("matchResultsCsvOutput")?.value||matchResultsToCsv(REGISTERED_RESULTS));const blob=new Blob([csv],{type:"text/csv;charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="match_results.csv";document.body.appendChild(a);a.click();a.remove()}function clearMatchResultsDatabaseCsv(){if(!confirm("Vuoi svuotare tutto match_results.csv?"))return;REGISTERED_RESULTS=[];saveRegisteredResults();renderAdminResultsList();renderPublicResults()}function renderAdminResultsList(){loadRegisteredResults();const list=document.getElementById("adminResultsList");if(!list)return;if(!REGISTERED_RESULTS.length){list.innerHTML='<div class="empty">Nessun match importato.</div>';return}const by={};REGISTERED_RESULTS.forEach(r=>{const id=r.match_id||"senza_id";(by[id]||(by[id]={match:r.match||id,rows:[]})).rows.push(r)});list.innerHTML=Object.keys(by).map(id=>`<div class="resultRowCard"><div class="resultRowTop"><div><div class="resultPlayerName">${escapeHtml(by[id].match)}</div><div class="resultPlayerMeta">Match ID: ${escapeHtml(id)} • Giocatori: ${by[id].rows.length}</div></div><button class="deleteBtn" onclick="deleteResultEntry('${escapeHtml(id)}')">Elimina match</button></div></div>`).join("")}async function renderPublicResults(){
   const grid=document.getElementById("resultsPublicGrid");
   if(!grid)return;
-  const formations=REGISTERED_FORMATIONS||[];
+  grid.innerHTML='<div class="empty">Caricamento Risultati dai CSV...</div>';
+
+  let formationsCsv="", playersCsv="", resultsCsv="";
+  try{
+    formationsCsv=await fantaPartiteFetchCsv("formations");
+    playersCsv=await fantaPartiteFetchCsv("players");
+    resultsCsv=await fantaPartiteFetchCsv("match_results");
+  }catch(e){
+    formationsCsv=fantaPartiteReadCsv("formations");
+    playersCsv=fantaPartiteReadCsv("players");
+    resultsCsv=fantaPartiteReadCsv("match_results");
+  }
+
+  const playersIndex=fantaPartiteBuildPlayersIndex(fantaPartiteParseCsv(playersCsv));
+  const formations=fantaPartiteParseFormationsCsv(formationsCsv,playersIndex);
+  const resultRows=fantaPartiteParseCsv(resultsCsv);
+
   if(!formations.length){grid.innerHTML='<div class="empty">Nessuna Formazione registrata.</div>';return}
+
   const resultIndex={};
-  (REGISTERED_RESULTS||[]).forEach(function(r){
-    const rkey=fantaPartiteRoundKey(r.round_name||"");
-    const pkey=normalizeResultName(r.player||"");
-    if(rkey&&pkey) resultIndex[rkey+"|"+pkey]=r;
+  const resultIndexByPlayer={};
+  resultRows.forEach(function(r){
+    const roundKey=fantaPartiteRoundKey(r.round_name||r.round||r.giornata||"");
+    const playerKey=normalizeResultName(r.player||r.player_name||r.giocatore||"");
+    if(playerKey){
+      if(roundKey) resultIndex[roundKey+"|"+playerKey]=r;
+      if(!resultIndexByPlayer[playerKey]) resultIndexByPlayer[playerKey]=r;
+    }
   });
+
+  function scoreRow(roundKey, playerName){
+    const key=normalizeResultName(playerName);
+    return resultIndex[roundKey+"|"+key]||resultIndexByPlayer[key]||null;
+  }
   function scoreForPlayer(roundKey, playerName){
-    const r=resultIndex[roundKey+"|"+normalizeResultName(playerName)];
+    const r=scoreRow(roundKey,playerName);
     if(!r)return "SV";
     return String(r.total||r.rating||"SV").trim()||"SV";
   }
@@ -2941,7 +2965,7 @@ function resultsStoreKey(){return"fm_database_csv_match_results"}function matchR
     return '<div class="resultsFormationPlayer"><div class="resultsFormationPlayerMain"><span class="resultsFormationSlot">'+slot+'</span><span class="resultsFormationName">'+name+'</span>'+fmCircleFlagHtml(nation)+'</div><span class="resultsFormationVote">'+score+'</span></div>';
   }
   function formationBody(f, roundKey){
-    const players=formationPlayersResolved(f);
+    const players=f.players||[];
     if(!players.length)return '<div class="empty">Nessun giocatore rilevato nella formazione.</div>';
     const sections=["TITOLARI","RISERVE"];
     const roles=["Portieri","Difensori","Centrocampisti","Attaccanti"];
@@ -2955,17 +2979,25 @@ function resultsStoreKey(){return"fm_database_csv_match_results"}function matchR
       }).join("")+'</div>';
     }).join("");
   }
+
   const byRound={};
   formations.forEach(function(f){
     const key=fantaPartiteRoundKey(f.round||f.round_name||"")||"0";
     (byRound[key]||(byRound[key]={label:f.round||f.round_name||("Giornata "+key),items:[]})).items.push(f);
   });
+
   grid.innerHTML=Object.keys(byRound).sort((a,b)=>Number(a)-Number(b)).map(function(key,idx){
     const block=byRound[key];
     return '<details class="resultsRoundBlock" '+(idx===0?'open':'')+'><summary><span>'+escapeHtml(block.label)+'</span><span>'+block.items.length+' squadre</span></summary><div class="resultsRoundBody">'+block.items.map(function(f){
-      const players=formationPlayersResolved(f);
-      let total=0, hasScore=false;
-      players.forEach(function(p){const v=scoreForPlayer(key,p.dbPlayerName||p.playerName||p.name);if(v!=="SV"){total+=numVal(v);hasScore=true;}});
+      const players=f.players||[];
+      let total=0,hasScore=false;
+      players.forEach(function(p){
+        const v=scoreForPlayer(key,p.dbPlayerName||p.playerName||p.name);
+        if(v!=="SV"&&String(v).trim()!==""){
+          total+=numVal(v);
+          hasScore=true;
+        }
+      });
       return '<details class="resultsFormationCard"><summary><span>'+escapeHtml(f.teamName||"Squadra")+'</span><span class="resultsFormationTotal">'+(hasScore?fmtScore(total):'SV')+'</span></summary><div class="resultsFormationBody">'+formationBody(f,key)+'</div></details>';
     }).join("")+'</div></details>';
   }).join("")||'<div class="empty">Nessun risultato pubblicato al momento.</div>';
