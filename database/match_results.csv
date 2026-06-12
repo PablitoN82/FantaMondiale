@@ -1,13 +1,13 @@
 match_id;match;home_team;away_team;home_score;away_score;score_str;status;penalty_score;winner_after_penalties;team;player;rating;minutes;goals;assists;yellow_cards;red_cards;own_goals;penalty_missed;penalties_saved;saves;goals_conceded;clean_sheet;draw_decisive_goal;win_decisive_goal;goal_minutes;assist_minutes;card_minutes;penalty_shootout_goals;penalty_shootout_missed;total
 4667751;Mexico vs South Africa;Mexico;South Africa;2;0;2 - 0;FT;;;South Africa;Ronwen Williams;6,2;90;0;0;0;0;0;0;0;2;2;0;0;0;;;;0;0;4,2
-4667751;Mexico vs South Africa;Mexico;South Africa;2;0;2 - 0;FT;;;Mexico;Raul Jiménez;8;76;1;0;0;0;0;0;0;0;0;0;0;1;67;;;0;0;12
+4667751;Mexico vs South Africa;Mexico;South Africa;2;0;2 - 0;FT;;;Mexico;Raul Jiménez;8;76;1;0;0;0;0;0;0;0;0;0;0;0;67;;;0;0;11
 4667751;Mexico vs South Africa;Mexico;South Africa;2;0;2 - 0;FT;;;South Africa;Themba Zwane;4,9;23;0;0;0;1;0;0;0;0;0;0;0;0;;;84 rosso;0;0;3,9
 4667751;Mexico vs South Africa;Mexico;South Africa;2;0;2 - 0;FT;;;Mexico;Luis Chávez;6,5;24;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,5
 4667751;Mexico vs South Africa;Mexico;South Africa;2;0;2 - 0;FT;;;Mexico;Jesús Gallardo;7,2;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,2
 4667751;Mexico vs South Africa;Mexico;South Africa;2;0;2 - 0;FT;;;South Africa;Aubrey Maphosa Modiba;5,9;77;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;5,9
 4667751;Mexico vs South Africa;Mexico;South Africa;2;0;2 - 0;FT;;;Mexico;César Montes;6,1;90;0;0;0;1;0;0;0;0;0;0;0;0;;;90 + 2 rosso;0;0;5,1
 4667751;Mexico vs South Africa;Mexico;South Africa;2;0;2 - 0;FT;;;South Africa;Nkosinathi Sibisi;5,8;90;0;0;1;0;0;0;0;0;0;0;0;0;;;74 giallo;0;0;5,3
-4667751;Mexico vs South Africa;Mexico;South Africa;2;0;2 - 0;FT;;;Mexico;Julián Quiñones;8,8;79;1;0;0;0;0;0;0;0;0;0;0;1;9;;;0;0;12,8
+4667751;Mexico vs South Africa;Mexico;South Africa;2;0;2 - 0;FT;;;Mexico;Julián Quiñones;8,8;79;1;0;0;0;0;0;0;0;0;0;0;0;9;;;0;0;11,8
 4667751;Mexico vs South Africa;Mexico;South Africa;2;0;2 - 0;FT;;;Mexico;Roberto Alvarado;8,2;90;0;1;0;0;0;0;0;0;0;0;0;0;;67;;0;0;9,2
 4667751;Mexico vs South Africa;Mexico;South Africa;2;0;2 - 0;FT;;;Mexico;Alexis Vega;6;11;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6
 4667751;Mexico vs South Africa;Mexico;South Africa;2;0;2 - 0;FT;;;Mexico;Edson Álvarez;6,6;14;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,6
@@ -40,7 +40,7 @@ match_id;match;home_team;away_team;home_score;away_score;score_str;status;penalt
 4667752;South Korea vs Czechia;South Korea;Czechia;2;1;2 - 1;FT;;;Czech Republic;Patrik Schick;5,9;64;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;5,9
 4667752;South Korea vs Czechia;South Korea;Czechia;2;1;2 - 1;FT;;;Korea Republic;Hee-Chan Hwang;6,5;28;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,5
 4667752;South Korea vs Czechia;South Korea;Czechia;2;1;2 - 1;FT;;;Korea Republic;Jin-Gyu Kim;SV;6;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;SV
-4667752;South Korea vs Czechia;South Korea;Czechia;2;1;2 - 1;FT;;;Korea Republic;In-Beom Hwang;8,9;84;1;1;0;0;0;0;0;0;0;0;1;0;67;80;;0;0;13,9
+4667752;South Korea vs Czechia;South Korea;Czechia;2;1;2 - 1;FT;;;Korea Republic;In-Beom Hwang;8,9;84;1;1;0;0;0;0;0;0;0;0;0;0;67;80;;0;0;12,9
 4667752;South Korea vs Czechia;South Korea;Czechia;2;1;2 - 1;FT;;;Czech Republic;Lukás Provod;6,8;64;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,8
 4667752;South Korea vs Czechia;South Korea;Czechia;2;1;2 - 1;FT;;;Czech Republic;Ladislav Krejcí;7,4;90;1;0;0;0;0;0;0;0;0;0;0;0;59;;;0;0;10,4
 4667752;South Korea vs Czechia;South Korea;Czechia;2;1;2 - 1;FT;;;Czech Republic;Michal Sadílek;6;26;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6
@@ -61,3 +61,35 @@ match_id;match;home_team;away_team;home_score;away_score;score_str;status;penalt
 4667752;South Korea vs Czechia;South Korea;Czechia;2;1;2 - 1;FT;;;Korea Republic;Gi-Hyuk Lee;7,6;90;0;0;1;0;0;0;0;0;0;0;0;0;;;90 + 6 giallo;0;0;7,1
 4667752;South Korea vs Czechia;South Korea;Czechia;2;1;2 - 1;FT;;;Czech Republic;Stepán Chaloupek;5,7;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;5,7
 4667752;South Korea vs Czechia;South Korea;Czechia;2;1;2 - 1;FT;;;Czech Republic;Alexandr Sojka;6,6;84;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,6
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Bosnia and Herzegovina;Sead Kolasinac;8,1;84;0;1;0;0;0;0;0;0;0;0;0;0;;21;;0;0;9,1
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Canada;Jonathan Osorio;SV;1;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;SV
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Canada;Maxime Crépeau;7,5;90;0;0;0;0;0;0;0;2;1;0;0;0;;;;0;0;6,5
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Bosnia and Herzegovina;Nikola Vasilj;6,8;90;0;0;0;0;0;0;0;1;1;0;0;0;;;;0;0;5,8
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Bosnia and Herzegovina;Ivan Sunjic;6,2;16;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,2
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Canada;Cyle Larin;7,5;14;1;0;0;0;0;0;0;0;0;0;1;0;78;;;0;0;11,5
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Bosnia and Herzegovina;Dzenis Burnic;SV;6;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;SV
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Bosnia and Herzegovina;Nikola Katic;8,4;90;0;0;1;0;0;0;0;0;0;0;0;0;;;90 + 3 giallo;0;0;7,9
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Canada;Richie Laryea;7,9;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,9
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Canada;Stephen Eustaquio;7,5;89;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,5
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Bosnia and Herzegovina;Ermedin Demirovic;6,7;90;0;0;1;0;0;0;0;0;0;0;0;0;;;44 giallo;0;0;6,2
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Canada;Derek Cornelius;7,4;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,4
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Canada;Liam Millar;6,8;61;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,8
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Canada;Jonathan David;6,6;61;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,6
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Bosnia and Herzegovina;Amar Dedic;7;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Canada;Jacob Shaffelburg;6,1;29;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,1
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Canada;Tajon Buchanan;5,7;61;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;5,7
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Canada;Alistair Johnston;7,2;90;0;0;1;0;0;0;0;0;0;0;0;0;;;11 giallo;0;0;6,7
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Bosnia and Herzegovina;Armin Gigovic;6,7;28;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,7
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Bosnia and Herzegovina;Jovo Lukic;8;62;1;0;1;0;0;0;0;0;0;0;0;0;21;;45 + 1 giallo;0;0;10,5
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Bosnia and Herzegovina;Ivan Basic;7,2;62;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,2
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Bosnia and Herzegovina;Tarik Muharemovic;8,2;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;8,2
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Canada;Promise David;6,6;29;0;1;0;0;0;0;0;0;0;0;0;0;;78;;0;0;7,6
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Bosnia and Herzegovina;Samed Bazdar;6;28;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Canada;Ismaël Koné;6;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Bosnia and Herzegovina;Amar Memic;6,1;74;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,1
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Canada;Tani Oluwaseyi;6,6;76;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,6
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Bosnia and Herzegovina;Esmir Bajraktarevic;6,2;74;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,2
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Canada;Ali Ahmed;6,1;29;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,1
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Canada;Luc De Fougerolles;6,9;90;0;0;1;0;0;0;0;0;0;0;0;0;;;53 giallo;0;0;6,4
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Bosnia and Herzegovina;Benjamin Tahirovic;6,7;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,7
+4667757;Canada vs Bosnia and Herzegovina;Canada;Bosnia and Herzegovina;1;1;1 - 1;FT;;;Bosnia and Herzegovina;Kerim Alajbegovic;6,3;16;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,3
