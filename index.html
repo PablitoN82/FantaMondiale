@@ -3461,7 +3461,17 @@ function playersIndexForResults(){
   }
 
   function hasRealBonusMalus(x){
-    return effectiveGoals(x)>0 || effectiveAssists(x)>0 || numVal(x.clean_sheet)>0 || numVal(x.goals_conceded)>0 || numVal(x.yellow_cards)>0 || numVal(x.red_cards)>0 || numVal(x.own_goals)>0 || numVal(x.penalty_missed)>0;
+    return effectiveGoals(x)>0
+      || effectiveAssists(x)>0
+      || numVal(x.penalties_saved)>0
+      || numVal(x.clean_sheet)>0
+      || numVal(x.draw_decisive_goal)>0
+      || numVal(x.win_decisive_goal)>0
+      || numVal(x.goals_conceded)>0
+      || numVal(x.yellow_cards)>0
+      || numVal(x.red_cards)>0
+      || numVal(x.own_goals)>0
+      || numVal(x.penalty_missed)>0;
   }
 
   function tableRows(rows, fixture){
@@ -3494,7 +3504,10 @@ function playersIndexForResults(){
         if(gol > 0) evid.push(chip("Gol", gol));
         const ass = effectiveAssists(x);
         if(ass > 0) evid.push(chip("Assist", ass));
+        if(numVal(x.penalties_saved) > 0) evid.push(chip("Rigore parato", x.penalties_saved));
         if(numVal(x.clean_sheet) > 0) evid.push(chip("Porta inviolata", x.clean_sheet));
+        if(numVal(x.draw_decisive_goal) > 0) evid.push(chip("Gol decisivo pareggio", x.draw_decisive_goal));
+        if(numVal(x.win_decisive_goal) > 0) evid.push(chip("Gol decisivo vittoria", x.win_decisive_goal));
         if(numVal(x.yellow_cards) > 0) evid.push(chip("Ammonizione", x.yellow_cards));
         if(numVal(x.red_cards) > 0) evid.push(chip("Espulsione", x.red_cards));
         if(numVal(x.own_goals) > 0) evid.push(chip("Autogol", x.own_goals));
