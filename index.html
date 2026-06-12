@@ -2825,7 +2825,7 @@ function resultFixtureRoundKey(fx){return String(fx.round_code||fx.round_name||f
 function resultFixtureRoundLabel(fx){return String(fx.round_name||fx.round||fx.giornata||fx.round_code||"Giornata").trim()}
 function registeredResultMatchIds(){loadRegisteredResults();const ids=new Set();REGISTERED_RESULTS.forEach(r=>{const id=String(r.match_id||"").trim();if(id)ids.add(id)});return ids}
 function firstUnregisteredFixture(fixtures,round){const done=registeredResultMatchIds();return fixtures.find(fx=>(!round||resultFixtureRoundKey(fx)===round)&&!done.has(resultFixtureId(fx)))||fixtures.find(fx=>!done.has(resultFixtureId(fx)))||fixtures[0]||null}
-function setupResultsAdmin(){loadRegisteredResults();const fixtures=getAllFixturesForResults(),roundSel=document.getElementById("resultRoundSelect");const next=firstUnregisteredFixture(fixtures,"");if(roundSel){const rounds=[];fixtures.forEach(fx=>{const key=resultFixtureRoundKey(fx);if(!key)return;if(!rounds.some(r=>r.key===key))rounds.push({key,label:resultFixtureRoundLabel(fx)})});roundSel.innerHTML=rounds.length?rounds.map(r=>'<option value="'+escapeHtml(r.key)+'">'+escapeHtml(r.label)+'</option>').join(""):'<option value="">Nessuna giornata caricata</option>';roundSel.value=next?resultFixtureRoundKey(next):(rounds[0]?.key||"")}updateResultMatchOptions(next?resultFixtureId(next):"");const out=document.getElementById("matchResultsCsvOutput");out&&(out.value=matchResultsToCsv(REGISTERED_RESULTS));renderAdminResultsList();updateMatchResultImportPreview()}
+async function setupResultsAdmin(){loadRegisteredResults();let fixtures=getAllFixturesForResults();if(!fixtures.length){try{const text=await fantaPartiteFetchCsv("fixtures");if(String(text||"").trim())fixtures=parseCsvGeneric(text)}catch(e){}}const roundSel=document.getElementById("resultRoundSelect");const next=firstUnregisteredFixture(fixtures,"");if(roundSel){const rounds=[];fixtures.forEach(fx=>{const key=resultFixtureRoundKey(fx);if(!key)return;if(!rounds.some(r=>r.key===key))rounds.push({key,label:resultFixtureRoundLabel(fx)})});roundSel.innerHTML=rounds.length?rounds.map(r=>'<option value="'+escapeHtml(r.key)+'">'+escapeHtml(r.label)+'</option>').join(""):'<option value="">Nessuna giornata caricata</option>';roundSel.value=next?resultFixtureRoundKey(next):(rounds[0]?.key||"")}updateResultMatchOptions(next?resultFixtureId(next):"");const out=document.getElementById("matchResultsCsvOutput");out&&(out.value=matchResultsToCsv(REGISTERED_RESULTS));renderAdminResultsList();updateMatchResultImportPreview()}
 function updateResultMatchOptions(preferredId){const roundSel=document.getElementById("resultRoundSelect"),matchSel=document.getElementById("resultMatchSelect");if(!matchSel)return;const fixtures=getAllFixturesForResults(),round=roundSel?.value||"",cur=preferredId||matchSel.value,list=fixtures.filter(fx=>!round||resultFixtureRoundKey(fx)===round);matchSel.innerHTML=list.length?list.map(fx=>{const id=resultFixtureId(fx),date=fx.match_date||fx.date||fx.data||"",time=fx.kickoff_time||fx.time_it||fx.ora||"",done=registeredResultMatchIds().has(id);return'<option value="'+escapeHtml(id)+'">'+escapeHtml([matchFixtureTitle(fx),date,time,done?"registrata":"da registrare"].filter(Boolean).join(" • "))+'</option>'}).join(""):'<option value="">Nessuna partita per questa giornata</option>';const next=firstUnregisteredFixture(list,round);matchSel.value=[...matchSel.options].some(o=>o.value===cur)?cur:(next?resultFixtureId(next):(matchSel.options[0]?.value||""));updateMatchResultImportPreview()}
 function findFixtureByMatchId(id){return getAllFixturesForResults().find(fx=>resultFixtureId(fx)===String(id||"").trim())||null}
 function updateMatchResultImportPreview(){const box=document.getElementById("resultPreview"),id=document.getElementById("resultMatchSelect")?.value||"";if(!box)return;if(!id){box.textContent="Seleziona una partita da fixtures.csv.";return}const fx=findFixtureByMatchId(id);box.innerHTML=fx?`<b>${escapeHtml(matchFixtureTitle(fx))}</b><br>${escapeHtml(fx.round_name||"")} ${escapeHtml(fx.match_date||fx.date||"")} ${escapeHtml(fx.kickoff_time||fx.time_it||"")}<br>Incolla il CSV completo del bot Telegram e premi <b>Registra Risultato</b>.`:"Partita non trovata in fixtures.csv."}
@@ -3112,24 +3112,7 @@ function deleteResultEntry(id){loadRegisteredResults();const rows=REGISTERED_RES
 })();
 </script>
 
-<script id="fm-fixtures-session-only-fix">
-(function(){
-  "use strict";
-  function clearPersistedFixtures(){
-    try{
-      [
-        "fm_database_csv_fixtures",
-        "FANTAMONDIALE_2026_DATABASE_FIXTURES",
-        "fm_database_csv_calendar",
-        "FANTAMONDIALE_2026_DATABASE_CALENDAR"
-      ].forEach(function(k){ fmNoStorage.removeItem(k); });
-    }catch(e){}
-  }
-  clearPersistedFixtures();
-  document.addEventListener("DOMContentLoaded", clearPersistedFixtures);
-  window.addEventListener("load", function(){ setTimeout(clearPersistedFixtures, 0); });
-})();
-</script>
+
 
 
 <script id="fm-world-matches-fixtures-uniform-fix">
