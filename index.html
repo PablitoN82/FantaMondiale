@@ -3501,17 +3501,17 @@ function playersIndexForResults(){
           (gc > 0 ? evid : neutral).push(chip("Gol subiti", x.goals_conceded, gc <= 0));
         }
         const gol = effectiveGoals(x);
-        if(gol > 0) evid.push(chip("Gol", gol));
+        if(gol > 0) evid.push(chip("★ Gol", gol));
+        if(numVal(x.draw_decisive_goal) > 0) evid.push(chip("◎ Gol decisivo pareggio", x.draw_decisive_goal));
+        if(numVal(x.win_decisive_goal) > 0) evid.push(chip("✦ Gol decisivo vittoria", x.win_decisive_goal));
         const ass = effectiveAssists(x);
-        if(ass > 0) evid.push(chip("Assist", ass));
-        if(numVal(x.penalties_saved) > 0) evid.push(chip("Rigore parato", x.penalties_saved));
-        if(numVal(x.clean_sheet) > 0) evid.push(chip("Porta inviolata", x.clean_sheet));
-        if(numVal(x.draw_decisive_goal) > 0) evid.push(chip("Gol decisivo pareggio", x.draw_decisive_goal));
-        if(numVal(x.win_decisive_goal) > 0) evid.push(chip("Gol decisivo vittoria", x.win_decisive_goal));
-        if(numVal(x.yellow_cards) > 0) evid.push(chip("Ammonizione", x.yellow_cards));
-        if(numVal(x.red_cards) > 0) evid.push(chip("Espulsione", x.red_cards));
-        if(numVal(x.own_goals) > 0) evid.push(chip("Autogol", x.own_goals));
-        if(numVal(x.penalty_missed) > 0) evid.push(chip("Rigore sbagliato", x.penalty_missed));
+        if(ass > 0) evid.push(chip("➜ Assist", ass));
+        if(isGk && numVal(x.penalties_saved) > 0) evid.push(chip("◈ Rigore parato", x.penalties_saved));
+        if(isGk && numVal(x.clean_sheet) > 0) evid.push(chip("■ Porta inviolata", x.clean_sheet));
+        if(numVal(x.yellow_cards) > 0) evid.push(chip("! Ammonizione", x.yellow_cards));
+        if(numVal(x.red_cards) > 0) evid.push(chip("!! Espulsione", x.red_cards));
+        if(numVal(x.own_goals) > 0) evid.push(chip("↺ Autogol", x.own_goals));
+        if(numVal(x.penalty_missed) > 0) evid.push(chip("✖ Rigore sbagliato", x.penalty_missed));
         const total = x.total || x.rating || "SV";
         return '<div class="worldRatingCard'+(evid.length?' worldRatingCardBonus':'')+'"><div class="worldRatingTop"><div class="worldRatingName">'+rowFlag(x,fixture,playersIdx)+'<span>'+esc(x.player||"")+'</span></div><div class="worldRatingVote">'+esc(total)+'</div></div><div class="worldRatingBadges">'+neutral.join("")+evid.join("")+'</div></div>';
       }).join("");
