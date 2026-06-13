@@ -124,3 +124,35 @@ match_id;match;home_team;away_team;home_score;away_score;score_str;status;penalt
 4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Alex Freeman;8,1;90;0;1;0;0;0;;0;0;0;0;0;0;0;;90 + 8;;0;0;9,1
 4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Diego Gómez;6,4;80;0;0;1;0;0;;0;0;0;0;0;0;0;;;79 giallo;0;0;5,9
 4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Orlando Gill;5,6;90;0;0;0;0;0;;0;0;3;4;0;0;0;;;;0;0;1,6
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Ricardo Rodríguez;7,9;89;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,9
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Hassan Al Haidos;SV;2;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;SV
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Remo Freuler;7,1;89;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,1
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Granit Xhaka;7,1;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,1
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Ahmed Alaaeldin;6,4;30;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,4
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Boualem Khoukhi;7,8;90;1;0;0;0;0;;0;0;0;0;0;1;0;90 + 4;;;0;0;11,8
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Karim Boudiaf;6,3;30;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,3
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Edmílson Junior;6,3;88;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,3
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Nico Elvedi;7,3;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,3
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Manuel Akanji;7,4;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,4
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Breel Embolo;8;90;1;0;0;0;0;;0;0;0;0;0;0;0;17;;;0;0;11
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Denis Zakaria;7,5;90;0;0;1;0;0;;0;0;0;0;0;0;0;;;42 giallo;0;0;7
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Akram Afif;6,9;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,9
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Assim Madibo;6,4;79;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,4
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Pedro Miguel;7,3;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,3
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Miro Muheim;SV;1;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;SV
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Gregor Kobel;7,3;90;0;0;0;0;0;;0;0;3;1;0;0;0;;;;0;0;6,3
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Michel Aebischer;7,2;65;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,2
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Rubén Vargas;8,1;79;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;8,1
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Ahmed Fathi;6,9;30;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,9
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Homam Elamin;7,9;90;0;1;0;0;0;;0;0;0;0;0;0;0;;90 + 4;;0;0;8,9
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Dan Ndoye;7,2;65;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,2
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Yusuf Abdurisag;6,8;60;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,8
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Zeki Amdouni;6,6;11;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,6
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Fabian Rieder;6,1;25;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,1
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Ardon Jashari;SV;1;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;SV
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Jassem Gaber;6,1;60;0;0;1;0;0;;0;0;0;0;0;0;0;;;23 giallo;0;0;5,6
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Mahmud Abunada;7,5;90;0;0;1;0;0;;0;0;5;1;0;0;0;;;16 giallo;0;0;6
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Ayoub Al Oui;6,4;60;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,4
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Johan Manzambi;5,9;25;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,9
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Mohamed Al Mannai;5,9;11;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,9
+4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Issa Laye;6,8;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,8
