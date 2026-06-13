@@ -318,43 +318,8 @@ input,select,textarea{
   .worldEventItem{grid-template-columns:46px minmax(0,1fr) !important;padding:8px 10px !important;}
   .worldEventMinute{min-width:38px !important;}
 }
-
-/* =========================================================
-   Mondiale > Partite - tabellino accordion compatto e mobile più largo
-   ========================================================= */
-#pageWorldMatches .worldTabellinoBody{padding:12px!important;background:transparent!important;display:grid!important;gap:10px!important;}
-#pageWorldMatches .worldTabellinoPanel{border:1px solid rgba(125,211,252,.22)!important;border-radius:20px!important;overflow:hidden!important;background:rgba(5,12,24,.58)!important;box-shadow:none!important;}
-#pageWorldMatches .worldTabellinoPanel>summary{list-style:none!important;cursor:pointer!important;background:#0b0b0b!important;color:#fff!important;padding:15px 16px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;font-weight:1000!important;border-radius:20px!important;}
-#pageWorldMatches .worldTabellinoPanel>summary::-webkit-details-marker{display:none!important;}
-#pageWorldMatches .worldTabellinoPanel[open]>summary{border-bottom:1px solid rgba(125,211,252,.16)!important;border-radius:20px 20px 0 0!important;}
-#pageWorldMatches .worldPanelArrow{font-size:16px!important;font-weight:1000!important;transition:transform .15s ease!important;}
-#pageWorldMatches .worldTabellinoPanel[open] .worldPanelArrow{transform:rotate(180deg)!important;}
-#pageWorldMatches .worldTabellinoPanelBody,#pageWorldMatches .worldRatingsGrid{padding:12px 14px 6px!important;background:rgba(8,17,31,.52)!important;}
-#pageWorldMatches .worldTabellinoPanel .worldRatingsTeamTitle{display:flex!important;align-items:center!important;gap:12px!important;font-size:20px!important;font-weight:1000!important;color:#fff!important;min-width:0!important;}
-#pageWorldMatches .worldTabellinoPanel .worldRatingsTeamTitle .fmIcon{width:30px!important;height:30px!important;min-width:30px!important;margin:0!important;color:#fff!important;}
-#pageWorldMatches .worldTabellinoPanel .worldRatingsTeamTitle .flagCircle{width:42px!important;height:42px!important;min-width:42px!important;margin:0!important;}
-#pageWorldMatches .worldTabellinoPanel .worldEventTeams{display:grid!important;gap:12px!important;padding:0!important;background:transparent!important;border:0!important;}
-#pageWorldMatches .worldTabellinoPanel .worldEventTeamBlock{border:0!important;background:transparent!important;padding:0!important;margin:0!important;}
-#pageWorldMatches .worldTabellinoPanel .worldEventTeamTitle{margin:0 0 8px!important;padding:4px 0 8px!important;border-bottom:1px solid rgba(125,211,252,.14)!important;}
-#pageWorldMatches .worldTabellinoPanel .worldEventList{display:grid!important;gap:0!important;}
-#pageWorldMatches .worldTabellinoPanel .worldEventItem{border:0!important;border-bottom:1px solid rgba(125,211,252,.12)!important;border-radius:0!important;background:transparent!important;padding:12px 0!important;display:grid!important;grid-template-columns:86px minmax(0,1fr)!important;gap:12px!important;align-items:center!important;}
-#pageWorldMatches .worldTabellinoPanel .worldEventItem:last-child,#pageWorldMatches .worldTabellinoPanel .worldRatingCard:last-child{border-bottom:0!important;}
-#pageWorldMatches .worldTabellinoPanel .worldRatingCard{background:transparent!important;border:0!important;border-bottom:1px solid rgba(125,211,252,.12)!important;border-radius:0!important;padding:12px 0!important;}
-#pageWorldMatches .worldTabellinoPanel .worldRatingBadges{display:flex!important;flex-wrap:wrap!important;gap:8px!important;margin-top:9px!important;}
-@media(max-width:640px){
-  #pageWorldMatches{width:calc(100vw - 8px)!important;margin-left:calc(50% - 50vw + 4px)!important;margin-right:calc(50% - 50vw + 4px)!important;}
-  #pageWorldMatches .teamIntroCard{margin-left:4px!important;margin-right:4px!important;}
-  #pageWorldMatches .worldDateBlock{margin-left:0!important;margin-right:0!important;border-radius:22px!important;}
-  #pageWorldMatches .worldDateMatches{padding:10px 6px!important;gap:12px!important;}
-  #pageWorldMatches .worldMatchCard{padding:16px 14px!important;border-radius:20px!important;}
-  #pageWorldMatches .worldMatchCard .worldTabellinoDetails{margin-left:0!important;margin-right:0!important;border-radius:20px!important;}
-  #pageWorldMatches .worldMatchCard .worldTabellinoBody{padding:10px!important;gap:9px!important;}
-  #pageWorldMatches .worldTabellinoPanel>summary{padding:14px!important;border-radius:18px!important;}
-  #pageWorldMatches .worldTabellinoPanel[open]>summary{border-radius:18px 18px 0 0!important;}
-  #pageWorldMatches .worldTabellinoPanel .worldEventItem{grid-template-columns:72px minmax(0,1fr)!important;gap:10px!important;}
-  #pageWorldMatches .worldTabellinoPanelBody,#pageWorldMatches .worldRatingsGrid{padding:10px 12px 4px!important;}
-  #pageWorldMatches .worldTabellinoPanel .worldRatingsTeamTitle{font-size:19px!important;}
-}
+.card-yellow{display:inline-block;width:10px;height:10px;background:#facc15;border-radius:2px;margin-right:6px;vertical-align:middle;}
+.card-red{display:inline-block;width:10px;height:10px;background:#ef4444;border-radius:2px;margin-right:6px;vertical-align:middle;}
 
 </style></head><body><svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg"><symbol id="fm-icon-statistiche-svg" viewbox="0 0 1024.000000 1024.000000"><g fill="currentColor" stroke="none" transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)">
 <path d="M4870 9344 c-881 -61 -1742 -376 -2375 -869 -303 -236 -524 -454
@@ -3770,43 +3735,23 @@ function playersIndexForResults(){
         const total = x.total || x.rating || "SV";
         return '<div class="worldRatingCard'+(evid.length?' worldRatingCardBonus':'')+'"><div class="worldRatingTop"><div class="worldRatingName">'+rowFlag(x,fixture,playersIdx)+'<span>'+esc(x.player||"")+'</span></div><div class="worldRatingVote">'+esc(total)+'</div></div><div class="worldRatingBadges">'+neutral.join("")+evid.join("")+'</div></div>';
       }).join("");
+      const open = idxTeam === 0 ? " open" : "";
       const bmCount = sorted.filter(hasRealBonusMalus).length;
-      return '<details class="worldTabellinoPanel worldRatingsTeamDetails" ontoggle="worldTabellinoExclusive(this)"><summary><span class="worldRatingsTeamTitle">'+rowTeamFlag({team:team},fixture)+'<span>'+esc(team)+'</span></span><span class="worldPanelArrow">▼</span></summary><div class="worldRatingsGrid">'+cards+'</div></details>';
+      return '<details class="worldRatingsTeamDetails"'+open+'><summary><span class="worldRatingsTeamTitle">'+rowTeamFlag({team:team},fixture)+'<span>'+esc(team)+'</span></span></summary><div class="worldRatingsGrid">'+cards+'</div></details>';
     }).filter(Boolean).join("")+'</div>';
   }
 
   function renderTabellino(r, res, done){
     const rows = Array.isArray(res) ? res : [];
-    const eventsPanel = '<details class="worldTabellinoPanel" ontoggle="worldTabellinoExclusive(this)"><summary><span class="worldRatingsTeamTitle">'+icon("fm-icon-ball")+'<span>Eventi partita</span></span><span class="worldPanelArrow">▼</span></summary><div class="worldTabellinoPanelBody">'+eventsByTeamHtml(rows,r)+'</div></details>';
+    const eventsBody = '<div class="worldMatchSection worldMatchSectionCompact"><div class="worldMatchSectionTitle">'+icon("fm-icon-ball")+'<span>Eventi partita</span></div>'+eventsByTeamHtml(rows,r)+'</div>';
     const body = rows.length
-      ? eventsPanel + tableRows(rows, r)
+      ? eventsBody + '<div class="worldMatchSection"><div class="worldMatchSectionTitle">'+icon("fm-icon-statistiche-svg")+'<span>Pagelle e bonus/malus</span></div>'+tableRows(rows, r)+'</div>'
       : '<div class="worldMatchPlaceholder worldMatchPlaceholderSoft">Tabellino non ancora disponibile</div>';
-    return '<details class="worldTabellinoDetails" ontoggle="worldTabellinoRootToggle(this)">'
+    return '<details class="worldTabellinoDetails">'
       + '<summary><span class="worldLineupsSummaryText">'+icon("fm-icon-formazioni-consegnate")+'<span>TABELLINO</span></span><span class="worldTabellinoArrow">▼</span></summary>'
       + '<div class="worldTabellinoBody">'+body+'</div>'
       + '</details>';
   }
-
-  function worldTabellinoExclusive(panel){
-    if(!panel || !panel.open) return;
-    const box = panel.closest(".worldTabellinoBody");
-    if(!box) return;
-    box.querySelectorAll("details.worldTabellinoPanel[open]").forEach(function(other){
-      if(other !== panel) other.open = false;
-    });
-  }
-
-  function worldTabellinoRootToggle(root){
-    if(!root) return;
-    const body = root.querySelector(".worldTabellinoBody");
-    if(!body) return;
-    body.querySelectorAll("details.worldTabellinoPanel[open]").forEach(function(panel){
-      panel.open = false;
-    });
-  }
-
-  window.worldTabellinoExclusive = worldTabellinoExclusive;
-  window.worldTabellinoRootToggle = worldTabellinoRootToggle;
 
   function scoreFromRows(rows, fixture){
     rows = rows || [];
