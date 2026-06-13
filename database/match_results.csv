@@ -1,126 +1,126 @@
-match_id;match;home_team;away_team;home_score;away_score;score_str;status;penalty_score;winner_after_penalties;team;player;rating;minutes;goals;assists;yellow_cards;red_cards;own_goals;penalty_missed;penalties_saved;saves;goals_conceded;clean_sheet;draw_decisive_goal;win_decisive_goal;goal_minutes;assist_minutes;card_minutes;penalty_shootout_goals;penalty_shootout_missed;total
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Ronwen Williams;6,2;90;0;0;0;0;0;0;0;2;2;0;0;0;;;;0;0;4,2
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Raul Jiménez;8;76;1;0;0;0;0;0;0;0;0;0;0;0;67;;;0;0;11
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Themba Zwane;4,9;23;0;0;0;1;0;0;0;0;0;0;0;0;;;84 rosso;0;0;3,9
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Luis Chávez;6,5;24;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,5
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Jesús Gallardo;7,2;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,2
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Aubrey Maphosa Modiba;5,9;77;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;5,9
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;César Montes;6,1;90;0;0;0;1;0;0;0;0;0;0;0;0;;;90 + 2 rosso;0;0;5,1
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Nkosinathi Sibisi;5,8;90;0;0;1;0;0;0;0;0;0;0;0;0;;;74 giallo;0;0;5,3
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Julián Quiñones;8,8;79;1;0;0;0;0;0;0;0;0;0;0;0;9;;;0;0;11,8
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Roberto Alvarado;8,2;90;0;1;0;0;0;0;0;0;0;0;0;0;;67;;0;0;9,2
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Alexis Vega;6;11;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Edson Álvarez;6,6;14;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,6
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Teboho Mokoena;6,5;90;0;0;1;0;0;0;0;0;0;0;0;0;;;17 giallo;0;0;6
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Lyle Foster;5,6;56;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;5,6
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Álvaro Fidalgo;7,2;66;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,2
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Johan Vásquez;7,2;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,2
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Khuliso Mudau;6,5;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,5
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Érik Lira;7,9;76;0;1;0;0;0;0;0;0;0;0;0;0;;9;;0;0;8,9
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Oswin Appollis;6,3;13;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,3
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Israel Reyes;7,4;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,4
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Iqraam Rayners;5,5;76;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;5,5
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Sphephelo Sithole;3,5;49;0;0;0;1;0;0;0;0;0;0;0;0;;;49 rosso;0;0;2,5
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Thalente Mbatha;6,2;34;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,2
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Evidence Makgopa;6,3;14;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,3
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Brian Gutiérrez;6,7;66;0;0;1;0;0;0;0;0;0;0;0;0;;;23 giallo;0;0;6,2
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Jayden Adams;6,2;61;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,2
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Raúl Rangel;7,5;90;0;0;0;0;0;0;0;2;0;1;0;0;;;;0;0;8,5
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Armando González;5,9;14;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;5,9
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Ime Okon;6;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Gilberto Mora;6,3;24;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,3
-4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Mbekezeli Mbokazi;6,1;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,1
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Seung-Gyu Kim;7,7;90;0;0;0;0;0;0;0;3;1;0;0;0;;;;0;0;6,7
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Heung-Min Son;6,9;69;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,9
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Jaroslav Zeleny;6,8;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,8
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Vladimír Coufal;6,9;90;0;1;0;0;0;0;0;0;0;0;0;0;;59;;0;0;7,9
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Tomás Chory;5,9;26;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;5,9
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Jae-Sung Lee;7,4;62;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,4
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Tomás Soucek;6,1;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,1
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Patrik Schick;5,9;64;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;5,9
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Hee-Chan Hwang;6,5;28;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,5
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Jin-Gyu Kim;SV;6;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;SV
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;In-Beom Hwang;8,9;84;1;1;0;0;0;0;0;0;0;0;0;0;67;80;;0;0;12,9
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Lukás Provod;6,8;64;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,8
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Ladislav Krejcí;7,4;90;1;0;0;0;0;0;0;0;0;0;0;0;59;;;0;0;10,4
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Michal Sadílek;6;26;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Min-Jae Kim;7,4;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,4
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Seung-Ho Paik;7,3;84;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,3
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Jin-Seob Park;SV;6;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;SV
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Kang-In Lee;8,4;90;0;1;0;0;0;0;0;0;0;0;0;0;;67;;0;0;9,4
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Adam Hlozek;6,1;26;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,1
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Mojmír Chytil;SV;6;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;SV
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Pavel Sulc;7,2;64;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,2
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Hyun-Gyu Oh;7,5;21;1;0;0;0;0;0;0;0;0;0;0;1;80;;;0;0;11,5
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Matej Kovár;6,8;90;0;0;0;0;0;0;0;4;2;0;0;0;;;;0;0;4,8
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Tae-Seok Lee;6,9;69;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,9
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Ji-Sung Eom;6,6;21;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,6
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Young-Woo Seol;6,9;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,9
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Robin Hranác;5,7;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;5,7
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Han-Beom Lee;7,1;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,1
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Gi-Hyuk Lee;7,6;90;0;0;1;0;0;0;0;0;0;0;0;0;;;90 + 6 giallo;0;0;7,1
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Stepán Chaloupek;5,7;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;5,7
-4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Alexandr Sojka;6,6;84;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,6
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Sead Kolasinac;8,1;84;0;1;0;0;0;0;0;0;0;0;0;0;;21;;0;0;9,1
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Jonathan Osorio;SV;1;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;SV
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Maxime Crépeau;7,5;90;0;0;0;0;0;0;0;2;1;0;0;0;;;;0;0;6,5
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Nikola Vasilj;6,8;90;0;0;0;0;0;0;0;1;1;0;0;0;;;;0;0;5,8
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Ivan Sunjic;6,2;16;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,2
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Cyle Larin;7,5;14;1;0;0;0;0;0;0;0;0;0;1;0;78;;;0;0;11,5
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Dzenis Burnic;SV;6;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;SV
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Nikola Katic;8,4;90;0;0;1;0;0;0;0;0;0;0;0;0;;;90 + 3 giallo;0;0;7,9
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Richie Laryea;7,9;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,9
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Stephen Eustaquio;7,5;89;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,5
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Ermedin Demirovic;6,7;90;0;0;1;0;0;0;0;0;0;0;0;0;;;44 giallo;0;0;6,2
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Derek Cornelius;7,4;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,4
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Liam Millar;6,8;61;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,8
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Jonathan David;6,6;61;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,6
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Amar Dedic;7;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Jacob Shaffelburg;6,1;29;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,1
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Tajon Buchanan;5,7;61;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;5,7
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Alistair Johnston;7,2;90;0;0;1;0;0;0;0;0;0;0;0;0;;;11 giallo;0;0;6,7
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Armin Gigovic;6,7;28;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,7
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Jovo Lukic;8;62;1;0;1;0;0;0;0;0;0;0;0;0;21;;45 + 1 giallo;0;0;10,5
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Ivan Basic;7,2;62;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,2
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Tarik Muharemovic;8,2;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;8,2
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Promise David;6,6;29;0;1;0;0;0;0;0;0;0;0;0;0;;78;;0;0;7,6
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Samed Bazdar;6;28;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Ismaël Koné;6;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Amar Memic;6,1;74;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,1
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Tani Oluwaseyi;6,6;76;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,6
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Esmir Bajraktarevic;6,2;74;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,2
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Ali Ahmed;6,1;29;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,1
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Luc De Fougerolles;6,9;90;0;0;1;0;0;0;0;0;0;0;0;0;;;53 giallo;0;0;6,4
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Benjamin Tahirovic;6,7;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,7
-4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Kerim Alajbegovic;6,3;16;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,3
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Tim Ream;7,5;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,5
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Gustavo Gómez;5,2;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;5,2
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Miguel Almirón;7;79;0;0;1;0;0;0;0;0;0;0;0;0;;;53 giallo;0;0;6,5
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Júnior Alonso;5,3;90;0;0;1;0;0;0;0;0;0;0;0;0;;;90 + 3 giallo;0;0;4,8
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Antonio Sanabria;5,7;62;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;5,7
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Gustavo Velázquez;6;11;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Andrés Cubas;6,3;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,3
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Alejandro Romero;6,1;10;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,1
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Antonee Robinson;7,6;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,6
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Christian Pulisic;7,9;45;0;1;0;0;0;0;0;0;0;0;0;0;;31;;0;0;8,9
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Tyler Adams;7,7;90;0;0;1;0;0;0;0;0;0;0;0;0;;;59 giallo;0;0;7,2
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Omar Alderete;5,8;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;5,8
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Weston McKennie;7,4;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,4
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Timothy Weah;6,2;18;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,2
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Sergiño Dest;7;72;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Chris Richards;7,2;90;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;7,2
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Folarin Balogun;8,8;72;2;0;0;0;0;0;0;0;0;0;0;0;31, 45 + 5;;;0;0;14,8
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Matt Freese;6,2;90;0;0;0;0;0;0;0;0;1;0;0;0;;;;0;0;5,2
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Ricardo Pepi;6;18;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Mauricio;7,4;45;1;0;0;0;0;0;0;0;0;0;0;0;73;;;0;0;10,4
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Giovanni Reyna;SV;8;1;0;0;0;0;0;0;0;0;0;0;0;90 + 8;;;0;0;SV
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Julio Enciso;7,8;90;0;1;0;0;0;0;0;0;0;0;0;0;;73;;0;0;8,8
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Malik Tillman;7,9;82;0;1;0;0;0;0;0;0;0;0;0;0;;45 + 5;;0;0;8,9
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Ramón Sosa;6,3;11;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,3
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Juan Cáceres;6,5;79;0;0;1;0;0;0;0;0;0;0;0;0;;;9 giallo;0;0;6
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Sebastian Berhalter;6,6;45;0;0;0;0;0;0;0;0;0;0;0;0;;;;0;0;6,6
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Damián Bobadilla;5;45;0;0;0;0;1;0;0;0;0;0;0;0;;;;0;0;3
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Álex Arce;6;28;0;0;1;0;0;0;0;0;0;0;0;0;;;88 giallo;0;0;5,5
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Alex Freeman;8,1;90;0;1;0;0;0;0;0;0;0;0;0;0;;90 + 8;;0;0;9,1
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Diego Gómez;6,4;80;0;0;1;0;0;0;0;0;0;0;0;0;;;79 giallo;0;0;5,9
-4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Orlando Gill;5,6;90;0;0;0;0;0;0;0;3;4;0;0;0;;;;0;0;1,6
+match_id;match;home_team;away_team;home_score;away_score;score_str;status;penalty_score;winner_after_penalties;team;player;rating;minutes;goals;assists;yellow_cards;red_cards;own_goals;own_goal_minutes;penalty_missed;penalties_saved;saves;goals_conceded;clean_sheet;draw_decisive_goal;win_decisive_goal;goal_minutes;assist_minutes;card_minutes;penalty_shootout_goals;penalty_shootout_missed;total
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Ronwen Williams;6,2;90;0;0;0;0;0;;0;0;2;2;0;0;0;;;;0;0;4,2
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Raul Jiménez;8;76;1;0;0;0;0;;0;0;0;0;0;0;0;67;;;0;0;11
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Themba Zwane;4,9;23;0;0;0;1;0;;0;0;0;0;0;0;0;;;84 rosso;0;0;3,9
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Luis Chávez;6,5;24;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,5
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Jesús Gallardo;7,2;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,2
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Aubrey Maphosa Modiba;5,9;77;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,9
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;César Montes;6,1;90;0;0;0;1;0;;0;0;0;0;0;0;0;;;90 + 2 rosso;0;0;5,1
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Nkosinathi Sibisi;5,8;90;0;0;1;0;0;;0;0;0;0;0;0;0;;;74 giallo;0;0;5,3
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Julián Quiñones;8,8;79;1;0;0;0;0;;0;0;0;0;0;0;0;9;;;0;0;11,8
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Roberto Alvarado;8,2;90;0;1;0;0;0;;0;0;0;0;0;0;0;;67;;0;0;9,2
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Alexis Vega;6;11;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Edson Álvarez;6,6;14;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,6
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Teboho Mokoena;6,5;90;0;0;1;0;0;;0;0;0;0;0;0;0;;;17 giallo;0;0;6
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Lyle Foster;5,6;56;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,6
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Álvaro Fidalgo;7,2;66;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,2
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Johan Vásquez;7,2;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,2
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Khuliso Mudau;6,5;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,5
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Érik Lira;7,9;76;0;1;0;0;0;;0;0;0;0;0;0;0;;9;;0;0;8,9
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Oswin Appollis;6,3;13;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,3
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Israel Reyes;7,4;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,4
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Iqraam Rayners;5,5;76;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,5
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Sphephelo Sithole;3,5;49;0;0;0;1;0;;0;0;0;0;0;0;0;;;49 rosso;0;0;2,5
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Thalente Mbatha;6,2;34;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,2
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Evidence Makgopa;6,3;14;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,3
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Brian Gutiérrez;6,7;66;0;0;1;0;0;;0;0;0;0;0;0;0;;;23 giallo;0;0;6,2
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Jayden Adams;6,2;61;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,2
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Raúl Rangel;7,5;90;0;0;0;0;0;;0;0;2;0;1;0;0;;;;0;0;8,5
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Armando González;5,9;14;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,9
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Ime Okon;6;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Messico;Gilberto Mora;6,3;24;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,3
+4667751;Messico vs Sudafrica;Messico;Sudafrica;2;0;2 - 0;FT;;;Sudafrica;Mbekezeli Mbokazi;6,1;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,1
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Seung-Gyu Kim;7,7;90;0;0;0;0;0;;0;0;3;1;0;0;0;;;;0;0;6,7
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Heung-Min Son;6,9;69;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,9
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Jaroslav Zeleny;6,8;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,8
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Vladimír Coufal;6,9;90;0;1;0;0;0;;0;0;0;0;0;0;0;;59;;0;0;7,9
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Tomás Chory;5,9;26;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,9
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Jae-Sung Lee;7,4;62;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,4
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Tomás Soucek;6,1;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,1
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Patrik Schick;5,9;64;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,9
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Hee-Chan Hwang;6,5;28;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,5
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Jin-Gyu Kim;SV;6;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;SV
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;In-Beom Hwang;8,9;84;1;1;0;0;0;;0;0;0;0;0;0;0;67;80;;0;0;12,9
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Lukás Provod;6,8;64;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,8
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Ladislav Krejcí;7,4;90;1;0;0;0;0;;0;0;0;0;0;0;0;59;;;0;0;10,4
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Michal Sadílek;6;26;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Min-Jae Kim;7,4;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,4
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Seung-Ho Paik;7,3;84;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,3
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Jin-Seob Park;SV;6;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;SV
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Kang-In Lee;8,4;90;0;1;0;0;0;;0;0;0;0;0;0;0;;67;;0;0;9,4
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Adam Hlozek;6,1;26;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,1
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Mojmír Chytil;SV;6;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;SV
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Pavel Sulc;7,2;64;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,2
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Hyun-Gyu Oh;7,5;21;1;0;0;0;0;;0;0;0;0;0;0;1;80;;;0;0;11,5
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Matej Kovár;6,8;90;0;0;0;0;0;;0;0;4;2;0;0;0;;;;0;0;4,8
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Tae-Seok Lee;6,9;69;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,9
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Ji-Sung Eom;6,6;21;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,6
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Young-Woo Seol;6,9;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,9
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Robin Hranác;5,7;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,7
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Han-Beom Lee;7,1;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,1
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Corea del Sud;Gi-Hyuk Lee;7,6;90;0;0;1;0;0;;0;0;0;0;0;0;0;;;90 + 6 giallo;0;0;7,1
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Stepán Chaloupek;5,7;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,7
+4667752;Corea del Sud vs Cechia;Corea del Sud;Cechia;2;1;2 - 1;FT;;;Cechia;Alexandr Sojka;6,6;84;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,6
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Sead Kolasinac;8,1;84;0;1;0;0;0;;0;0;0;0;0;0;0;;21;;0;0;9,1
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Jonathan Osorio;SV;1;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;SV
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Maxime Crépeau;7,5;90;0;0;0;0;0;;0;0;2;1;0;0;0;;;;0;0;6,5
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Nikola Vasilj;6,8;90;0;0;0;0;0;;0;0;1;1;0;0;0;;;;0;0;5,8
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Ivan Sunjic;6,2;16;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,2
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Cyle Larin;7,5;14;1;0;0;0;0;;0;0;0;0;0;1;0;78;;;0;0;11,5
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Dzenis Burnic;SV;6;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;SV
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Nikola Katic;8,4;90;0;0;1;0;0;;0;0;0;0;0;0;0;;;90 + 3 giallo;0;0;7,9
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Richie Laryea;7,9;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,9
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Stephen Eustaquio;7,5;89;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,5
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Ermedin Demirovic;6,7;90;0;0;1;0;0;;0;0;0;0;0;0;0;;;44 giallo;0;0;6,2
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Derek Cornelius;7,4;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,4
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Liam Millar;6,8;61;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,8
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Jonathan David;6,6;61;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,6
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Amar Dedic;7;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Jacob Shaffelburg;6,1;29;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,1
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Tajon Buchanan;5,7;61;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,7
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Alistair Johnston;7,2;90;0;0;1;0;0;;0;0;0;0;0;0;0;;;11 giallo;0;0;6,7
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Armin Gigovic;6,7;28;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,7
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Jovo Lukic;8;62;1;0;1;0;0;;0;0;0;0;0;0;0;21;;45 + 1 giallo;0;0;10,5
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Ivan Basic;7,2;62;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,2
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Tarik Muharemovic;8,2;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;8,2
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Promise David;6,6;29;0;1;0;0;0;;0;0;0;0;0;0;0;;78;;0;0;7,6
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Samed Bazdar;6;28;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Ismaël Koné;6;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Amar Memic;6,1;74;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,1
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Tani Oluwaseyi;6,6;76;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,6
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Esmir Bajraktarevic;6,2;74;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,2
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Ali Ahmed;6,1;29;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,1
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Canada;Luc De Fougerolles;6,9;90;0;0;1;0;0;;0;0;0;0;0;0;0;;;53 giallo;0;0;6,4
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Benjamin Tahirovic;6,7;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,7
+4667757;Canada vs Bosnia ed Erzegovina;Canada;Bosnia ed Erzegovina;1;1;1 - 1;FT;;;Bosnia ed Erzegovina;Kerim Alajbegovic;6,3;16;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,3
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Tim Ream;7,5;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,5
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Gustavo Gómez;5,2;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,2
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Miguel Almirón;7;79;0;0;1;0;0;;0;0;0;0;0;0;0;;;53 giallo;0;0;6,5
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Júnior Alonso;5,3;90;0;0;1;0;0;;0;0;0;0;0;0;0;;;90 + 3 giallo;0;0;4,8
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Antonio Sanabria;5,7;62;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,7
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Gustavo Velázquez;6;11;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Andrés Cubas;6,3;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,3
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Alejandro Romero;6,1;10;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,1
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Antonee Robinson;7,6;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,6
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Christian Pulisic;7,9;45;0;1;0;0;0;;0;0;0;0;0;0;0;;31;;0;0;8,9
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Tyler Adams;7,7;90;0;0;1;0;0;;0;0;0;0;0;0;0;;;59 giallo;0;0;7,2
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Omar Alderete;5,8;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,8
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Weston McKennie;7,4;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,4
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Timothy Weah;6,2;18;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,2
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Sergiño Dest;7;72;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Chris Richards;7,2;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,2
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Folarin Balogun;8,8;72;2;0;0;0;0;;0;0;0;0;0;0;0;31, 45 + 5;;;0;0;14,8
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Matt Freese;6,2;90;0;0;0;0;0;;0;0;0;1;0;0;0;;;;0;0;5,2
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Ricardo Pepi;6;18;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Mauricio;7,4;45;1;0;0;0;0;;0;0;0;0;0;0;0;73;;;0;0;10,4
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Giovanni Reyna;SV;8;1;0;0;0;0;;0;0;0;0;0;0;0;90 + 8;;;0;0;SV
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Julio Enciso;7,8;90;0;1;0;0;0;;0;0;0;0;0;0;0;;73;;0;0;8,8
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Malik Tillman;7,9;82;0;1;0;0;0;;0;0;0;0;0;0;0;;45 + 5;;0;0;8,9
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Ramón Sosa;6,3;11;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,3
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Juan Cáceres;6,5;79;0;0;1;0;0;;0;0;0;0;0;0;0;;;9 giallo;0;0;6
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Sebastian Berhalter;6,6;45;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,6
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Damián Bobadilla;5;45;0;0;0;0;1;7;0;0;0;0;0;0;0;;;;0;0;3
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Álex Arce;6;28;0;0;1;0;0;;0;0;0;0;0;0;0;;;88 giallo;0;0;5,5
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Stati Uniti;Alex Freeman;8,1;90;0;1;0;0;0;;0;0;0;0;0;0;0;;90 + 8;;0;0;9,1
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Diego Gómez;6,4;80;0;0;1;0;0;;0;0;0;0;0;0;0;;;79 giallo;0;0;5,9
+4667771;Stati Uniti vs Paraguay;Stati Uniti;Paraguay;4;1;4 - 1;FT;;;Paraguay;Orlando Gill;5,6;90;0;0;0;0;0;;0;0;3;4;0;0;0;;;;0;0;1,6
