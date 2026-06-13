@@ -3311,11 +3311,46 @@ function playersIndexForResults(){
   }
 
   function splitResultMinutes(v){
-    return String(v||"").split(",").map(function(x){return x.trim();}).filter(Boolean);
+    const raw = String(v ?? "").trim();
+    if(!raw) return [];
+    return raw
+      .split(",")
+      .map(function(x){ return String(x || "").trim(); })
+      .filter(Boolean);
   }
 
   function cleanResultMinute(v){
-    return String(v||"").replace(/giallo|rosso|autogol/gi,"").replace(/'/g,"").trim();
+    const s = String(v ?? "")
+      .replace(/giallo|rosso|autogol|own\s*goal|\bOG\b/gi, "")
+      .replace(/'/g, "")
+      .trim();
+    const m = s.match(/\d+(?:\s*\+\s*\d+)?/);
+    return m ? m[0].replace(/\s+/g, " ").trim() : "";
+  }
+
+  function eventMinuteRank(v){
+    const s = cleanResultMinute(v);
+    if(!s) return 9999;
+    const m = s.match(/^(\d+)(?:\s*\+\s*(\d+))?/);
+    if(!m) return 9999;
+    return (parseInt(m[1],10) || 0) + ((parseInt(m[2],10) || 0) / 100);
+  }
+
+  function ownGoalMinuteTokens(row){
+    const direct = []
+      .concat(splitResultMinutes(row.own_goal_minutes))
+      .concat(splitResultMinutes(row.own_goal_minute))
+      .concat(splitResultMinutes(row.ownGoalMinutes))
+      .concat(splitResultMinutes(row.ownGoalMinute))
+      .map(cleanResultMinute)
+      .filter(Boolean);
+
+    if(direct.length) return direct;
+
+    return splitResultMinutes(row.goal_minutes)
+      .filter(function(m){ return /autogol|own\s*goal|\bOG\b/i.test(m); })
+      .map(cleanResultMinute)
+      .filter(Boolean);
   }
 
   function playerTeamTitle(team, fixture){
@@ -3341,11 +3376,7 @@ function playersIndexForResults(){
     const playersIdx = playerIndexByName();
     const out = [];
     const seen = {};
-    function minuteRank(v){
-      const s = String(v||"").trim();
-      if(!s) return 9999;
-      return numVal(s);
-    }
+
     function pushEvent(kind, team, player, minute, extra){
       const cleanMinute = cleanResultMinute(minute);
       const key = [kind, team || "", player || "", cleanMinute || "", extra || ""].join("|");
@@ -3353,41 +3384,40 @@ function playersIndexForResults(){
       seen[key] = true;
       out.push({kind:kind, team:team, player:player, minute:cleanMinute, extra:extra || ""});
     }
+
     rows.forEach(function(x){
       const team = resolveRowTeam(x, fixture, playersIdx) || "Senza squadra";
       const player = x.player || "";
-      let ownGoalEventsForRow = 0;
 
-      splitResultMinutes(x.own_goal_minutes).forEach(function(m){
+      const ownGoalMinutes = ownGoalMinuteTokens(x);
+      ownGoalMinutes.forEach(function(m){
         pushEvent("own_goal", team, player, m, "Autogol");
-        ownGoalEventsForRow++;
       });
 
       splitResultMinutes(x.goal_minutes).forEach(function(m){
-        const own = /autogol|own\s*goal|\bOG\b/i.test(m);
-        if(own){
-          pushEvent("own_goal", team, player, m, "Autogol");
-          ownGoalEventsForRow++;
-        }else{
-          pushEvent("goal", team, player, m, "");
-        }
+        if(/autogol|own\s*goal|\bOG\b/i.test(m)) return;
+        pushEvent("goal", team, player, m, "");
       });
 
       const ownGoalsCount = Math.max(0, Math.floor(numVal(x.own_goals)));
-      while(ownGoalEventsForRow < ownGoalsCount){
+      for(let i = ownGoalMinutes.length; i < ownGoalsCount; i++){
         pushEvent("own_goal", team, player, "", "Autogol");
-        ownGoalEventsForRow++;
       }
 
       splitResultMinutes(x.assist_minutes).forEach(function(m){
         pushEvent("assist", team, player, m, "");
       });
+
       splitResultMinutes(x.card_minutes).forEach(function(m){
         if(/rosso/i.test(m)) pushEvent("red", team, player, m, "");
         else if(/giallo/i.test(m)) pushEvent("yellow", team, player, m, "");
       });
     });
-    return out.sort(function(a,b){ return (minuteRank(a.minute)-minuteRank(b.minute)) || String(a.player||"").localeCompare(String(b.player||""),"it"); });
+
+    return out.sort(function(a,b){
+      return (eventMinuteRank(a.minute) - eventMinuteRank(b.minute))
+        || String(a.player||"").localeCompare(String(b.player||""),"it");
+    });
   }
   function eventsByTeamHtml(rows, fixture){
     const playersIdx = playerIndexByName();
