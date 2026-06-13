@@ -3340,26 +3340,55 @@ function playersIndexForResults(){
   function collectMatchEvents(rows, fixture){
     const playersIdx = playerIndexByName();
     const out = [];
+    const seen = {};
+    function minuteRank(v){
+      const s = String(v||"").trim();
+      if(!s) return 9999;
+      return numVal(s);
+    }
+    function pushEvent(kind, team, player, minute, extra){
+      const cleanMinute = cleanResultMinute(minute);
+      const key = [kind, team || "", player || "", cleanMinute || "", extra || ""].join("|");
+      if(seen[key]) return;
+      seen[key] = true;
+      out.push({kind:kind, team:team, player:player, minute:cleanMinute, extra:extra || ""});
+    }
     rows.forEach(function(x){
       const team = resolveRowTeam(x, fixture, playersIdx) || "Senza squadra";
+      const player = x.player || "";
+      let ownGoalEventsForRow = 0;
+
       splitResultMinutes(x.own_goal_minutes).forEach(function(m){
-        out.push({kind:"own_goal",team:team,player:x.player,minute:cleanResultMinute(m),extra:"Autogol"});
+        pushEvent("own_goal", team, player, m, "Autogol");
+        ownGoalEventsForRow++;
       });
+
       splitResultMinutes(x.goal_minutes).forEach(function(m){
-        const own = /autogol/i.test(m);
-        out.push({kind:own?"own_goal":"goal",team:team,player:x.player,minute:cleanResultMinute(m),extra:own?"Autogol":""});
+        const own = /autogol|own\s*goal|\bOG\b/i.test(m);
+        if(own){
+          pushEvent("own_goal", team, player, m, "Autogol");
+          ownGoalEventsForRow++;
+        }else{
+          pushEvent("goal", team, player, m, "");
+        }
       });
+
+      const ownGoalsCount = Math.max(0, Math.floor(numVal(x.own_goals)));
+      while(ownGoalEventsForRow < ownGoalsCount){
+        pushEvent("own_goal", team, player, "", "Autogol");
+        ownGoalEventsForRow++;
+      }
+
       splitResultMinutes(x.assist_minutes).forEach(function(m){
-        out.push({kind:"assist",team:team,player:x.player,minute:cleanResultMinute(m),extra:""});
+        pushEvent("assist", team, player, m, "");
       });
       splitResultMinutes(x.card_minutes).forEach(function(m){
-        if(/rosso/i.test(m)) out.push({kind:"red",team:team,player:x.player,minute:cleanResultMinute(m),extra:""});
-        else if(/giallo/i.test(m)) out.push({kind:"yellow",team:team,player:x.player,minute:cleanResultMinute(m),extra:""});
+        if(/rosso/i.test(m)) pushEvent("red", team, player, m, "");
+        else if(/giallo/i.test(m)) pushEvent("yellow", team, player, m, "");
       });
     });
-    return out.sort(function(a,b){ return (numVal(a.minute)-numVal(b.minute)) || String(a.player||"").localeCompare(String(b.player||""),"it"); });
+    return out.sort(function(a,b){ return (minuteRank(a.minute)-minuteRank(b.minute)) || String(a.player||"").localeCompare(String(b.player||""),"it"); });
   }
-
   function eventsByTeamHtml(rows, fixture){
     const playersIdx = playerIndexByName();
     const entries = collectMatchEvents(rows, fixture);
