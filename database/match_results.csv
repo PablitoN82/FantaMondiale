@@ -156,3 +156,97 @@ match_id;match;home_team;away_team;home_score;away_score;score_str;status;penalt
 4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Svizzera;Johan Manzambi;5,9;25;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,9
 4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Mohamed Al Mannai;5,9;11;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,9
 4667758;Qatar vs Svizzera;Qatar;Svizzera;1;1;1 - 1;FT;;;Qatar;Issa Laye;6,8;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,8
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Brasile;Danilo;6,4;45;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,4
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Brasile;Casemiro;6,5;45;0;0;1;0;0;;0;0;0;0;0;0;0;;;37 giallo;0;0;6
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Brasile;Marquinhos;6,9;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,9
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Brasile;Alisson Becker;6,5;90;0;0;0;0;0;;0;0;2;1;0;0;0;;;;0;0;5,5
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Marocco;Yassine Bounou;7,4;90;0;0;0;0;0;;0;0;4;1;0;0;0;;;;0;0;6,4
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Brasile;Douglas Santos;7,7;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,7
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Brasile;Fabinho;6,3;45;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,3
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Marocco;Issa Diop;6,6;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,6
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Brasile;Raphinha;6,8;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,8
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Marocco;Brahim Díaz;7,1;65;0;1;0;0;0;;0;0;0;0;0;0;0;;21;;0;0;8,1
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Brasile;Lucas Paquetá;7,1;61;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,1
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Marocco;Achraf Hakimi;7,5;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,5
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Marocco;Noussair Mazraoui;7,4;80;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,4
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Brasile;Gabriel;6,9;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,9
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Brasile;Vinícius Júnior;7,3;90;1;0;0;0;0;;0;0;0;0;0;1;0;32;;;0;0;11,3
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Brasile;Bruno Guimarães;7;80;0;1;0;0;0;;0;0;0;0;0;0;0;;32;;0;0;8
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Brasile;Roger Ibañez;6,7;45;0;0;1;0;0;;0;0;0;0;0;0;0;;;43 giallo;0;0;6,2
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Brasile;Matheus Cunha;6,3;29;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,3
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Marocco;Soufiane Rahimi;SV;1;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;SV
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Marocco;Anass Salah-Eddine;5,9;10;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,9
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Marocco;Azzedine Ounahi;7,3;65;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,3
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Brasile;Luiz Henrique;6,5;28;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,5
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Marocco;Ismael Saibari;7,7;89;1;0;0;0;0;;0;0;0;0;0;0;0;21;;;0;0;10,7
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Brasile;Danilo;6,1;10;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,1
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Marocco;Chadi Riad;7,2;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,2
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Marocco;Neil El Aynaoui;7,4;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,4
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Brasile;Igor Thiago;6,5;62;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,5
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Marocco;Bilal El Khannouss;7,6;80;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,6
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Marocco;Chemsdine Talbi;6,1;25;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,1
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Marocco;Ayyoub Bouaddi;7,1;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,1
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Marocco;Samir El Mourabet;6,2;25;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,2
+4667764;Brasile vs Marocco;Brasile;Marocco;1;1;1 - 1;FT;;;Marocco;Ayoube Amaimouni-Echghouyab;6,2;10;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,2
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Haiti;Johny Placide;6,4;90;0;0;0;0;0;;0;0;1;1;0;0;0;;;;0;0;5,4
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Scozia;Kenny McLean;SV;7;0;0;1;0;0;;0;0;0;0;0;0;0;;;90 + 5 giallo;0;0;SV
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Scozia;Grant Hanley;6,8;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,8
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Scozia;Lawrence Shankland;6,8;83;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,8
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Scozia;John McGinn;7,8;83;1;0;0;0;0;;0;0;0;0;0;0;1;29;;;0;0;11,8
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Scozia;Andrew Robertson;7,3;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,3
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Scozia;Ryan Christie;6,4;15;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,4
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Haiti;Ricardo Adé;6,7;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,7
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Scozia;Ché Adams;6,4;75;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,4
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Haiti;Carlens Arcus;6,4;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,4
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Scozia;Jack Hendry;6,8;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,8
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Haiti;Yassin Fortuné;SV;5;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;SV
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Scozia;Angus Gunn;7,7;90;0;0;0;0;0;;0;0;2;0;1;0;0;;;;0;0;8,7
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Scozia;Lyndon Dykes;6,1;15;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,1
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Haiti;Jean-Ricner Bellegarde;7,3;90;0;0;1;0;0;;0;0;0;0;0;0;0;;;39 giallo;0;0;6,8
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Haiti;Hannes Delcroix;6,9;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,9
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Haiti;Frantzdy Pierrot;6;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Scozia;Scott McTominay;6,8;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,8
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Haiti;Wilson Isidor;5,9;76;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,9
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Scozia;Lewis Ferguson;7,3;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,3
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Scozia;Aaron Hickey;7,3;75;0;0;1;0;0;;0;0;0;0;0;0;0;;;46 giallo;0;0;6,8
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Haiti;Don Deedson Louicius;6,5;61;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,5
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Scozia;Nathan Patterson;6,2;15;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,2
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Haiti;Martin Expérience;7,1;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,1
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Haiti;Josué Casimir;6,2;29;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,2
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Haiti;Ruben Providence;6,5;85;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,5
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Haiti;Lenny Joseph;6;14;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Scozia;Ben Gannon-Doak;7;75;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Haiti;Danley Jean Jacques;7,3;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,3
+4667765;Haiti vs Scozia;Haiti;Scozia;0;1;0 - 1;FT;;;Scozia;Findlay Curtis;SV;7;0;0;1;0;0;;0;0;0;0;0;0;0;;;90 + 1 giallo;0;0;SV
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Australia;Aziz Behich;SV;6;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;SV
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Turkey;Abdülkerim Bardakci;6,6;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,6
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Turkey;Hakan Çalhanoglu;7,4;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,4
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Australia;Jackson Irvine;SV;6;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;SV
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Australia;Jason Geria;6,4;16;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,4
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Australia;Cameron Burgess;7,1;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,1
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Turkey;Ugurcan Çakir;6;90;0;0;0;0;0;;0;0;2;2;0;0;0;;;;0;0;4
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Australia;Harry Souttar;7,7;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,7
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Turkey;Salih Özcan;SV;9;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;SV
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Turkey;Ferdi Kadioglu;7,6;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,6
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Australia;Aiden O'Neill;7,2;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,2
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Turkey;Merih Demiral;6,5;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,5
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Turkey;Yunus Akgün;6,6;28;0;0;1;0;0;;0;0;0;0;0;0;0;;;86 giallo;0;0;6,1
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Turkey;Zeki Çelik;6,4;81;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,4
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Australia;Connor Metcalfe;8;90;1;0;0;0;0;;0;0;0;0;0;0;0;75;;;0;0;11
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Australia;Jacob Italiano;7,1;74;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,1
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Turkey;Baris Alper Yilmaz;5,6;45;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;5,6
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Turkey;Mert Müldür;SV;9;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;SV
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Turkey;Orkun Kökcü;6,8;62;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,8
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Turkey;Kerem Aktürkoglu;6,2;85;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,2
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Australia;Mohamed Touré;6,6;74;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,6
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Turkey;Ismail Yüksek;7;81;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Australia;Tete Yengi;6,4;16;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,4
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Australia;Nishan Velupillay;6,2;29;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,2
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Turkey;Arda Güler;7,4;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,4
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Australia;Jordan Bos;6,8;84;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;6,8
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Australia;Alessandro Circati;7,1;90;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,1
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Australia;Nestory Irankunda;7,6;61;1;0;0;0;0;;0;0;0;0;0;0;0;27;;;0;0;10,6
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Australia;Patrick Beach;8,8;90;0;0;0;0;0;;0;0;8;0;1;0;0;;;;0;0;9,8
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Turkey;Deniz Gül;SV;5;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;SV
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Turkey;Kenan Yildiz;7,2;45;0;0;0;0;0;;0;0;0;0;0;0;0;;;;0;0;7,2
+4667772;Australia vs Turchia;Australia;Turchia;2;0;2 - 0;FT;;;Australia;Paul Okon-Engstler;8,1;84;0;1;0;0;0;;0;0;0;0;0;0;0;;27;;0;0;9,1
