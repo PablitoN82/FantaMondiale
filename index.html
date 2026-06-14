@@ -3258,7 +3258,7 @@ function formationVoteLineFantasy(p,roundKey,data,evaluation){
   const row=fantasyScoreRow(roundKey,fantasyPlayerLookupName(p),data);
   const score=escapeHtml(fantasyScoreText(row));
   const selected=evaluation.selected[fantasyPlayerKey(p)];
-  const nameStyle=selected?' style="background:linear-gradient(135deg,#1e5eff 0%,#2563eb 48%,#38bdf8 100%);color:#fff;border-radius:8px;padding:2px 7px;display:inline-block;"':"";
+  const nameStyle=selected?' style="background:linear-gradient(135deg,#0ea5e9 0%,#38bdf8 100%);color:#000;border-radius:12px;padding:4px 10px;display:inline-block;font-weight:700;"':"";
   const subInfo="";
   return '<div class="resultsFormationPlayer"><div class="resultsFormationPlayerMain"><span class="resultsFormationSlot">'+slot+'</span><span class="resultsFormationName"'+nameStyle+'>'+name+'</span>'+fmCircleFlagHtml(nation)+subInfo+'</div><span class="resultsFormationVote">'+score+'</span></div>';
 }
