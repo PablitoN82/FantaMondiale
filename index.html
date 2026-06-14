@@ -3120,7 +3120,10 @@ async function renderStandingsPage(){
   const rounds=Object.keys(byRound).sort((a,b)=>Number(a)-Number(b));
   const previous=select.value||"campionato";
 
-  select.innerHTML='<option value="campionato">Campionato</option>'+rounds.map(k=>'<option value="'+escapeHtml(k)+'">'+escapeHtml(byRound[k].label||("Giornata "+k))+'</option>').join("");
+  const currentRoundKey=rounds.length?rounds[rounds.length-1]:"";
+  const currentRoundLabel=currentRoundKey?(byRound[currentRoundKey].label||("Giornata "+currentRoundKey)):"";
+  const campionatoLabel=currentRoundLabel?("Campionato - "+currentRoundLabel):"Campionato";
+  select.innerHTML='<option value="campionato">'+escapeHtml(campionatoLabel)+'</option>'+rounds.map(k=>'<option value="'+escapeHtml(k)+'">'+escapeHtml(byRound[k].label||("Giornata "+k))+'</option>').join("");
   select.value=Array.from(select.options).some(o=>o.value===previous)?previous:"campionato";
 
   const table={};
@@ -3256,7 +3259,7 @@ function formationVoteLineFantasy(p,roundKey,data,evaluation){
   const score=escapeHtml(fantasyScoreText(row));
   const selected=evaluation.selected[fantasyPlayerKey(p)];
   const nameStyle=selected?' style="background:linear-gradient(135deg,#1e5eff 0%,#2563eb 48%,#38bdf8 100%);color:#fff;border-radius:8px;padding:2px 7px;display:inline-block;"':"";
-  const subInfo=selected&&selected.kind==="reserve"?'<span class="badge ok" style="margin-left:6px">Subentrato</span>':"";
+  const subInfo="";
   return '<div class="resultsFormationPlayer"><div class="resultsFormationPlayerMain"><span class="resultsFormationSlot">'+slot+'</span><span class="resultsFormationName"'+nameStyle+'>'+name+'</span>'+fmCircleFlagHtml(nation)+subInfo+'</div><span class="resultsFormationVote">'+score+'</span></div>';
 }
 
