@@ -1,36 +1,146 @@
 {
   "version": "1.0",
-  "type": "FantaMondiale_Formazione",
-  "savedAt": "2026-06-08T18:54:49.785Z",
-  "teamName": "River Mésch National FC",
-  "round": "Prima giornata",
-  "module": "3-4-3",
-  "selections": {
-    "A1": "21",
-    "P2": "0",
-    "P3": "2",
-    "D5": "6",
-    "D7": "7",
-    "A6": "23",
-    "A7": "25",
-    "P1": "1",
-    "D1": "4",
-    "D2": "5",
-    "D3": "10",
-    "D4": "8",
-    "D6": "3",
-    "D8": "9",
-    "C1": "12",
-    "C2": "15",
-    "C3": "14",
-    "C4": "16",
-    "C7": "13",
-    "C8": "17",
-    "A2": "24",
-    "A3": "19",
-    "C5": "11",
-    "C6": "18",
-    "A4": "22",
-    "A5": "20"
+  "savedAt": "2026-06-07T11:55:00.000Z",
+  "fantasyTeamName": "Zheneda Mundial",
+  "selectedTeam": "Argentina",
+  "slots": {
+    "Portieri": [
+      {
+        "raw": "Unai Simón — Spagna — 22,00 mln €",
+        "ok": true,
+        "val": 22
+      },
+      {
+        "raw": "Mike Maignan — Francia — 20,00 mln €",
+        "ok": true,
+        "val": 20
+      },
+      {
+        "raw": "Alisson Becker — Brasile — 15,00 mln €",
+        "ok": true,
+        "val": 15
+      }
+    ],
+    "Difensori": [
+      {
+        "raw": "Joshua Kimmich — Germania — 35,00 mln €",
+        "ok": true,
+        "val": 35
+      },
+      {
+        "raw": "Josko Gvardiol — Croazia — 70,00 mln €",
+        "ok": true,
+        "val": 70
+      },
+      {
+        "raw": "Noussair Mazraoui — Marocco — 18,00 mln €",
+        "ok": true,
+        "val": 18
+      },
+      {
+        "raw": "Merih Demiral — Turchia — 12,00 mln €",
+        "ok": true,
+        "val": 12
+      },
+      {
+        "raw": "José Giménez — Uruguay — 9,00 mln €",
+        "ok": true,
+        "val": 9
+      },
+      {
+        "raw": "Jules Koundé — Francia — 60,00 mln €",
+        "ok": true,
+        "val": 60
+      },
+      {
+        "raw": "Ángelo Preciado — Ecuador — 3,50 mln €",
+        "ok": true,
+        "val": 3.5
+      },
+      {
+        "raw": "Davinson Sánchez — Colombia — 16,00 mln €",
+        "ok": true,
+        "val": 16
+      }
+    ],
+    "Centrocampisti": [
+      {
+        "raw": "Martin Ødegaard — Norvegia — 65,00 mln €",
+        "ok": true,
+        "val": 65
+      },
+      {
+        "raw": "Marcel Sabitzer — Austria — 6,00 mln €",
+        "ok": true,
+        "val": 6
+      },
+      {
+        "raw": "Tomás Soucek — Cechia — 10,00 mln €",
+        "ok": true,
+        "val": 10
+      },
+      {
+        "raw": "Bruno Fernandes — Portogallo — 35,00 mln €",
+        "ok": true,
+        "val": 35
+      },
+      {
+        "raw": "Alexis Mac Allister — Argentina — 70,00 mln €",
+        "ok": true,
+        "val": 70
+      },
+      {
+        "raw": "Bruno Guimarães — Brasile — 70,00 mln €",
+        "ok": true,
+        "val": 70
+      },
+      {
+        "raw": "Luka Modric — Croazia — 3,50 mln €",
+        "ok": true,
+        "val": 3.5
+      },
+      {
+        "raw": "Rodri — Spagna — 50,00 mln €",
+        "ok": true,
+        "val": 50
+      }
+    ],
+    "Attaccanti": [
+      {
+        "raw": "Edin Dzeko — Bosnia ed Erzegovina — 1,00 mln €",
+        "ok": true,
+        "val": 1
+      },
+      {
+        "raw": "Lamine Yamal — Spagna — 200,00 mln €",
+        "ok": true,
+        "val": 200
+      },
+      {
+        "raw": "Cristiano Ronaldo — Portogallo — 10,00 mln €",
+        "ok": true,
+        "val": 10
+      },
+      {
+        "raw": "Ousmane Dembélé — Francia — 100,00 mln €",
+        "ok": true,
+        "val": 100
+      },
+      {
+        "raw": "Harry Kane — Inghilterra — 60,00 mln €",
+        "ok": true,
+        "val": 60
+      },
+      {
+        "raw": "Raul Jiménez — Messico — 3,00 mln €",
+        "ok": true,
+        "val": 3
+      },
+      {
+        "raw": "Julián Álvarez — Argentina — 100,00 mln €",
+        "ok": true,
+        "val": 100
+      }
+    ]
   }
 }
